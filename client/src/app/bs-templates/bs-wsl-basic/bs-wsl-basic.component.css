@@ -1,0 +1,48 @@
+:host {
+  height: 100%;
+  overflow: hidden;
+}
+
+.container-fluid.body-content {
+  position: absolute;
+  top: 64px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  overflow-y: auto;
+  background-color: #ececec
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #323232;
+    height: 64px;
+}
+
+span.app-title {
+  font-size: 16px;
+  line-height: 64px;
+  vertical-align: middle;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00b29f;
+    height: 50px;
+}
+
+span.app-footer {
+  font-size: 12px;
+  line-height: 50px;
+  vertical-align: middle;
+  color: #ffffff;
+  padding-left: 20px;
+}

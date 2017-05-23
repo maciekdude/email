@@ -1,0 +1,63 @@
+{
+  "cloudantNoSQLDB": [{
+    "credentials": {
+      "username": "f280e88a-c9f2-4a9c-97a1-bf5f977525d0-bluemix",
+      "password": "82f7237e14bb4eb2d792a44372b642ba2afe13c4bbdb46df8a699542d2e374fa",
+      "host": "f280e88a-c9f2-4a9c-97a1-bf5f977525d0-bluemix.cloudant.com",
+      "port": 443,
+      "url": "https://f280e88a-c9f2-4a9c-97a1-bf5f977525d0-bluemix:82f7237e14bb4eb2d792a44372b642ba2afe13c4bbdb46df8a699542d2e374fa@f280e88a-c9f2-4a9c-97a1-bf5f977525d0-bluemix.cloudant.com"
+    },
+    "syslog_drain_url": null,
+    "label": "cloudantNoSQLDB",
+    "provider": null,
+    "plan": "Lite",
+    "name": "Cloudant NoSQL DB-ak",
+    "tags": [
+      "data_management",
+      "ibm_created",
+      "ibm_dedicated_public"
+    ]
+  }],
+  "conversation": [{
+    "credentials": {
+      "url": "https://gateway.watsonplatform.net/conversation/api",
+      "password": "65cJTfytSdgc",
+      "username": "1142c6f7-afc6-4c11-b665-ecd0cb636b8d"
+    },
+    "syslog_drain_url": null,
+    "label": "conversation",
+    "provider": null,
+    "plan": "free",
+    "name": "Conversation-n0",
+    "tags": [
+      "watson",
+      "ibm_created"
+    ]
+  }],
+  "alchemy_api": [{
+    "credentials": {
+      "url": "https://gateway-a.watsonplatform.net/calls",
+      "note": "It may take up to 5 minutes for this key to become active",
+      "apikey": "2de43aed04d82513a7809aa2fe5bb460a338320c"
+    },
+    "syslog_drain_url": null,
+    "label": "alchemy_api",
+    "provider": null,
+    "plan": "free",
+    "name": "AlchemyAPI-01",
+    "tags": [
+      "watson",
+      "ibm_created",
+      "ibm_dedicated_public"
+    ]
+  }],
+  "SpeechToText": [{
+    "credentials": {
+      "url": "https://stream.watsonplatform.net/speech-to-text/api",
+      "username": "543041c2-2816-49ca-887c-0627cbe49417",
+      "password": "o7VZZVqMnwgh"
+    },
+    "name": "Speech to Text-default",
+    "label": "speech_to_text"
+  }]
+}

@@ -1,0 +1,14 @@
+{
+  "CLOUDANT_CONNECTION_URL": {"expr": "Cloudant.*", "field": "credentials.url"},
+  "CLOUDANT_DB_NAME": "wsl-starter-app-db",
+  "CONVERSATION_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/d91fd157-b5e1-4cf5-a158-5250590bea9f/message?version=2016-09-20"},
+  "CONVERSATION_API_USER": {"expr": "Conversation.*", "field": "credentials.username"},
+  "CONVERSATION_API_PASSWORD": {"expr": "Conversation.*", "field": "credentials.password"},
+  "ALCHEMY_URL": {"expr": "AlchemyAPI.*", "field": "credentials.url"},
+  "ALCHEMY_NEWS_URL": {"expr": "AlchemyAPI.*", "field": "credentials.url", "append": "/data/GetNews"},
+  "ALCHEMY_LANGUAGE_TEXT_COMBINED_URL": {"expr": "AlchemyAPI.*", "field": "credentials.url", "append": "/text/TextGetCombinedData"},
+  "ALCHEMY_API_KEY": {"expr": "AlchemyAPI.*", "field": "credentials.apikey"},
+  "STT_API_USER": {"expr": "Speech to Text.*", "field": "credentials.username"},
+  "STT_API_PASSWORD": {"expr": "Speech to Text.*", "field": "credentials.password"},
+  "STT_API_URL": {"expr": "Speech to Text.*", "field": "credentials.url"}
+}

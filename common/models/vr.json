@@ -1,0 +1,46 @@
+{
+  "name": "Vr",
+  "plural": "Vr",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "*"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "*"
+    }
+  ],
+  "methods": {
+    "classifyFromCloudant": {
+      "accepts": [
+        {
+          "arg": "_id",
+          "type": "string"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
