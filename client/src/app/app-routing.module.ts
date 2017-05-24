@@ -9,11 +9,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const APP_ROUTES: Routes = [
-  { path: 'bs-templates', loadChildren: './bs-templates/bs-templates.module#BsTemplatesModule', canLoad: [AuthGuard] },
-  // { path: 'dashboard', component: DashboardComponent, canLoad: [AuthGuard] },
+  // { path: 'bs-templates', loadChildren: './bs-templates/bs-templates.module#BsTemplatesModule', canLoad: [AuthGuard] },
+  { path: 'dashboard', component: DashboardComponent, canLoad: [AuthGuard] },
   { path: 'login', component: LoopbackLoginComponent },
-  { path: '', redirectTo: 'bs-templates/bs-simple-sidebar', pathMatch: 'full'  },
-  // { path: '', redirectTo: 'dashboard', pathMatch: 'full'  },
+  // { path: '', redirectTo: 'bs-templates/bs-simple-sidebar', pathMatch: 'full'  },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full'  },
   { path: '**', component: PageNotFoundComponent }
 ];
 

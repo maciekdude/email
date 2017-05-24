@@ -16,17 +16,30 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppSidebarComponent } from './dashboard/app-sidebar/app-sidebar.component';
 
+import { ScrollToModule } from 'ng2-scroll-to';
+import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModule, PaginationModule, ProgressbarModule, PopoverModule, TooltipModule } from 'ngx-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     DashboardComponent,
-    AppSidebarComponent,
+    AppSidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    ScrollToModule.forRoot(),
+    AlertModule.forRoot(),
+    CollapseModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    ButtonsModule.forRoot(),
+    TabsModule.forRoot(),
+    PaginationModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    PopoverModule.forRoot(),
+    TooltipModule.forRoot()
   ],
   providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}, AuthGuard, AlertService],
   bootstrap: [AppComponent]
