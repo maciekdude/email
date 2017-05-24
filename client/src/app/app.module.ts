@@ -13,11 +13,15 @@ import { AlertService } from './utils/alert.service'
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppSidebarComponent } from './dashboard/app-sidebar/app-sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    DashboardComponent,
+    AppSidebarComponent,
   ],
   imports: [
     BrowserModule,
