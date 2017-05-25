@@ -1,0 +1,9 @@
+<div class="panel panel-primary" *ngIf="currentEmail">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{currentEmail.subject}}</h3>
+    <h6>From: {{currentEmail.from}}</h6>
+  </div>
+  <div class="panel-body">
+    {{currentEmail.text}}
+  </div>
+</div>

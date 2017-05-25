@@ -1,0 +1,25 @@
+<div class="panel panel-primary" *ngIf="currentEmail">
+  <div class="panel-heading">
+    <h3 class="panel-title">Summary & Actions</h3>
+    <span class="label label-info">{{currentEmail.status}}</span>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="missing">
+          <h5>Missing:</h5>
+          <div class="alert alert-warning alert-dismissible" role="alert" *ngFor="let item of itemsMissing">
+            <strong>{{item}}</strong> Please add this to submit.
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h5>Actions:</h5>
+        <div class="btn-group-vertical" role="group" aria-label="">
+          <button type="button" class="btn btn-default">Submit</button>
+          <button type="button" class="btn btn-default">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

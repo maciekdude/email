@@ -1,0 +1,22 @@
+<div class="panel panel-primary" *ngIf="currentEmail">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Summary</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
+  <!-- Table -->
+  <table class="table">
+    <tr>
+      <td>VIN#</td>
+      <td>{{currentEmail.entities.vin}}</td>
+    </tr>
+    <tr>
+      <td>LIC#</td>
+      <td>{{currentEmail.entities.license}}</td>
+    </tr>
+    <tr>
+      <td>SSN#</td>
+      <td>{{currentEmail.entities.ssn}}</td>
+    </tr>
+  </table>
+</div>

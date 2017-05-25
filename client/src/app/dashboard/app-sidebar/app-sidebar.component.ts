@@ -2,6 +2,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { LoopbackLoginService } from '../../auth/loopback/lb-login.service';
 
+import { EmailService } from '../services/email.service';
+
+import { Email } from '../services/email'
+
 @Component({
   selector: 'app-app-sidebar',
   templateUrl: './app-sidebar.component.html',
@@ -13,34 +17,17 @@ export class AppSidebarComponent implements OnInit {
   public isToggled: boolean = false;
 
   constructor(
-    private authService: LoopbackLoginService
+    private authService: LoopbackLoginService,
+    private emailService: EmailService
   ) { }
 
-  emails = [
-    {
-      id:"1234",
-      from: "jackson@mail.com",
-      to: "process@insurance.com",
-      subject: "a nice little subject",
-      text:"  Please issue a certificate of insurance for: Lakewood Park Apartments, Attn: Liza Schumer 1001 Pine Wood Lane Durham, NC 27703 Please email the completed coi to Lakewood@realestateassoc.com, kaseylm4@gmail.com and cc: lbarraga@bbt.com.  Thank you."
-    },
-    {
-      id:"1245",
-      from: "jackson@mail.com",
-      to: "process@insurance.com",
-      subject: "please do this",
-      text:"  Please issue a certificate of insurance for: Lakewood Park Apartments, Attn: Liza Schumer 1001 Pine Wood Lane Durham, NC 27703 Please email the completed coi to Lakewood@realestateassoc.com, kaseylm4@gmail.com and cc: lbarraga@bbt.com.  Thank you."
-    },
-    {
-      id:"1256",
-      from: "jackson@mail.com",
-      to: "process@insurance.com",
-      subject: "can you add this person?",
-      text:"  Please issue a certificate of insurance for: Lakewood Park Apartments, Attn: Liza Schumer 1001 Pine Wood Lane Durham, NC 27703 Please email the completed coi to Lakewood@realestateassoc.com, kaseylm4@gmail.com and cc: lbarraga@bbt.com.  Thank you."
-    }
-  ]
+  emails: Array<Email> = this.emailService.emails
 
   ngOnInit() {
+    // update emails if they change
+    this.emailService.emailsUpdate.subscribe( (allEmails) =>{
+      this.emails = allEmails
+    })
   }
 
   toggleSidebar() {
@@ -50,6 +37,11 @@ export class AppSidebarComponent implements OnInit {
 
   logout() {
     this.authService.logout().subscribe();
+  }
+
+  // pass the selected email through as the active one
+  activateEmail(email){
+    this.emailService.switchEmail(email)
   }
 
 }

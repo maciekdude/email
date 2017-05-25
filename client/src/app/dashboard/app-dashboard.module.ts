@@ -6,6 +6,11 @@ import { DashboardComponent } from './dashboard.component';
 import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
 
 import { AppRoutingModule } from './app-dashboard-routing.module';
+import { EmailViewComponent } from './email-view/email-view.component';
+
+import { EmailService } from './services/email.service';
+import { SummaryComponent } from './summary/summary.component';
+import { ActionsComponent } from './actions/actions.component';
 
 @NgModule({
   imports: [
@@ -14,7 +19,13 @@ import { AppRoutingModule } from './app-dashboard-routing.module';
   ],
   declarations: [
     DashboardComponent,
-    AppSidebarComponent
-  ]
+    AppSidebarComponent,
+    EmailViewComponent,
+    SummaryComponent,
+    ActionsComponent
+  ],
+providers: [
+  EmailService
+]
 })
 export class AppDashboardModule { }
