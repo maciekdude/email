@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 
+import { ConversationService } from './conversation.service';
+
 import { Email } from './email'
 
 @Injectable()
@@ -54,7 +56,16 @@ export class EmailService {
   emailChange: Subject<any> = new Subject<any>();
   emailsUpdate: Subject<any> = new Subject<any>();
 
-  constructor() { }
+  constructor(public conversationService:ConversationService) {
+    for(let i of this.emails){
+      let message = i.text
+      this.conversationService.sendMessage(message).subscribe(response => {
+        if(response[0].intents[0]){
+          i.requestType = response[0].intents[0].intent
+        }
+      })
+    }
+  }
 
   getEmails(){
     return this.emails

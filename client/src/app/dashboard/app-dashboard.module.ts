@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-dashboard-routing.module';
 import { EmailViewComponent } from './email-view/email-view.component';
 
 import { EmailService } from './services/email.service';
+import { ConversationService } from './services/conversation.service';
+
 import { SummaryComponent } from './summary/summary.component';
 import { ActionsComponent } from './actions/actions.component';
 
@@ -25,7 +27,8 @@ import { ActionsComponent } from './actions/actions.component';
     ActionsComponent
   ],
 providers: [
-  EmailService
+  EmailService,
+  ConversationService
 ]
 })
 export class AppDashboardModule { }
