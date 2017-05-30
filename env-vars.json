@@ -1,7 +1,7 @@
 {
   "CLOUDANT_CONNECTION_URL": {"expr": "Cloudant.*", "field": "credentials.url"},
   "CLOUDANT_DB_NAME": "wsl-starter-app-db",
-  "CONVERSATION_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/d91fd157-b5e1-4cf5-a158-5250590bea9f/message?version=2016-09-20"},
+  "CONVERSATION_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/4213be4a-c730-4746-8391-28a6ee82c903/message?version=2016-09-20"},
   "CONVERSATION_API_USER": {"expr": "Conversation.*", "field": "credentials.username"},
   "CONVERSATION_API_PASSWORD": {"expr": "Conversation.*", "field": "credentials.password"},
   "ALCHEMY_URL": {"expr": "AlchemyAPI.*", "field": "credentials.url"},
