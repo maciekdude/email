@@ -10,6 +10,7 @@ import { EmailViewComponent } from './email-view/email-view.component';
 
 import { EmailService } from './services/email.service';
 import { ConversationService } from './services/conversation.service';
+import { NluService } from './services/nlu.service';
 
 import { SummaryComponent } from './summary/summary.component';
 import { ActionsComponent } from './actions/actions.component';
@@ -28,7 +29,8 @@ import { ActionsComponent } from './actions/actions.component';
   ],
 providers: [
   EmailService,
-  ConversationService
+  ConversationService,
+  NluService
 ]
 })
 export class AppDashboardModule { }
