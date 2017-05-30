@@ -13,7 +13,7 @@ export class NluService {
 
   constructor(private http: Http, private auth: LoopbackLoginService) {
     this.access_token = auth.get().token
-    this.url = '/api/Conversation/message?access_token=' + this.access_token
+    this.url = '/api/Nlu/message?access_token=' + this.access_token
   }
 
 }

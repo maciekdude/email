@@ -1,6 +1,6 @@
 {
-  "name": "Alchemy",
-  "plural": "Alchemy",
+  "name": "nlu",
+  "plural": "nlu",
   "base": "Model",
   "idInjection": true,
   "options": {

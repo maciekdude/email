@@ -59,82 +59,10 @@
       "password": "${CONVERSATION_API_PASSWORD}"
     }
   },
-  "alchemy": {
-    "name": "alchemy",
-    "baseURL": "${ALCHEMY_URL}",
+  "nlu": {
+    "name": "nlu",
+    "baseURL": "",
     "crud": false,
-    "connector": "rest",
-    "operations": [
-      {
-        "template": {
-          "method": "GET",
-          "url": "${ALCHEMY_NEWS_URL}",
-          "query": {
-            "apikey" : "${ALCHEMY_API_KEY}",
-            "outputMode" : "{outputMode=json:string}",
-            "start" : "{start='':string}",
-            "end" : "{end='':string}",
-            "timeSlice" : "{timeSlice='':string}",
-            "maxResults" : "{maxResults=10:integer}",
-            "return" : "{return='':string}",
-            "dedup" : "{dedup='':string}",
-            "dedupThreshold" : "{dedupThreshold=10:integer}",
-            "rank" : "{rank='':string}",
-            "next" : "{next='':string}",
-            "q.enriched.url.enrichedTitle.relations.relation" : "{q.enriched.url.enrichedTitle.relations.relation='':string}",
-            "q.enriched.url.enrichedTitle.entities.entity" : "{q.enriched.url.enrichedTitle.entities.entity='':string}",
-            "q.enriched.url.enrichedTitle.taxonomy.taxonomy" : "{q.enriched.url.enrichedTitle.taxonomy.taxonomy='':string}",
-            "q.enriched.url.enrichedTitle.docSentiment.type" : "{q.enriched.url.enrichedTitle.docSentiment.type='':string}",
-            "q.enriched.url.concepts.concept.text" : "{q.enriched.url.concepts.concept.text='':string}",
-            "q.enriched.url.enrichedTitle.keywords.keyword.text" : "{q.enriched.url.enrichedTitle.keywords.keyword.text='':string}"
-          },
-          "responsePath": "$"
-        },
-        "functions": {
-          "getNews": [
-            "outputMode",
-            "start",
-            "end",
-            "timeSlice",
-            "maxResults",
-            "return",
-            "dedup",
-            "dedupThreshold",
-            "rank",
-            "next",
-            "q.enriched.url.enrichedTitle.relations.relation",
-            "q.enriched.url.enrichedTitle.entities.entity",
-            "q.enriched.url.enrichedTitle.taxonomy.taxonomy",
-            "q.enriched.url.enrichedTitle.docSentiment.type",
-            "q.enriched.url.concepts.concept.text",
-            "q.enriched.url.enrichedTitle.keywords.keyword.text"
-          ]
-        }
-      },
-      {
-        "template": {
-          "method": "POST",
-          "url": "${ALCHEMY_LANGUAGE_TEXT_COMBINED_URL}",
-          "query": {
-            "apikey" : "${ALCHEMY_API_KEY}",
-            "outputMode" : "{outputMode=json:string}",
-            "extract" : "{extract='entities,keywords':string}",
-            "sentiment" : "{sentiment=1:integer}",
-            "maxRetrieve" : "{maxRetrieve=1:integer}",
-            "text" : "{text='':string}"
-          },
-          "responsePath": "$"
-        },
-        "functions": {
-          "textGetCombinedData": [
-            "outputMode",
-            "extract",
-            "sentiment",
-            "maxRetrieve",
-            "text"
-          ]
-        }
-      }
-    ]
+    "connector": "rest"
   }
 }

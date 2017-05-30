@@ -59,8 +59,8 @@
     "dataSource": "cloudant",
     "public": true
   },
-  "Alchemy": {
-    "dataSource": "alchemy",
+  "nlu": {
+    "dataSource": "nlu",
     "public": true
   }
 }
