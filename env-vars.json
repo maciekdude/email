@@ -8,6 +8,7 @@
   "NATURAL_LANGUAGE_USERNAME": "b4b08d6c-8040-47b4-90b1-bb4f052a20c8",
   "NATURAL_LANGUAGE_PASSWORD": "e0KPoXDjXr2V",
   "NATURAL_LANGUAGE_VERSION": "2017-02-27",
+  "NATURAL_LANGUAGE_TEXT_COMBINED_URL": "https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2017-02-27",
   "STT_API_USER": {"expr": "Speech to Text.*", "field": "credentials.username"},
   "STT_API_PASSWORD": {"expr": "Speech to Text.*", "field": "credentials.password"},
   "STT_API_URL": {"expr": "Speech to Text.*", "field": "credentials.url"}

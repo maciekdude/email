@@ -11,24 +11,26 @@
     "connector": "cloudant"
   },
   "watson-stt-token": {
-  "name": "watson-stt-token",
-  "crud": false,
-  "connector": "rest",
-  "operations": [{
-    "template": {
-      "method": "GET",
-      "url": "https://stream.watsonplatform.net/authorization/api/v1/token?url=https://stream.watsonplatform.net/speech-to-text/api"
-    },
-  "responsePath": "$",
-    "functions": {
-       "retrieve": []
+    "name": "watson-stt-token",
+    "crud": false,
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "https://stream.watsonplatform.net/authorization/api/v1/token?url=https://stream.watsonplatform.net/speech-to-text/api"
+        },
+        "responsePath": "$",
+        "functions": {
+          "retrieve": []
+        }
+      }
+    ],
+    "auth": {
+      "user": "${STT_API_USER}",
+      "password": "${STT_API_PASSWORD}"
     }
-  }],
-  "auth": {
-    "user": "${STT_API_USER}",
-    "password": "${STT_API_PASSWORD}"
-  }
-},
+  },
   "watson-conversation": {
     "name": "watson-conversation",
     "connector": "rest",
@@ -61,8 +63,40 @@
   },
   "nlu": {
     "name": "nlu",
-    "baseURL": "",
+    "baseURL": "${NATURAL_LANGUAGE_URL}",
     "crud": false,
-    "connector": "rest"
+    "connector": "rest",
+    "options": {
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+        },
+      "auth": {
+        "user": "${NATURAL_LANGUAGE_USERNAME}",
+        "password": "${NATURAL_LANGUAGE_PASSWORD}"
+        }
+    },
+    "operations": [
+      {
+        "template": {
+          "method": "POST",
+          "url": "${NATURAL_LANGUAGE_TEXT_COMBINED_URL}",
+          "query": {
+            "text" : "{text='':string}",
+            "features" : {
+              "entities": {
+                "model": "c8744ad4-369a-43a9-ab84-12272f06f572"
+              }
+            }
+          },
+          "responsePath": "$"
+        },
+        "functions": {
+          "analyzeText": [
+            "text"
+          ]
+        }
+      }
+    ]
   }
 }
