@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 
 import { ConversationService } from './conversation.service';
+import { NluService } from './nlu.service';
 
 import { Email } from './email'
 
@@ -56,13 +57,19 @@ export class EmailService {
   emailChange: Subject<any> = new Subject<any>();
   emailsUpdate: Subject<any> = new Subject<any>();
 
-  constructor(public conversationService:ConversationService) {
+  constructor(
+    public conversationService:ConversationService,
+    public nluService:NluService,
+  ) {
     for(let i of this.emails){
       let message = i.text
       this.conversationService.sendMessage(message).subscribe(response => {
         if(response[0].intents[0]){
           i.requestType = response[0].intents[0].intent
         }
+      })
+      this.nluService.analyzeText(message).subscribe(response => {
+        console.log(response)
       })
     }
   }

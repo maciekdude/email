@@ -13,7 +13,13 @@ export class NluService {
 
   constructor(private http: Http, private auth: LoopbackLoginService) {
     this.access_token = auth.get().token
-    this.url = '/api/Nlu/message?access_token=' + this.access_token
+    this.url = '/api/nlu/analyzeText?access_token=' + this.access_token
+  }
+
+  analyzeText(text){
+    let urlWithQuery = this.url + '&text=' + text
+    return this.http.post(urlWithQuery, '')
+      .map((res: Response) => res.json())
   }
 
 }
