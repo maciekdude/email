@@ -1,14 +1,13 @@
 export class Entities {
   constructor(
-    public vin: string,
-    public license: string,
-    // public regustration: string,
-    // public tlc: string,
-    public ssn: string
-    // public gender: string,
-    // public cell: string,
-    // public crd: string,
-    // public kyc: string
+    public Zip_Code: string,
+    public Cell_Number: string,
+    public LIC: string,
+    public PL_Policy: string,
+    public CL_Policy: string,
+    public First_Name: string,
+    public Last_Name: string,
+    public Vin_Number: string
   ) {
     // Left blank
   }

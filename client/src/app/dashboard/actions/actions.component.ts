@@ -21,15 +21,12 @@ export class ActionsComponent implements OnInit {
     this.emailService.emailChange.subscribe( (email) => {
       this.itemsMissing = []
       this.currentEmail = email
-      if(this.currentEmail.entities.vin === null || this.currentEmail.entities.vin === ""){
-        this.itemsMissing.push("VIN")
-      }
-      if(this.currentEmail.entities.license === null || this.currentEmail.entities.license === ""){
-        this.itemsMissing.push("License")
-      }
-      if(this.currentEmail.entities.ssn === null || this.currentEmail.entities.ssn === ""){
-        this.itemsMissing.push("SSN")
-      }
+      // if(this.currentEmail.entities.vin === null || this.currentEmail.entities.vin === ""){
+      //   this.itemsMissing.push("VIN")
+      // }
+      // if(this.currentEmail.entities.license === null || this.currentEmail.entities.license === ""){
+      //   this.itemsMissing.push("License")
+      // }
     })
   }
 

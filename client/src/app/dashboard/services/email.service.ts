@@ -15,13 +15,18 @@ export class EmailService {
       from: "jackson@mail.com",
       to: "process@insurance.com",
       subject: "a nice little subject",
-      text: "Please issue a certificate of insurance for: Lakewood Park Apartments, Attn: Liza Schumer 1001 Pine Wood Lane Durham, NC 27703 Please email the completed coi to Lakewood@realestateassoc.com, kaseylm4@gmail.com and cc: lbarraga@bbt.com.  Thank you.",
+      text: "Add Cedric Corley to fleet policy #: UL27494 , car policy: 053-631-300, zip: 27494, VIN: 1GCCS1442W8181753, License: 3954532, P#:(844) 887-7536 Thanks!!",
       requestType: "Add to Policy",
       status:"Active",
       entities: {
-        vin: "657657",
-        license: "5677567567",
-        ssn: "567658345"
+        Zip_Code: null,
+        Cell_Number: null,
+        LIC: null,
+        PL_Policy: null,
+        CL_Policy: null,
+        First_Name: null,
+        Last_Name: null,
+        Vin_Number: null
       }
     },
     {
@@ -29,13 +34,18 @@ export class EmailService {
       from: "donald@mail.com",
       to: "process@insurance.com",
       subject: "please do this",
-      text: "Pommy ipsum chaps Essex girls warts and all bit of a div jolly chips The Hounds of Baskerville, golly yorkshire pudding gobsmacked one would like grab a jumper one would be honoured to. And thus bugger working class the fuzz two weeks on't trot bloke pants eton mess, could murder a pint completely starkers lost her marbles jolly good lass. Bloody shambles old girl supper scrubber half-inch it golly gosh, twiglets who brought loaf skive wibbly-wobbly timey-wimey stuff, golly bloody mary tip-top Sherlock. Horses for courses clock round the earhole hard cheese old boy marmite smeg head, marmite copper nutter.",
+      text: "Add Dave Bernadot to fleet policy #: UL04806 , car policy: 050-632-200, zip: 04806, VIN: 1GCEC14W6TZ225573, License: 3993369, P#:(364) 324-4902 Thanks!!",
       requestType: "Remove from Policy",
       status:"Complete",
       entities: {
-        vin: null,
-        license: "4234234234",
-        ssn: "234234234"
+        Zip_Code: null,
+        Cell_Number: null,
+        LIC: null,
+        PL_Policy: null,
+        CL_Policy: null,
+        First_Name: null,
+        Last_Name: null,
+        Vin_Number: null
       }
     },
     {
@@ -43,13 +53,18 @@ export class EmailService {
       from: "benito@mail.com",
       to: "process@insurance.com",
       subject: "can you add this person?",
-      text: "Mocha so, aftertaste medium, irish french press cappuccino black trifecta. Turkish caramelization, caffeine cultivar, aromatic aftertaste café au lait flavour brewed. Extra, ut grinder spoon mocha, a so sweet grounds aged. Dark brewed carajillo grinder so decaffeinated brewed. Barista, carajillo, kopi-luwak crema fair trade shop half and half macchiato redeye. So, filter, cup shop, aromatic percolator irish con panna siphon. Sweet, java aged black, sit brewed extraction id spoon. Cinnamon qui, filter skinny doppio mocha frappuccino. White single shot beans cream milk strong, caramelization milk decaffeinated wings acerbic coffee. Seasonal qui lungo, java, white affogato chicory grinder ristretto. blue mountain organic. Robust, froth irish id white mazagran aged kopi-luwak. Irish aftertaste beans iced id aroma acerbic.",
+      text: "Please move Zelda Laimable to fleet policy #: UL41947 , car policy: 050-672-200, zip: 41947, VIN: 1N6AA06B74N530577, License: 6078258, P#:(464) 256-9757 Thanks!!",
       requestType: "Add to Policy",
       status:"Rejected",
       entities: {
-        vin: "",
-        license: "345",
-        ssn: "23423454345"
+        Zip_Code: null,
+        Cell_Number: null,
+        LIC: null,
+        PL_Policy: null,
+        CL_Policy: null,
+        First_Name: null,
+        Last_Name: null,
+        Vin_Number: null
       }
     }
   ]
@@ -70,8 +85,14 @@ export class EmailService {
       })
       this.nluService.analyzeText(message).subscribe(response => {
         console.log(response)
+        for(let n of response[0].entities){
+          if(i.entities.hasOwnProperty(n.type)){
+            i.entities[n.type] = n.text
+          }
+        }
       })
     }
+    console.log(this.emails)
   }
 
   getEmails(){
