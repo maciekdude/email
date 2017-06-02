@@ -3,12 +3,15 @@
   <div class="panel-heading">Summary</div>
   <div class="panel-body">
     <h3><span class="label label-info">{{currentEmail.requestType}}</span></h3>
+    <div class="btn-group">
+      <button (click)='updateEntities()' type="button" class="btn btn-primary">Update</button>
+    </div>
   </div>
   <!-- Table -->
   <table class="table">
     <tr *ngFor='let entity of currentEntities'>
       <td>{{entity.name}}</td>
-      <td>{{entity.value}}</td>
+      <td><input type="text" name="" [(ngModel)]="entity.value"></td>
     </tr>
   </table>
 </div>

@@ -84,7 +84,6 @@ export class EmailService {
         }
       })
       this.nluService.analyzeText(message).subscribe(response => {
-        console.log(response)
         for(let n of response[0].entities){
           if(i.entities.hasOwnProperty(n.type)){
             i.entities[n.type] = n.text
@@ -108,6 +107,14 @@ export class EmailService {
     let index = this.emails.indexOf(email)
     // change the status of that email
     this.emails[index].status = "Complete"
+  }
+
+  updateEntities(email, entities){
+    // find the index of the given email
+    let index = this.emails.indexOf(email)
+    // update the entities
+    this.emails[index].entities = entities
+    this.switchEmail(email)
   }
 
 }

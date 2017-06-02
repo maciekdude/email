@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes, RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { DashboardComponent } from './dashboard.component';
 import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
@@ -19,7 +20,8 @@ import { ResponseComponent } from './response/response.component';
 @NgModule({
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   declarations: [
     DashboardComponent,

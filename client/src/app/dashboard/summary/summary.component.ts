@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter } from '@angular/core';
 
 import { EmailService } from '../services/email.service';
 import { Email } from '../services/email'
@@ -27,6 +27,15 @@ export class SummaryComponent implements OnInit {
         this.currentEntities.push({ name:i, value:entities[i]})
       }
     })
+  }
+
+  updateEntities(){
+    let newEntities = {}
+    for(let i of this.currentEntities){
+      newEntities[i.name] = i.value
+    }
+    console.log(newEntities)
+    this.emailService.updateEntities(this.currentEmail, newEntities)
   }
 
 }
