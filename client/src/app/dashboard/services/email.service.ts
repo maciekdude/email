@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 
 import { ConversationService } from './conversation.service';
@@ -88,10 +88,32 @@ export class EmailService {
           if(i.entities.hasOwnProperty(n.type)){
             i.entities[n.type] = n.text
           }
+          this.doEntityCheck()
         }
       })
     }
     console.log(this.emails)
+  }
+
+  doEntityCheck(){
+    console.log()
+    for(let i of this.emails){
+      let totalEntities = 0
+      let completeEntities = 0
+      for(let e in i.entities){
+        totalEntities++
+        if(i.entities[e] !== null){
+          completeEntities++
+        }
+      }
+      if(completeEntities == totalEntities){
+        i.status = "Complete"
+      }
+    }
+  }
+
+  automate(){
+
   }
 
   getEmails(){
