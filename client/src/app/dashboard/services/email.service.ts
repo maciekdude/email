@@ -36,7 +36,7 @@ export class EmailService {
       subject: "please do this",
       text: "Add Dave Bernadot to fleet policy #: UL04806 , car policy: 050-632-200, zip: 04806, VIN: 1GCEC14W6TZ225573, License: 3993369, P#:(364) 324-4902 Thanks!!",
       requestType: "Remove from Policy",
-      status:"Complete",
+      status:"Active",
       entities: {
         Zip_Code: null,
         Cell_Number: null,
@@ -55,7 +55,7 @@ export class EmailService {
       subject: "can you add this person?",
       text: "Please move Zelda Laimable to fleet policy #: UL41947 , car policy: 050-672-200, zip: 41947, VIN: 1N6AA06B74N530577, License: 6078258, P#:(464) 256-9757 Thanks!!",
       requestType: "Add to Policy",
-      status:"Rejected",
+      status:"Active",
       entities: {
         Zip_Code: null,
         Cell_Number: null,
