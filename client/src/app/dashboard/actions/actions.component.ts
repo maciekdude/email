@@ -21,13 +21,17 @@ export class ActionsComponent implements OnInit {
     this.emailService.emailChange.subscribe( (email) => {
       this.itemsMissing = []
       this.currentEmail = email
-      // if(this.currentEmail.entities.vin === null || this.currentEmail.entities.vin === ""){
-      //   this.itemsMissing.push("VIN")
-      // }
-      // if(this.currentEmail.entities.license === null || this.currentEmail.entities.license === ""){
-      //   this.itemsMissing.push("License")
-      // }
+      let entities = email.entities
+      for(let i in entities){
+        if(entities[i] == null){
+          this.itemsMissing.push(i)
+        }
+      }
     })
+  }
+
+  submit(){
+    this.emailService.submitEmail(this.currentEmail)
   }
 
 }

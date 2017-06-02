@@ -17,7 +17,8 @@ export class NluService {
   }
 
   analyzeText(text){
-    let urlWithQuery = this.url + '&text=' + text
+    let urlReadyText = encodeURIComponent(text)
+    let urlWithQuery = this.url + '&text=' + urlReadyText
     return this.http.post(urlWithQuery, '')
       .map((res: Response) => res.json())
   }

@@ -6,17 +6,9 @@
   </div>
   <!-- Table -->
   <table class="table">
-    <tr>
-      <td>VIN#</td>
-      <td>{{currentEmail.entities.vin}}</td>
-    </tr>
-    <tr>
-      <td>LIC#</td>
-      <td>{{currentEmail.entities.license}}</td>
-    </tr>
-    <tr>
-      <td>SSN#</td>
-      <td>{{currentEmail.entities.ssn}}</td>
+    <tr *ngFor='let entity of currentEntities'>
+      <td>{{entity.name}}</td>
+      <td>{{entity.value}}</td>
     </tr>
   </table>
 </div>

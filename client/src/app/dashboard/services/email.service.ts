@@ -15,7 +15,7 @@ export class EmailService {
       from: "jackson@mail.com",
       to: "process@insurance.com",
       subject: "a nice little subject",
-      text: "Add Cedric Corley to fleet policy #: UL27494 , car policy: 053-631-300, zip: 27494, VIN: 1GCCS1442W8181753, License: 3954532, P#:(844) 887-7536 Thanks!!",
+      text: "Aged aftertaste extra kopi-luwak single origin caramelization aftertaste trifecta arabica trifecta. At roast, shop as qui caffeine single shot. Robust mug cup ristretto viennese coffee chicory.",
       requestType: "Add to Policy",
       status:"Active",
       entities: {
@@ -101,6 +101,13 @@ export class EmailService {
 
   switchEmail(email){
     this.emailChange.next(email)
+  }
+
+  submitEmail(email){
+    // find the index of the given email
+    let index = this.emails.indexOf(email)
+    // change the status of that email
+    this.emails[index].status = "Complete"
   }
 
 }

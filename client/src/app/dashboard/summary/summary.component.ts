@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { EmailService } from '../services/email.service';
 import { Email } from '../services/email'
+import { Entities } from '../services/entities'
 
 @Component({
   selector: 'app-summary',
@@ -11,6 +12,7 @@ import { Email } from '../services/email'
 export class SummaryComponent implements OnInit {
 
   currentEmail: Email = null
+  currentEntities = null
 
   constructor(
     private emailService: EmailService
@@ -19,6 +21,11 @@ export class SummaryComponent implements OnInit {
   ngOnInit() {
     this.emailService.emailChange.subscribe( (email) => {
       this.currentEmail = email
+      this.currentEntities = []
+      let entities = email.entities
+      for(let i in entities){
+        this.currentEntities.push({ name:i, value:entities[i]})
+      }
     })
   }
 
