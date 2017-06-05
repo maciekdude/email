@@ -1,9 +1,15 @@
+.navbar{
+  margin-bottom: 0px;
+}
+
 #wrapper {
     padding-left: 0;
+    padding-top: 50px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+
 }
 
 #wrapper.toggled {

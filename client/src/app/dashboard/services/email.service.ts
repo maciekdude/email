@@ -1,13 +1,19 @@
 import { Injectable, OnInit } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import {Observable} from 'rxjs/Rx';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
 
 import { ConversationService } from './conversation.service';
 import { NluService } from './nlu.service';
 
-import { Email } from './email'
+import { Email } from './email';
 
 @Injectable()
 export class EmailService {
+
+  firstEmail: Array<Email> = []
 
   emails: Array<Email> = [
     {
@@ -17,7 +23,7 @@ export class EmailService {
       subject: "a nice little subject",
       text: "Aged aftertaste extra kopi-luwak single origin caramelization aftertaste trifecta arabica trifecta. At roast, shop as qui caffeine single shot. Robust mug cup ristretto viennese coffee chicory.",
       requestType: "Add to Policy",
-      status:"Active",
+      status:"Incomplete",
       entities: {
         Zip_Code: null,
         Cell_Number: null,
@@ -36,7 +42,7 @@ export class EmailService {
       subject: "please do this",
       text: "Add Dave Bernadot to fleet policy #: UL04806 , car policy: 050-632-200, zip: 04806, VIN: 1GCEC14W6TZ225573, License: 3993369, P#:(364) 324-4902 Thanks!!",
       requestType: "Remove from Policy",
-      status:"Active",
+      status:"Incomplete",
       entities: {
         Zip_Code: null,
         Cell_Number: null,
@@ -55,7 +61,7 @@ export class EmailService {
       subject: "can you add this person?",
       text: "Please move Zelda Laimable to fleet policy #: UL41947 , car policy: 050-672-200, zip: 41947, VIN: 1N6AA06B74N530577, License: 6078258, P#:(464) 256-9757 Thanks!!",
       requestType: "Add to Policy",
-      status:"Active",
+      status:"Incomplete",
       entities: {
         Zip_Code: null,
         Cell_Number: null,
@@ -75,6 +81,7 @@ export class EmailService {
   constructor(
     public conversationService:ConversationService,
     public nluService:NluService,
+    private http: Http
   ) {
     for(let i of this.emails){
       let message = i.text
@@ -93,6 +100,7 @@ export class EmailService {
       })
     }
     console.log(this.emails)
+    this.firstEmail.push(this.emails[0])
   }
 
   doEntityCheck(){
@@ -137,6 +145,11 @@ export class EmailService {
     // update the entities
     this.emails[index].entities = entities
     this.switchEmail(email)
+  }
+
+  refreshEmails(){
+    console.log('refreshing emails from the email service');
+    this.emailsUpdate.next(this.emails)
   }
 
 }
