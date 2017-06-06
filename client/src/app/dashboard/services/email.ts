@@ -9,7 +9,8 @@ export class Email {
     public text: string,
     public requestType: string,
     public status: string,
-    public entities: Entities
+    public entities: Entities,
+    public response: string
   ) {
     // Left blank
   }

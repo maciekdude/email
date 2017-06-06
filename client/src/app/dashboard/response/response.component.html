@@ -1,9 +1,30 @@
+<div class="panel panel-primary" *ngIf="currentEmail" [hidden]="!currentEmail.response">
+  <div class="panel-heading">
+    <h3 class="panel-title">Response</h3>
+    <h6>To: {{currentEmail.from}}</h6>
+  </div>
+  <div class="panel-body">
+    <div id="responseHTML"></div>
+  </div>
+</div>
+
 <div class="panel panel-primary" *ngIf="currentEmail">
   <div class="panel-heading">
     <h3 class="panel-title">Reply</h3>
     <h6>To: {{currentEmail.from}}</h6>
   </div>
   <div class="panel-body">
+    <!-- <textarea cols='60' rows='10' id="responseArea" *ngIf="itemsMissing.length > 0">
+      Hi,
+
+      Thank you for sending this through; however, we are missing a few items. Could you please provide us with the following:
+
+      <li *ngFor='let item of itemsMissing'>{{item}}</li>
+
+      Thank you!
+    </textarea>
+    <textarea cols='60' rows='10' id="responseArea" *ngIf="itemsMissing.length < 1">
+    </textarea> -->
     <div id="responseArea" contenteditable>
       <div class="preset" *ngIf="itemsMissing.length > 0">
         <span>Hi,</span>

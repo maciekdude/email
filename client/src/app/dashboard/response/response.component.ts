@@ -21,6 +21,7 @@ export class ResponseComponent implements OnInit {
     this.emailService.emailChange.subscribe( (email) => {
       this.itemsMissing = []
       this.currentEmail = email
+      // this.responseHTML = this.currentEmail.response
       let entities = email.entities
       for(let i in entities){
         if(entities[i] == null){
@@ -31,6 +32,14 @@ export class ResponseComponent implements OnInit {
   }
 
   sendReply(){
+
+    console.log(document.getElementById('responseHTML'))
+    console.log(document.getElementById('responseArea'))
+
+    this.currentEmail.response = document.getElementById('responseArea').innerHTML
+    console.log(this.currentEmail.response)
+    document.getElementById('responseHTML').innerHTML = this.currentEmail.response
+
     document.getElementById('responseArea').innerHTML = ''
   }
 

@@ -33,7 +33,8 @@ export class EmailService {
         First_Name: null,
         Last_Name: null,
         Vin_Number: null
-      }
+      },
+      response: null
     },
     {
       id:"1245",
@@ -52,7 +53,8 @@ export class EmailService {
         First_Name: null,
         Last_Name: null,
         Vin_Number: null
-      }
+      },
+      response: null
     },
     {
       id:"1256",
@@ -71,7 +73,8 @@ export class EmailService {
         First_Name: null,
         Last_Name: null,
         Vin_Number: null
-      }
+      },
+      response: null
     }
   ]
 
