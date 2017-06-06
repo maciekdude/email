@@ -13,6 +13,8 @@ import { Email } from '../services/email'
 })
 export class AppSidebarComponent implements OnInit {
 
+  loading = false
+
   @Output() onToggled = new EventEmitter();
   public isToggled: boolean = false;
 
@@ -26,8 +28,18 @@ export class AppSidebarComponent implements OnInit {
   ngOnInit() {
     // update emails if they change
     this.emailService.emailsUpdate.subscribe( (allEmails) =>{
-      this.emails = allEmails
+      this.emails = []
+      this.loading = true
+      let here = this
+      setTimeout(function(){
+        here.emails = allEmails
+        here.loading = false
+      }, 1000)
     })
+  }
+
+  refreshEmails(newEmails){
+
   }
 
   toggleSidebar() {
