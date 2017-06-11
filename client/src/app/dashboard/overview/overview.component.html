@@ -1,0 +1,88 @@
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">ACME Insurance</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Email Analysis Automation</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<br><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Overview</div>
+      <div class="panel-body">
+
+        <table class="table">
+          <tr>
+            <td>Total Emails</td>
+            <td>{{emails.length}}</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <th>Request Types</th>
+          <tr>
+            <td>Add to Policy</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Remove from Policy</td>
+            <td>5</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <th>Status</th>
+          <tr>
+            <td>Complete (processed automatically)</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Incomplete</td>
+            <td>2</td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <th>Entity Breakdown</th>
+          <tr>
+            <td>Average Entities Extracted</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Entity with most extractions</td>
+            <td>Policy Number</td>
+            <td>80%</td>
+          </tr>
+          <tr>
+            <td>Entity with least extractions</td>
+            <td>First Name</td>
+            <td>58%</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">View Emails</button>
+    </div>
+
+  </div>
+</div>

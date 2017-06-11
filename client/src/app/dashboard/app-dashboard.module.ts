@@ -16,6 +16,7 @@ import { NluService } from './services/nlu.service';
 import { SummaryComponent } from './summary/summary.component';
 import { ActionsComponent } from './actions/actions.component';
 import { ResponseComponent } from './response/response.component';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { ResponseComponent } from './response/response.component';
     EmailViewComponent,
     SummaryComponent,
     ActionsComponent,
-    ResponseComponent
+    ResponseComponent,
+    OverviewComponent
   ],
 providers: [
   EmailService,
