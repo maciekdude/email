@@ -162,6 +162,7 @@ export class EmailService {
       }
       if(completeEntities == totalEntities){
         i.status = "Complete"
+        i.response = "Thanks, all done! We've automatically completed your request."
       }
     }
     this.emailsReady.next(this.emails)

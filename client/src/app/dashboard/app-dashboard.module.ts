@@ -17,12 +17,24 @@ import { SummaryComponent } from './summary/summary.component';
 import { ActionsComponent } from './actions/actions.component';
 import { ResponseComponent } from './response/response.component';
 import { OverviewComponent } from './overview/overview.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
+import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModule, PaginationModule, ProgressbarModule, PopoverModule, TooltipModule } from 'ngx-bootstrap';
 
 @NgModule({
   imports: [
     CommonModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AlertModule.forRoot(),
+    CollapseModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    ButtonsModule.forRoot(),
+    TabsModule.forRoot(),
+    PaginationModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    PopoverModule.forRoot(),
+    TooltipModule.forRoot()
   ],
   declarations: [
     DashboardComponent,
@@ -31,7 +43,8 @@ import { OverviewComponent } from './overview/overview.component';
     SummaryComponent,
     ActionsComponent,
     ResponseComponent,
-    OverviewComponent
+    OverviewComponent,
+    NavbarComponent
   ],
 providers: [
   EmailService,
