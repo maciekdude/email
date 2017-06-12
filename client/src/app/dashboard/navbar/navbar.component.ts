@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CurrentDemoService } from '../services/current-demo.service'
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private currentDemoService:CurrentDemoService
+  ) { }
+
+  demos = []
+
+  currentDemo = this.currentDemoService.currentDemo
 
   ngOnInit() {
+    this.demos = this.currentDemoService.demos
+
+    this.currentDemoService.changeDemo.subscribe( (demo) =>{
+      this.currentDemo = demo
+    })
+  }
+
+  switchDemo(demo){
+    this.currentDemoService.switchDemo(demo)
   }
 
 }

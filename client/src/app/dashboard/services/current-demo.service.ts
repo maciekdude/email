@@ -4,8 +4,21 @@ import { Subject } from 'rxjs/Subject';
 @Injectable()
 export class CurrentDemoService {
 
+  demos = [
+    {
+      id:1,
+      name:'Insurance',
+      companyName:'ACME Insurance'
+    },
+    {
+      id:2,
+      name:'Workstation Management',
+      companyName:'GBM Workstation Management'
+    }
+  ]
+
   // demo starts as insurance
-  currentDemo = 'insurance'
+  currentDemo = this.demos[0]
 
   changeDemo: Subject<any> = new Subject<any>();
 

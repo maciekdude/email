@@ -12,6 +12,7 @@ import { EmailViewComponent } from './email-view/email-view.component';
 import { EmailService } from './services/email.service';
 import { ConversationService } from './services/conversation.service';
 import { NluService } from './services/nlu.service';
+import { CurrentDemoService } from './services/current-demo.service';
 
 import { SummaryComponent } from './summary/summary.component';
 import { ActionsComponent } from './actions/actions.component';
@@ -49,7 +50,8 @@ import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModul
 providers: [
   EmailService,
   ConversationService,
-  NluService
+  NluService,
+  CurrentDemoService
 ]
 })
 export class AppDashboardModule { }
