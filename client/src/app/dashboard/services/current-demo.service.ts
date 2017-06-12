@@ -6,12 +6,12 @@ export class CurrentDemoService {
 
   demos = [
     {
-      id:1,
+      id:0,
       name:'Insurance',
       companyName:'ACME Insurance'
     },
     {
-      id:2,
+      id:1,
       name:'Workstation Management',
       companyName:'GBM Workstation Management'
     }

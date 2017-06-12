@@ -13,6 +13,7 @@ import { EmailService } from './services/email.service';
 import { ConversationService } from './services/conversation.service';
 import { NluService } from './services/nlu.service';
 import { CurrentDemoService } from './services/current-demo.service';
+import { EmailsStorageService } from './services/emails-storage.service';
 
 import { SummaryComponent } from './summary/summary.component';
 import { ActionsComponent } from './actions/actions.component';
@@ -51,7 +52,8 @@ providers: [
   EmailService,
   ConversationService,
   NluService,
-  CurrentDemoService
+  CurrentDemoService,
+  EmailsStorageService
 ]
 })
 export class AppDashboardModule { }
