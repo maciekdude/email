@@ -1,5 +1,5 @@
 {
-  "name": "wsl-lb-ng2-bootstrap-starter-app",
+  "name": "email-automation",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -64,5 +64,5 @@
     "url": ""
   },
   "license": "Apache-2.0",
-  "description": "wsl-lb-ng2-bootstrap-starter-app"
+  "description": "email-automation"
 }

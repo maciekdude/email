@@ -51,14 +51,6 @@
     "dataSource": "watson-conversation",
     "public": true
   },
-  "WatsonSttToken": {
-    "dataSource": "watson-stt-token",
-    "public": true
-  },
-  "Sample-Cloudant": {
-    "dataSource": "cloudant",
-    "public": true
-  },
   "nlu": {
     "dataSource": "nlu",
     "public": true
