@@ -64,8 +64,8 @@
       "password": "${CONVERSATION_API_PASSWORD}"
     }
   },
-  "nlu": {
-    "name": "nlu",
+  "nlu0": {
+    "name": "nlu0",
     "baseURL": "${NATURAL_LANGUAGE_URL}",
     "crud": false,
     "connector": "rest",
@@ -75,8 +75,8 @@
         "content-type": "application/json"
         },
       "auth": {
-        "user": "${NATURAL_LANGUAGE_USERNAME}",
-        "password": "${NATURAL_LANGUAGE_PASSWORD}"
+        "user": "${NATURAL_LANGUAGE_USERNAME0}",
+        "password": "${NATURAL_LANGUAGE_PASSWORD0}"
         }
     },
     "operations": [
@@ -89,6 +89,44 @@
             "features" : {
               "entities": {
                 "model": "c8744ad4-369a-43a9-ab84-12272f06f572"
+              }
+            }
+          },
+          "responsePath": "$"
+        },
+        "functions": {
+          "analyzeText": [
+            "text"
+          ]
+        }
+      }
+    ]
+  },
+  "nlu1": {
+    "name": "nlu1",
+    "baseURL": "${NATURAL_LANGUAGE_URL}",
+    "crud": false,
+    "connector": "rest",
+    "options": {
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+        },
+      "auth": {
+        "user": "${NATURAL_LANGUAGE_USERNAME1}",
+        "password": "${NATURAL_LANGUAGE_PASSWORD1}"
+        }
+    },
+    "operations": [
+      {
+        "template": {
+          "method": "POST",
+          "url": "${NATURAL_LANGUAGE_TEXT_COMBINED_URL}",
+          "query": {
+            "text" : "{text='':string}",
+            "features" : {
+              "entities": {
+                "model": "74c51c71-c479-42ec-ad62-fe07f5034c85"
               }
             }
           },

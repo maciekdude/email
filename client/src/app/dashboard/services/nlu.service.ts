@@ -4,6 +4,7 @@ import 'rxjs/Rx';
 import { Observable } from 'rxjs/Rx';
 
 import { LoopbackLoginService } from '../../auth/loopback/lb-login.service';
+import { CurrentDemoService } from './current-demo.service';
 
 @Injectable()
 export class NluService {
@@ -11,9 +12,21 @@ export class NluService {
   private access_token: string;
   private url: string;
 
-  constructor(private http: Http, private auth: LoopbackLoginService) {
+  currentDemo = this.currentDemoService.currentDemo
+
+  constructor(
+    private http: Http,
+    private auth: LoopbackLoginService,
+    private currentDemoService: CurrentDemoService
+  ) {
     this.access_token = auth.get().token
-    this.url = '/api/nlu/analyzeText?access_token=' + this.access_token
+    this.url = '/api/nlu' + this.currentDemo.id + '/analyzeText?access_token=' + this.access_token
+
+    // subscribe to demo change
+    this.currentDemoService.changeDemo.subscribe( (demo) =>{
+      this.currentDemo = demo
+      this.url = '/api/nlu' + demo.id + '/analyzeText?access_token=' + this.access_token
+    })
   }
 
   analyzeText(text){

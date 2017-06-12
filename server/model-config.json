@@ -55,8 +55,12 @@
     "dataSource": "watson-conversation1",
     "public": true
   },
-  "nlu": {
-    "dataSource": "nlu",
+  "nlu0": {
+    "dataSource": "nlu0",
+    "public": true
+  },
+  "nlu1": {
+    "dataSource": "nlu1",
     "public": true
   }
 }

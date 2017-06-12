@@ -3,9 +3,11 @@
   "CONVERSATION1_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/4d1611d9-e18e-4bf2-aef1-c4c81b05566c/message?version=2016-09-20"},
   "CONVERSATION_API_USER": {"expr": "Conversation.*", "field": "credentials.username"},
   "CONVERSATION_API_PASSWORD": {"expr": "Conversation.*", "field": "credentials.password"},
+  "NATURAL_LANGUAGE_USERNAME0": "b4b08d6c-8040-47b4-90b1-bb4f052a20c8",
+  "NATURAL_LANGUAGE_PASSWORD0": "e0KPoXDjXr2V",
+  "NATURAL_LANGUAGE_USERNAME1": "1e076c7d-973c-4d88-b3df-f2e080200ca9",
+  "NATURAL_LANGUAGE_PASSWORD1": "dPGeNAPd6HC2",
   "NATURAL_LANGUAGE_URL": "https://gateway.watsonplatform.net/natural-language-understanding/api",
-  "NATURAL_LANGUAGE_USERNAME": "b4b08d6c-8040-47b4-90b1-bb4f052a20c8",
-  "NATURAL_LANGUAGE_PASSWORD": "e0KPoXDjXr2V",
   "NATURAL_LANGUAGE_VERSION": "2017-02-27",
   "NATURAL_LANGUAGE_TEXT_COMBINED_URL": "https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2017-02-27"
 }

@@ -1,5 +1,3 @@
-import { Entities } from './entities'
-
 export class Email {
   constructor(
     public id: string,
@@ -9,7 +7,7 @@ export class Email {
     public text: string,
     public requestType: string,
     public status: string,
-    public entities: Entities,
+    public entities:any,
     public response: string
   ) {
     // Left blank

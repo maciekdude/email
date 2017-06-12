@@ -2,7 +2,6 @@ import { Component, OnInit, Input, EventEmitter } from '@angular/core';
 
 import { EmailService } from '../services/email.service';
 import { Email } from '../services/email'
-import { Entities } from '../services/entities'
 
 @Component({
   selector: 'app-summary',
@@ -34,7 +33,6 @@ export class SummaryComponent implements OnInit {
     for(let i of this.currentEntities){
       newEntities[i.name] = i.value
     }
-    console.log(newEntities)
     this.emailService.updateEntities(this.currentEmail, newEntities)
   }
 

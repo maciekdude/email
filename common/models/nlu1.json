@@ -1,6 +1,6 @@
 {
-  "name": "nlu",
-  "plural": "nlu",
+  "name": "nlu1",
+  "plural": "nlu1",
   "base": "Model",
   "idInjection": true,
   "options": {
