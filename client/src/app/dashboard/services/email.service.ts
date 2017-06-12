@@ -38,6 +38,7 @@ export class EmailService {
       this.currentDemo = demo
       this.emails = this.emailsStorageService.emails[this.currentDemo.id]
       this.runWatsonAnalysis()
+      this.emailsUpdate.next(this.firstEmail)
     })
     this.runWatsonAnalysis()
   }
@@ -59,6 +60,7 @@ export class EmailService {
         }
       })
     }
+    this.firstEmail = []
     this.firstEmail.push(this.emails[0])
   }
 
