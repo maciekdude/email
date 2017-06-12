@@ -38,8 +38,8 @@ export class AppSidebarComponent implements OnInit {
     })
   }
 
-  refreshEmails(newEmails){
-
+  refreshEmails(){
+    this.emailService.refreshEmails()
   }
 
   toggleSidebar() {
