@@ -47,8 +47,12 @@
       }
     }
   },
-  "Conversation": {
-    "dataSource": "watson-conversation",
+  "Conversation0": {
+    "dataSource": "watson-conversation0",
+    "public": true
+  },
+  "Conversation1": {
+    "dataSource": "watson-conversation1",
     "public": true
   },
   "nlu": {

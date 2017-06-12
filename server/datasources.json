@@ -4,14 +4,44 @@
     "connector": "memory",
     "file": "mem_db.json"
   },
-  "watson-conversation": {
-    "name": "watson-conversation",
+  "watson-conversation0": {
+    "name": "watson-conversation0",
     "connector": "rest",
     "operations": [
       {
         "template": {
           "method": "POST",
-          "url": "${CONVERSATION_API_URL}",
+          "url": "${CONVERSATION0_API_URL}",
+          "body": "{input='':any}",
+          "responsePath": "$"
+        },
+        "functions": {
+          "message": [
+            "input"
+          ]
+        }
+      }
+    ],
+    "crud": false,
+    "options": {
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      }
+    },
+    "auth": {
+      "user": "${CONVERSATION_API_USER}",
+      "password": "${CONVERSATION_API_PASSWORD}"
+    }
+  },
+  "watson-conversation1": {
+    "name": "watson-conversation1",
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "POST",
+          "url": "${CONVERSATION1_API_URL}",
           "body": "{input='':any}",
           "responsePath": "$"
         },

@@ -1,6 +1,6 @@
 {
-  "name": "Conversation",
-  "plural": "Conversation",
+  "name": "Conversation0",
+  "plural": "Conversation0",
   "base": "Model",
   "idInjection": true,
   "options": {
