@@ -16,13 +16,14 @@ export class EmailService {
   firstEmail: Array<Email> = []
 
   emails: Array<Email> = [
+
     {
       id:"1234",
-      from: "jackson@mail.com",
+      from: "regisco@mail.com",
       to: "process@insurance.com",
-      subject: "a nice little subject",
-      text: "Aged aftertaste extra kopi-luwak single origin caramelization aftertaste trifecta arabica trifecta. At roast, shop as qui caffeine single shot. Robust mug cup ristretto viennese coffee chicory.",
-      requestType: "Add to Policy",
+      subject: "Add New Driver To Policy",
+      text: "Add Irvine Brahams to fleet policy #: UL32953 , car policy: 050-632-200, zip: 32940, VIN: JHMZE2H73AS009608, License: 4382913, P#:(321) 321-2145 Thanks!!",
+      requestType: null,
       status:"Incomplete",
       entities: {
         Zip_Code: null,
@@ -37,12 +38,12 @@ export class EmailService {
       response: null
     },
     {
-      id:"1245",
-      from: "donald@mail.com",
+      id:"1234",
+      from: "gjisl@mail.com",
       to: "process@insurance.com",
-      subject: "please do this",
-      text: "Add Dave Bernadot to fleet policy #: UL04806 , car policy: 050-632-200, zip: 04806, VIN: 1GCEC14W6TZ225573, License: 3993369, P#:(364) 324-4902 Thanks!!",
-      requestType: "Remove from Policy",
+      subject: "Add to fleet policy #: UL60273",
+      text: "Hey, can you please add Abbott Rout to fleet policy #: UL60273 , car policy: 050-632-200, zip: 60273 Appreciate it",
+      requestType: null,
       status:"Incomplete",
       entities: {
         Zip_Code: null,
@@ -57,12 +58,52 @@ export class EmailService {
       response: null
     },
     {
-      id:"1256",
-      from: "benito@mail.com",
+      id:"1234",
+      from: "hello@mail.com",
       to: "process@insurance.com",
-      subject: "can you add this person?",
+      subject: "Remove driver",
+      text: "Please delete Nina Prahl from fleet policy #: UL52145 , VIN: JH4KA7550NC033894, License: 9410030, P#:(468) 376-9558 Thanks!",
+      requestType: null,
+      status:"Incomplete",
+      entities: {
+        Zip_Code: null,
+        Cell_Number: null,
+        LIC: null,
+        PL_Policy: null,
+        CL_Policy: null,
+        First_Name: null,
+        Last_Name: null,
+        Vin_Number: null
+      },
+      response: null
+    },
+    {
+      id:"1234",
+      from: "henry@mail.com",
+      to: "process@insurance.com",
+      subject: "Move drive Zelda Laimable",
       text: "Please move Zelda Laimable to fleet policy #: UL41947 , car policy: 050-672-200, zip: 41947, VIN: 1N6AA06B74N530577, License: 6078258, P#:(464) 256-9757 Thanks!!",
-      requestType: "Add to Policy",
+      requestType: null,
+      status:"Incomplete",
+      entities: {
+        Zip_Code: null,
+        Cell_Number: null,
+        LIC: null,
+        PL_Policy: null,
+        CL_Policy: null,
+        First_Name: null,
+        Last_Name: null,
+        Vin_Number: null
+      },
+      response: null
+    },
+    {
+      id:"1234",
+      from: "admin@mail.com",
+      to: "process@insurance.com",
+      subject: "Delete driver- Marlo Dodshun",
+      text: "Please delete Marlo Dodshun from fleet policy #: UL87534 , car policy: 053-932-600, zip: 80151, VIN: KM8SC73E94U774838, License: 2950048, P#:(732) 351-7698 Thanks",
+      requestType: null,
       status:"Incomplete",
       entities: {
         Zip_Code: null,
@@ -79,6 +120,7 @@ export class EmailService {
   ]
 
   emailChange: Subject<any> = new Subject<any>();
+  emailsReady: Subject<any> = new Subject<any>();
   emailsUpdate: Subject<any> = new Subject<any>();
 
   constructor(
@@ -104,6 +146,7 @@ export class EmailService {
     }
     console.log(this.emails)
     this.firstEmail.push(this.emails[0])
+    // this.emailsReady.next(this.emails)
   }
 
   doEntityCheck(){
@@ -121,6 +164,7 @@ export class EmailService {
         i.status = "Complete"
       }
     }
+    this.emailsReady.next(this.emails)
   }
 
   automate(){

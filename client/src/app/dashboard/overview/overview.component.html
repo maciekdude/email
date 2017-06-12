@@ -38,25 +38,17 @@
 
         <table class="table">
           <th>Request Types</th>
-          <tr>
-            <td>Add to Policy</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Remove from Policy</td>
-            <td>5</td>
+          <tr *ngFor="let item of requestTypes">
+            <td>{{item.name}}</td>
+            <td>{{item.count}}</td>
           </tr>
         </table>
 
         <table class="table">
           <th>Status</th>
-          <tr>
-            <td>Complete (processed automatically)</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Incomplete</td>
-            <td>2</td>
+          <tr *ngFor="let item of statuses">
+            <td>{{item.name}}</td>
+            <td>{{item.count}}</td>
           </tr>
         </table>
 
@@ -64,24 +56,28 @@
           <th>Entity Breakdown</th>
           <tr>
             <td>Average Entities Extracted</td>
-            <td>4</td>
+            <td>{{averageEntitiesExtracted}}</td>
+          </tr>
+          <tr>
+            <td>Entity Extraction Success Rate</td>
+            <td>{{entityExtractionSuccess | percent}}</td>
           </tr>
           <tr>
             <td>Entity with most extractions</td>
-            <td>Policy Number</td>
-            <td>80%</td>
+            <td>{{mostEntitiesExtracted}}</td>
+            <td>{{mostEntitiesExtractedPercentage | percent}}</td>
           </tr>
           <tr>
             <td>Entity with least extractions</td>
-            <td>First Name</td>
-            <td>58%</td>
+            <td>{{leastEntitiesExtracted}}</td>
+            <td>{{leastEntitiesExtractedPercentage | percent}}</td>
           </tr>
         </table>
       </div>
     </div>
 
     <div class="btn-group">
-      <button type="button" class="btn btn-primary">View Emails</button>
+      <button (click)="routeToEmails()" type="button" class="btn btn-primary">View Emails</button>
     </div>
 
   </div>
