@@ -8,7 +8,8 @@ export class Email {
     public requestType: string,
     public status: string,
     public entities:any,
-    public response: string
+    public response: string,
+    public timestamp: any
   ) {
     // Left blank
   }

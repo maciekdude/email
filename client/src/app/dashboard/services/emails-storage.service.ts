@@ -25,7 +25,8 @@ export class EmailsStorageService {
           Last_Name: null,
           Vin_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 7, 2017 10:13:00")
       },
       {
         id:"1234",
@@ -45,7 +46,8 @@ export class EmailsStorageService {
           Last_Name: null,
           Vin_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 7, 2017 10:13:00")
       },
       {
         id:"1234",
@@ -65,7 +67,8 @@ export class EmailsStorageService {
           Last_Name: null,
           Vin_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 6, 2017 10:13:00")
       },
       {
         id:"1234",
@@ -85,7 +88,8 @@ export class EmailsStorageService {
           Last_Name: null,
           Vin_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 5, 2017 10:13:00")
       },
       {
         id:"1234",
@@ -105,7 +109,8 @@ export class EmailsStorageService {
           Last_Name: null,
           Vin_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 4, 2017 10:13:00")
       }
     ],
     [
@@ -126,7 +131,8 @@ export class EmailsStorageService {
           First_Name: null,
           Serial_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 7, 2017 10:13:00")
       },
       {
         id:"1234",
@@ -145,7 +151,8 @@ export class EmailsStorageService {
           First_Name: null,
           Serial_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 6, 2017 10:13:00")
       },
       {
         id:"1234",
@@ -164,7 +171,8 @@ export class EmailsStorageService {
           First_Name: null,
           Serial_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 5, 2017 10:13:00")
       },
       {
         id:"1234",
@@ -183,7 +191,8 @@ export class EmailsStorageService {
           First_Name: null,
           Serial_Number: null
         },
-        response: null
+        response: null,
+        timestamp: new Date("June 4, 2017 10:13:00")
       }
     ]
   ]
