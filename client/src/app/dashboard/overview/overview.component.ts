@@ -52,21 +52,46 @@ export class OverviewComponent implements OnInit {
 
     for(let i in this.emails){
 
+      let status = this.emails[i].status
+
       // requestTypes
       let requestTypeExists = false
       for(let x in this.requestTypes){
         if(this.requestTypes[x].name == this.emails[i].requestType){
           requestTypeExists = true
           this.requestTypes[x].count++
+
+          // add complete or incomplete status
+          if(status == 'Complete'){
+            this.requestTypes[x].complete++
+          } else if (status == 'Incomplete'){
+            this.requestTypes[x].incomplete++
+          }
+
         }
       }
+
+      // if no request type exists add an innitial entry
       if(!requestTypeExists){
-        this.requestTypes.push(
-          {
-            name: this.emails[i].requestType,
-            count: 1
-          }
-        )
+        if(status == 'Complete'){
+          this.requestTypes.push(
+            {
+              name: this.emails[i].requestType,
+              count: 1,
+              complete: 1,
+              incomplete: 0
+            }
+          )
+        } else if (status == 'Incomplete'){
+          this.requestTypes.push(
+            {
+              name: this.emails[i].requestType,
+              count: 1,
+              complete: 0,
+              incomplete: 1
+            }
+          )
+        }
       }
 
       // status
