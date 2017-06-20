@@ -3,8 +3,13 @@
 
   <div class="container">
     <br><br><br><br>
-    <h2>Top Intents</h2>
-    <div class="row">
+
+    <div class="intentsRow row">
+      <div class="col-sm-12">
+        <h2>
+          <span tooltip="Intents pulled from Watson Conversation Service" placement="right">Email Intents</span>
+        </h2>
+      </div>
       <div class="col-sm-6 col-md-4" *ngFor='let type of requestTypes'>
         <h1 class='alignCenter'>
           <span *ngIf='type.name == "ADD_TO_POLICY"' class="addToPolicy fa-stack fa-lg">
@@ -34,18 +39,22 @@
           <span class="label label-info">{{type.count}}</span>
         </h3>
         <div class="intentStats">
-          <h4 class="alignCenter">
-            <span>
-              {{type.complete}}
-              <span class="label label-success">Automated</span>
-            </span>
-          </h4>
-          <h4 class="alignCenter">
-            <span>
-              {{type.incomplete}}
-              <span class="label label-danger">Needs Review</span>
-            </span>
-          </h4>
+          <div class="whiteWell">
+            <h4 class="alignCenter">
+              <span>
+                <span class="label label-success">{{type.complete}}</span>
+                Automated
+              </span>
+            </h4>
+          </div>
+          <div class="whiteWell">
+            <h4 class="alignCenter">
+              <span>
+                <span class="label label-danger">{{type.incomplete}}</span>
+                Needs Review
+              </span>
+            </h4>
+          </div>
         </div>
       </div>
     </div>

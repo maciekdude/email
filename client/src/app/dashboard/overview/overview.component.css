@@ -8,6 +8,10 @@
   background-color: white;
 }
 
+.intentsRow{
+  background-color: whitesmoke;
+}
+
 .addToPolicy{
   color: turquoise;
 }
@@ -28,13 +32,19 @@
   color: lightseagreen;
 }
 
-
 .alignCenter{
   text-align: center;
 }
 
 .intentStats{
   padding-top: 2em;
+}
+
+.whiteWell{
+  background-color: white;
+  padding: 3px;
+  margin: 10px;
+  border-radius: 15px;
 }
 
 .typeIncomplete{
