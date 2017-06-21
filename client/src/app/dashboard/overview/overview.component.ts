@@ -21,6 +21,14 @@ export class OverviewComponent implements OnInit {
   emails: Array<Email> = this.emailService.emails
 
   requestTypes = []
+
+  intents = [
+    {
+      requestType: 'requestType',
+      date: new Date
+    }
+  ]
+
   statuses = []
   entities = []
   averageEntitiesExtracted: number
@@ -36,6 +44,7 @@ export class OverviewComponent implements OnInit {
     // add emails after enrichments
     this.emailService.emailsReady.subscribe( (allEmails) =>{
       this.emails = allEmails
+      console.log('running analysis')
       this.runAnalysis()
     })
   }
@@ -143,6 +152,7 @@ export class OverviewComponent implements OnInit {
       }
       totalEntities += allEntities
       totalEntitiesExtracted +=  allEntitiesExtracted
+
     }
 
     // entity analysis
@@ -165,17 +175,61 @@ export class OverviewComponent implements OnInit {
       }
     }
 
+    this.intents = []
+    for(let i in this.emails){
+      let requestType = this.emails[i].requestType
+      let entry = {
+        requestType: requestType,
+        date: this.emails[i].timestamp
+      }
+
+      this.intents.push(entry)
+
+      // if(this.intents.hasOwnProperty(requestType)){
+      //   this.intents[requestType].push(entry)
+      // } else {
+      //   this.intents[requestType] = [entry]
+      // }
+    }
+    console.log(this.intents)
+    this.buildIntentsChart()
+
+    // let intentDates = []
+    // for(let x in this.intents){
+    //   this.intentDates.push(this.intents[i].date)
+    // }
+
+
+
+  }
+
+  buildIntentsChart(){
+
     var chart = c3.generate({
         bindto: '#emailIntentsChart',
         data: {
-            x: 'x',
-    //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
-            columns: [
-                ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
-    //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
-                ['data1', 30, 200, 100, 400, 150, 250],
-                ['data2', 130, 340, 200, 500, 250, 350]
-            ]
+
+          json: this.intents,
+          // json: [
+          //   {name: 'www.site1.com', upload: 200, download: 200, total: 400},
+          //   {name: 'www.site2.com', upload: 100, download: 300, total: 400},
+          // ],
+          // keys: {
+          //   value: ['upload', 'download']
+          // }
+          keys: {
+            x: 'date',
+            value: ['date', 'requestType']
+          }
+
+    //         x: 'x',
+    // //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
+    //         columns: [
+    //             ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
+    // //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
+    //             ['data1', 30, 200, 100, 400, 150, 250],
+    //             ['data2', 130, 340, 200, 500, 250, 350]
+    //         ]
         },
         axis: {
             x: {
@@ -186,15 +240,6 @@ export class OverviewComponent implements OnInit {
             }
         }
     });
-
-    setTimeout(function () {
-        chart.load({
-            columns: [
-                ['data3', 400, 500, 450, 700, 600, 500]
-            ]
-        });
-    }, 1000);
-
 
   }
 
