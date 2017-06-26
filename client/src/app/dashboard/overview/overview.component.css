@@ -1,12 +1,7 @@
 #allPageContent{
   background-image: url('../../../assets/img/background/dark-triangles.png');
-  /*background: #4AC29A;
-  background: -webkit-linear-gradient(to top, #BDFFF3, #4AC29A);
-  background: linear-gradient(to top, #BDFFF3, #4AC29A);*/
-}
-
-.container{
-  background-color: white;
+  height: calc(100vh);
+  overflow-y: scroll;
 }
 
 .intentsRow{
@@ -50,4 +45,13 @@
 
 .typeIncomplete{
   float: right;
+}
+
+.gridTileDiv{
+  padding: 1em;
+}
+
+
+.spacer {
+  flex: 1 1 auto;
 }

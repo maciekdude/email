@@ -23,6 +23,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModule, PaginationModule, ProgressbarModule, PopoverModule, TooltipModule } from 'ngx-bootstrap';
 
+// material
+import {MdToolbarModule, MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule, MdChipsModule, MdTooltipModule} from '@angular/material';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 @NgModule({
   imports: [
     CommonModule,
@@ -36,7 +40,16 @@ import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModul
     PaginationModule.forRoot(),
     ProgressbarModule.forRoot(),
     PopoverModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    // material
+    FlexLayoutModule,
+    MdButtonModule,
+    MdCheckboxModule,
+    MdCardModule,
+    MdGridListModule,
+    MdChipsModule,
+    MdTooltipModule,
+    MdToolbarModule
   ],
   declarations: [
     DashboardComponent,

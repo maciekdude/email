@@ -1,4 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
+// import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import 'hammerjs';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 
 import { NgModule } from '@angular/core';
 import { PathLocationStrategy, LocationStrategy } from '@angular/common';
@@ -27,7 +31,8 @@ import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModul
     // AppSidebarComponent
   ],
   imports: [
-    BrowserModule,
+    // BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     AuthModule,
     ScrollToModule.forRoot(),
@@ -39,7 +44,8 @@ import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModul
     PaginationModule.forRoot(),
     ProgressbarModule.forRoot(),
     PopoverModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    FlexLayoutModule
   ],
   providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}, AuthGuard, AlertService],
   bootstrap: [AppComponent]
