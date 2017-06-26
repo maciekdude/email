@@ -22,12 +22,8 @@ export class OverviewComponent implements OnInit {
 
   requestTypes = []
 
-  intents = [
-    {
-      requestType: 'requestType',
-      date: new Date
-    }
-  ]
+  intents = []
+  intentNamesforChart = []
 
   statuses = []
   entities = []
@@ -176,28 +172,75 @@ export class OverviewComponent implements OnInit {
     }
 
     this.intents = []
+    let firstItteration = true
     for(let i in this.emails){
+      let date = this.emails[i].timestamp
       let requestType = this.emails[i].requestType
-      let entry = {
-        requestType: requestType,
-        date: this.emails[i].timestamp
+      // adding to array of chart variables
+      if(!this.intentNamesforChart.hasOwnProperty(requestType)){
+        this.intentNamesforChart.push(requestType)
+      }
+      let foundItem = 0
+
+      if(firstItteration){
+        let entry = {
+          "date": date,
+          [requestType]: 1
+        }
+        this.intents.push(entry)
+        firstItteration = false
+      } else {
+        for(let x in this.intents){
+          console.log(date)
+          console.log(this.intents[x].date)
+          if(date.getTime() == this.intents[x].date.getTime()){
+
+            console.log('same date')
+
+            if(this.intents[x].hasOwnProperty(requestType)){
+              this.intents[x][requestType] ++
+            } else {
+              this.intents[x][requestType] = 1
+            }
+
+            break
+          } else {
+
+
+
+            foundItem++
+          }
+          console.log(foundItem)
+          console.log(this.intents.length)
+          if(foundItem == this.intents.length){
+            let entry = {
+              "date": date,
+              [requestType]: 1
+            }
+            this.intents.push(entry)
+          }
+        }
       }
 
-      this.intents.push(entry)
-
-      // if(this.intents.hasOwnProperty(requestType)){
-      //   this.intents[requestType].push(entry)
-      // } else {
-      //   this.intents[requestType] = [entry]
+      // let requestType = this.emails[i].requestType
+      // let entry = {
+      //   requestType: requestType,
+      //   date: this.emails[i].timestamp
       // }
+      //
+      // this.intents.push(entry)
+      //
+      // // if(this.intents.hasOwnProperty(requestType)){
+      // //   this.intents[requestType].push(entry)
+      // // } else {
+      // //   this.intents[requestType] = [entry]
+      // // }
     }
+
     console.log(this.intents)
     this.buildIntentsChart()
 
-    // let intentDates = []
-    // for(let x in this.intents){
-    //   this.intentDates.push(this.intents[i].date)
-    // }
+
 
 
 
@@ -219,7 +262,7 @@ export class OverviewComponent implements OnInit {
           // }
           keys: {
             x: 'date',
-            value: ['date', 'requestType']
+            value: this.intentNamesforChart
           }
 
     //         x: 'x',
