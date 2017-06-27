@@ -4,6 +4,10 @@ import { Router } from '@angular/router';
 import { EmailService } from '../services/email.service';
 import { Email } from '../services/email'
 
+import {MdDialog} from '@angular/material';
+
+import {IntentDialogComponent} from './intent-dialog/intent-dialog.component';
+
 declare var c3:any
 
 @Component({
@@ -15,7 +19,8 @@ export class OverviewComponent implements OnInit {
 
   constructor(
     private emailService: EmailService,
-    private router: Router
+    private router: Router,
+    public dialog: MdDialog
   ) { }
 
   emails: Array<Email> = this.emailService.emails
@@ -53,6 +58,11 @@ export class OverviewComponent implements OnInit {
     this.router.navigate(['/dashboard/emails']);
   }
 
+  openDialog(type){
+    console.log(type)
+    this.dialog.open(IntentDialogComponent, {data: type});
+  }
+
   runAnalysis(){
     this.requestTypes = []
     this.statuses = []
@@ -65,7 +75,7 @@ export class OverviewComponent implements OnInit {
 
       let status = this.emails[i].status
 
-      // requestTypes
+      // requestTypes (intents)
       let requestTypeExists = false
       for(let x in this.requestTypes){
         if(this.requestTypes[x].name == this.emails[i].requestType){
@@ -79,18 +89,56 @@ export class OverviewComponent implements OnInit {
             this.requestTypes[x].incomplete++
           }
 
+          // add entity counts
+          for(let n in this.emails[i].entities){
+            // if(this.emails[i].entities !== null && this.requestTypes[x].entities.hasOwnProperty(n)){
+            //   this.requestTypes[x].entities[n]++
+            // }
+            for(let q of this.requestTypes[x].entities){
+              if(q.name == n){
+                q.count++
+              }
+            }
+          }
+
         }
       }
 
       // if no request type exists add an innitial entry
       if(!requestTypeExists){
+
+        // setting up entities count
+        let entitiesEntry = []
+        for(let x in this.emails[i].entities){
+          console.log(x)
+          console.log(this.emails[i].entities[x])
+          let value = this.emails[i].entities[x]
+          if(value == null){
+            entitiesEntry.push(
+                {
+                  "name": x,
+                  "count": 0
+                }
+            )
+          } else {
+            entitiesEntry.push(
+                {
+                  "name": x,
+                  "count": 1
+                }
+            )
+          }
+        }
+        console.log(entitiesEntry)
+
         if(status == 'Complete'){
           this.requestTypes.push(
             {
               name: this.emails[i].requestType,
               count: 1,
               complete: 1,
-              incomplete: 0
+              incomplete: 0,
+              entities: entitiesEntry
             }
           )
         } else if (status == 'Incomplete'){
@@ -99,7 +147,8 @@ export class OverviewComponent implements OnInit {
               name: this.emails[i].requestType,
               count: 1,
               complete: 0,
-              incomplete: 1
+              incomplete: 1,
+              entities: entitiesEntry
             }
           )
         }
@@ -174,6 +223,7 @@ export class OverviewComponent implements OnInit {
     this.intents = []
     let firstItteration = true
     for(let i in this.emails){
+
       let date = this.emails[i].timestamp
       let requestType = this.emails[i].requestType
       // adding to array of chart variables
@@ -196,18 +246,13 @@ export class OverviewComponent implements OnInit {
           if(date.getTime() == this.intents[x].date.getTime()){
 
             console.log('same date')
-
             if(this.intents[x].hasOwnProperty(requestType)){
               this.intents[x][requestType] ++
             } else {
               this.intents[x][requestType] = 1
             }
-
             break
           } else {
-
-
-
             foundItem++
           }
           console.log(foundItem)

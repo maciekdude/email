@@ -51,7 +51,17 @@
   padding: 1em;
 }
 
-
 .spacer {
   flex: 1 1 auto;
+}
+
+.cardActions{
+  display: flex;
+}
+.cardActionChips{}
+.cardActionSpacer{
+  flex:1;
+}
+.intentCardOpenButton{
+  float:right;
 }

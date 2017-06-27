@@ -31,14 +31,16 @@
                 <md-chip selected="true" mdTooltip="total {{type.name}} emails identified">Total Emails: {{type.count}}</md-chip>
               </md-chip-list> -->
             </md-card-content>
-            <md-card-actions>
+            <md-card-actions class='cardActions'>
               <!-- <button md-button>LIKE</button>
               <button md-button>SHARE</button> -->
-              <md-chip-list>
+              <md-chip-list class='cardActionChips'>
                 <md-chip selected="true" mdTooltip="total {{type.name}} emails identified">Total Emails: {{type.count}}</md-chip>
                 <md-chip color="accent" selected="true" mdTooltip="automated emails">{{type.complete}}</md-chip>
                 <md-chip color="warn" selected="true" mdTooltip="needs attention">{{type.incomplete}}</md-chip>
               </md-chip-list>
+              <span class="cardActionSpacer"></span>
+              <button class="intentCardOpenButton" md-raised-button (click)="openDialog(type)">Explore</button>
             </md-card-actions>
           </md-card>
         </div>
@@ -51,8 +53,8 @@
     </md-card>
 
   </div>
-<!--
-  <div class="container">
+
+  <!-- <div class="container">
     <div class="row">
       <div class="panel panel-primary">
         <div class="panel-heading">Overview</div>
