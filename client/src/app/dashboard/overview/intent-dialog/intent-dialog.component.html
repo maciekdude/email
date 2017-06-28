@@ -4,13 +4,9 @@
     <md-list>
       <h3 md-subheader>Top Entities</h3>
       <md-list-item *ngFor="let entity of intentData.entities | sortBy:'count'">
-      <!-- <md-list-item> -->
-        <!-- <md-icon md-list-icon>folder</md-icon> -->
-        <md-icon md-list-icon>
-          <md-chip-list class='cardActionChips'>
-            <md-chip selected="true" mdTooltip="">{{entity.count}}</md-chip>
-          </md-chip-list>
-        </md-icon>
+        <md-chip-list md-list-icon>
+          <md-chip selected="true">{{entity.count}}</md-chip>
+        </md-chip-list>
         <h4 md-line>{{entity.name}}</h4>
       </md-list-item>
     </md-list>

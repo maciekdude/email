@@ -3,8 +3,11 @@
 }
 
 #wrapper {
+    background-image: url('./../../assets/img/background/dark-triangles.png');
     padding-left: 0;
     padding-top: 50px;
+    height: calc(100vh);
+    overflow-y: scroll;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
