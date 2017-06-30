@@ -17,7 +17,6 @@
               <md-card-title>Intent</md-card-title>
               <md-card-subtitle>Identified by Conversation Services</md-card-subtitle>
             </md-card-header>
-            <!-- <img md-card-image src="assets/img/examples/shiba2.jpg"> -->
             <md-card-content>
               <h3>
                 <i *ngIf='type.name == "ADD_TO_POLICY"' class="material-icons">note_add</i>
@@ -27,13 +26,8 @@
                 <i *ngIf='type.name != "ADD_TO_POLICY" && type.name != "REMOVE_POLICY" && type.name != "MODIFY_POLICY" && type.name != "RETURN_DEVICE"' class="material-icons">explore</i>
                 {{type.name}}
               </h3>
-              <!-- <md-chip-list>
-                <md-chip selected="true" mdTooltip="total {{type.name}} emails identified">Total Emails: {{type.count}}</md-chip>
-              </md-chip-list> -->
             </md-card-content>
             <md-card-actions class='cardActions'>
-              <!-- <button md-button>LIKE</button>
-              <button md-button>SHARE</button> -->
               <md-chip-list class='cardActionChips'>
                 <md-chip selected="true" mdTooltip="total {{type.name}} emails identified">Total Emails: {{type.count}}</md-chip>
                 <md-chip color="accent" selected="true" mdTooltip="automated emails">{{type.complete}}</md-chip>
@@ -46,67 +40,9 @@
         </div>
       </div>
     </div>
-
     <md-toolbar mdTooltip="Intents indicate the type of email that was sent">Email Intents / Time</md-toolbar>
     <md-card>
       <div id="emailIntentsChart"></div>
     </md-card>
-
   </div>
-
-  <!-- <div class="container">
-    <div class="row">
-      <div class="panel panel-primary">
-        <div class="panel-heading">Overview</div>
-        <div class="panel-body">
-
-          <table class="table">
-            <tr>
-              <td>Total Emails</td>
-              <td>{{emails.length}}</td>
-            </tr>
-          </table>
-
-          <table class="table">
-            <th>Request Types</th>
-            <tr *ngFor="let item of requestTypes">
-              <td>{{item.name}}</td>
-              <td>{{item.count}}</td>
-            </tr>
-          </table>
-
-          <table class="table">
-            <th>Status</th>
-            <tr *ngFor="let item of statuses">
-              <td>{{item.name}}</td>
-              <td>{{item.count}}</td>
-            </tr>
-          </table>
-
-          <table class="table">
-            <th>Entity Breakdown</th>
-            <tr>
-              <td>Average Entities Extracted</td>
-              <td>{{averageEntitiesExtracted}}</td>
-            </tr>
-            <tr>
-              <td>Entity Extractions</td>
-              <td>{{entityExtractionSuccess | percent}}</td>
-            </tr>
-            <tr>
-              <td>Entity with most extractions</td>
-              <td>{{mostEntitiesExtracted}}</td>
-              <td>{{mostEntitiesExtractedPercentage | percent}}</td>
-            </tr>
-            <tr>
-              <td>Entity most commonly missing</td>
-              <td>{{leastEntitiesExtracted}}</td>
-              <td>{{leastEntitiesExtractedPercentage | percent}}</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
 </div>

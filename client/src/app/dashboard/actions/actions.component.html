@@ -1,26 +1,39 @@
-<div class="panel panel-primary" *ngIf="currentEmail">
-  <div class="panel-heading">
-    <h3 class="panel-title">Summary & Actions</h3>
-    <span class="label label-info">{{currentEmail.status}}</span>
-  </div>
-  <div class="panel-body">
-    <div class="row">
-      <div class="col-lg-8" *ngIf='itemsMissing.length > 0'>
-        <div class="missing">
-          <h5>Missing:</h5>
-          <div class="alert alert-warning alert-dismissible" role="alert" *ngFor="let item of itemsMissing">
-            <strong>{{item}}</strong> Please add this to submit.
-          </div>
-        </div>
+<div  *ngIf="currentEmail">
+  <md-toolbar>
+    <span>Actions</span>
+    <span class="toolbarSpacer"></span>
+    <md-icon>assignment_returned</md-icon>
+  </md-toolbar>
+  <md-card class="card">
+    <md-card-header>
+      <md-card-title>Status:
+        <md-chip selected="true">{{currentEmail.status}}</md-chip>
+        <md-chip-list></md-chip-list>
+      </md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <div class="missing" *ngIf='itemsMissing.length > 0'>
+        <md-list dense>
+          <h3 md-subheader>Missing</h3>
+          <md-list-item *ngFor="let item of itemsMissing">
+            <md-icon color='warn' md-list-icon>warning</md-icon>
+            <h4 md-line>{{item}}</h4>
+            <p md-line>Please add the {{item}} to submit</p>
+          </md-list-item>
+        </md-list>
       </div>
-      <div class="col-lg-4">
-        <h5>Actions:</h5>
-        <div class="btn-group-vertical" role="group" aria-label="">
-          <button (click)="submit()" type="button" class="btn btn-primary" *ngIf='itemsMissing.length === 0'>Submit</button>
-          <button type="button" class="btn btn-primary" disabled="disabled" *ngIf='itemsMissing.length > 0'>Submit</button>
-          <!-- <button type="button" class="btn btn-primary">Respond</button> -->
-        </div>
-      </div>
-    </div>
-  </div>
+
+      <md-input-container *ngFor='let entity of currentEntities'>
+        <input mdInput placeholder="{{entity.name}}" value="{{entity.value}}">
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions>
+      <md-chip class="completedChip" mdTooltip="This process was automated" color="accent" selected="true" *ngIf='currentEmail.status == "Complete"'>Automated!</md-chip>
+      <button mdTooltip="Submit to Complete this process" (click)="submit()" *ngIf='itemsMissing.length === 0 && currentEmail.status !=="Complete"' md-button>Submit</button>
+      <span mdTooltip="Please ensure all entities are complete to submit" *ngIf='itemsMissing.length > 0'>
+        <button (click)="submit()" disabled="disabled" md-button>Submit</button>
+      </span>
+    </md-card-actions>
+  </md-card>
+
 </div>

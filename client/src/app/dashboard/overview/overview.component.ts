@@ -25,20 +25,12 @@ export class OverviewComponent implements OnInit {
 
   emails: Array<Email> = this.emailService.emails
 
+  // analysis by request type (intent) - includes entity breakdown
   requestTypes = []
 
+  // elements for Email Intents / Time c3 chart
   intents = []
   intentNamesforChart = []
-
-  statuses = []
-  entities = []
-  averageEntitiesExtracted: number
-  entityExtractionSuccess: number
-
-  mostEntitiesExtracted: string
-  mostEntitiesExtractedPercentage: number
-  leastEntitiesExtracted: string
-  leastEntitiesExtractedPercentage: number
 
   ngOnInit() {
     // add emails after enrichments
@@ -46,10 +38,6 @@ export class OverviewComponent implements OnInit {
       this.emails = allEmails
       this.runAnalysis()
     })
-  }
-
-  ngOnChanges(){
-
   }
 
   routeToEmails(){
@@ -62,16 +50,8 @@ export class OverviewComponent implements OnInit {
 
   runAnalysis(){
     this.requestTypes = []
-    this.statuses = []
-    this.entities = []
-
-    let totalEntities = 0
-    let totalEntitiesExtracted = 0
-
     for(let i in this.emails){
-
       let status = this.emails[i].status
-
       // requestTypes (intents)
       let requestTypeExists = false
       for(let x in this.requestTypes){
@@ -86,18 +66,19 @@ export class OverviewComponent implements OnInit {
             this.requestTypes[x].incomplete++
           }
 
-          // add entity counts
+          // add entity counts if entity exists
           for(let n in this.emails[i].entities){
-            for(let q of this.requestTypes[x].entities){
-              if(q.name == n){
-                q.count++
+            if(this.emails[i].entities[n] !== null){
+              for(let q of this.requestTypes[x].entities){
+                if(q.name === n){
+                  q.count++
+                }
               }
             }
           }
 
         }
       }
-
       // if no request type exists add an innitial entry
       if(!requestTypeExists){
 
@@ -106,22 +87,11 @@ export class OverviewComponent implements OnInit {
         for(let x in this.emails[i].entities){
           let value = this.emails[i].entities[x]
           if(value == null){
-            entitiesEntry.push(
-                {
-                  "name": x,
-                  "count": 0
-                }
-            )
+            entitiesEntry.push({"name": x,"count": 0})
           } else {
-            entitiesEntry.push(
-                {
-                  "name": x,
-                  "count": 1
-                }
-            )
+            entitiesEntry.push({"name": x,"count": 1})
           }
         }
-
         if(status == 'Complete'){
           this.requestTypes.push(
             {
@@ -144,73 +114,9 @@ export class OverviewComponent implements OnInit {
           )
         }
       }
-
-      // status
-      let statusExists = false
-      for(let x in this.statuses){
-        if(this.statuses[x].name == this.emails[i].status){
-          statusExists = true
-          this.statuses[x].count++
-        }
-      }
-      if(!statusExists){
-        this.statuses.push(
-          {
-            name: this.emails[i].status,
-            count: 1
-          }
-        )
-      }
-
-      // entities
-      let allEntities = 0
-      let allEntitiesExtracted = 0
-      for(let e in this.emails[i].entities){
-        allEntities++
-        if(this.emails[i].entities[e]){
-          allEntitiesExtracted++
-          let entityExists = false
-          for(let x in this.entities){
-            if(this.entities[x].name == e){
-              entityExists = true
-              this.entities[x].count++
-            }
-          }
-          if(!entityExists){
-            this.entities.push(
-              {
-                name: e,
-                count: 1
-              }
-            )
-          }
-        }
-      }
-      totalEntities += allEntities
-      totalEntitiesExtracted +=  allEntitiesExtracted
-
     }
 
-    // entity analysis
-    this.averageEntitiesExtracted = totalEntitiesExtracted / this.emails.length
-    this.entityExtractionSuccess = totalEntitiesExtracted / totalEntities
-
-    // entities with most and least extractions
-    let highestEntity = 0
-    let lowestEntity = Infinity
-    for(let i in this.entities){
-      if(this.entities[i].count > highestEntity){
-        highestEntity = this.entities[i].count
-        this.mostEntitiesExtracted = this.entities[i].name
-        this.mostEntitiesExtractedPercentage = this.entities[i].count / this.emails.length
-      }
-      if(this.entities[i].count < lowestEntity){
-        lowestEntity = this.entities[i].count
-        this.leastEntitiesExtracted = this.entities[i].name
-        this.leastEntitiesExtractedPercentage = this.entities[i].count / this.emails.length
-      }
-    }
-
+    // prepare data for c3 chart
     this.intents = []
     let firstItteration = true
     for(let i in this.emails){
@@ -255,6 +161,7 @@ export class OverviewComponent implements OnInit {
     this.buildIntentsChart()
   }
 
+  // c3 chart of intents over time
   buildIntentsChart(){
 
     var chart = c3.generate({

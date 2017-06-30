@@ -20,6 +20,7 @@ export class IntentDialogComponent implements OnInit {
 
   ngOnInit() {
     this.intentData = this.data
+    console.log(this.intentData)
   }
 
   routeToEmails(){

@@ -10,9 +10,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const APP_ROUTES: Routes = [
   { path: 'dashboard', loadChildren: './dashboard/app-dashboard.module#AppDashboardModule', canLoad: [AuthGuard] },
-  // { path: 'dashboard', component: DashboardComponent, canLoad: [AuthGuard] },
   { path: 'login', component: LoopbackLoginComponent },
-  // { path: '', redirectTo: 'bs-templates/bs-simple-sidebar', pathMatch: 'full'  },
+  { path: 'home', redirectTo: 'dashboard', pathMatch: 'full'  },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full'  },
   { path: '**', component: PageNotFoundComponent }
 ];

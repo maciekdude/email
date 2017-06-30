@@ -1,9 +1,16 @@
-<div class="panel panel-primary" *ngIf="currentEmail">
-  <div class="panel-heading">
-    <h3 class="panel-title">{{currentEmail.subject}}</h3>
-    <h6>From: {{currentEmail.from}}</h6>
-  </div>
-  <div class="panel-body">
-    {{currentEmail.text}}
-  </div>
+<div *ngIf="currentEmail">
+  <md-toolbar>
+    <span>Email</span>
+    <span class="toolbarSpacer"></span>
+    <md-icon>email</md-icon>
+  </md-toolbar>
+  <md-card class="card">
+    <md-card-header>
+      <md-card-title>{{currentEmail.subject}}</md-card-title>
+      <md-card-subtitle>From: {{currentEmail.from}}</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+      {{currentEmail.text}}
+    </md-card-content>
+  </md-card>
 </div>
