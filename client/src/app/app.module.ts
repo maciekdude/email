@@ -1,4 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import 'hammerjs';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 
 import { NgModule } from '@angular/core';
 import { PathLocationStrategy, LocationStrategy } from '@angular/common';
@@ -13,8 +16,6 @@ import { AlertService } from './utils/alert.service'
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-// import { DashboardComponent } from './dashboard/dashboard.component';
-// import { AppSidebarComponent } from './dashboard/app-sidebar/app-sidebar.component';
 
 import { ScrollToModule } from 'ng2-scroll-to';
 import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModule, PaginationModule, ProgressbarModule, PopoverModule, TooltipModule } from 'ngx-bootstrap';
@@ -22,12 +23,11 @@ import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModul
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
-    // DashboardComponent,
-    // AppSidebarComponent
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule,
+    // BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     AuthModule,
     ScrollToModule.forRoot(),
@@ -39,7 +39,8 @@ import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModul
     PaginationModule.forRoot(),
     ProgressbarModule.forRoot(),
     PopoverModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    FlexLayoutModule
   ],
   providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}, AuthGuard, AlertService],
   bootstrap: [AppComponent]

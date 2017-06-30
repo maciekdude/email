@@ -44,45 +44,35 @@ export class EmailService {
   }
 
   runWatsonAnalysis(){
-    let allResolvers = []
-
+    let responseCounter = 0
     for(let i of this.emails){
-
-      let resolver = new Promise((resolve, reject) => {
-
-        let message = i.text
-        this.conversationService.sendMessage(message).subscribe(response => {
-          if(response[0].intents[0]){
-            i.requestType = response[0].intents[0].intent
-          }
-        })
-        this.nluService.analyzeText(message).subscribe(response => {
-          for(let n of response[0].entities){
-            if(i.entities.hasOwnProperty(n.type)){
-              i.entities[n.type] = n.text
-            }
-            this.doEntityCheck.then(value => {
-              resolve()
-            })
-          }
-        })
+      let message = i.text
+      this.conversationService.sendMessage(message).subscribe(response => {
+        if(response[0].intents[0]){
+          i.requestType = response[0].intents[0].intent
+        }
       })
-      allResolvers.push(resolver)
-    }
-    if(allResolvers.length == this.emails.length){
-      Promise.all(allResolvers).then(value =>{
-        console.log('watson analysis done')
-        this.firstEmail = []
-        this.firstEmail.push(this.emails[0])
-        this.emailsReady.next(this.emails)
+      this.nluService.analyzeText(message).subscribe(response => {
+        let entityResponseCounter = 0
+        for(let n of response[0].entities){
+          if(i.entities.hasOwnProperty(n.type)){
+            i.entities[n.type] = n.text
+            entityResponseCounter++
+            if(entityResponseCounter == response[0].entities.length){
+              responseCounter++
+              if(responseCounter == this.emails.length){
+                  this.doEntityCheck()
+              }
+            }
+          }
+        }
       })
     }
   }
 
-  doEntityCheck = new Promise((resolve, reject) => {
-    let allResolvers = []
+  doEntityCheck(){
+    let emailsAnalyzed = 0
     for(let i of this.emails){
-      let resolver = new Promise((resolve, reject) => {
         let totalEntities = 0
         let completeEntities = 0
         for(let e in i.entities){
@@ -94,17 +84,18 @@ export class EmailService {
         if(completeEntities == totalEntities){
           i.status = "Complete"
           i.response = "Thanks, all done! We've automatically completed your request."
+          emailsAnalyzed++
+        } else {
+          emailsAnalyzed++
         }
-        resolve()
-      })
-      allResolvers.push(resolver)
     }
-    if(allResolvers.length == this.emails.length){
-      Promise.all(allResolvers).then(value =>{
-        resolve()
-      })
+    if(this.emails.length == emailsAnalyzed){
+      this.firstEmail = []
+      this.firstEmail.push(this.emails[0])
+      this.emailsReady.next(this.emails)
     }
-  })
+  }
+
 
   automate(){
 
@@ -134,7 +125,6 @@ export class EmailService {
   }
 
   refreshEmails(){
-    console.log('refreshing emails from the email service');
     this.emailsUpdate.next(this.emails)
   }
 

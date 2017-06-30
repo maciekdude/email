@@ -4,133 +4,45 @@
   <div class="container">
     <br><br><br><br>
 
-    <div class="intentsRow row">
-      <div class="col-sm-12">
-        <h2>
-          <span tooltip="Intents pulled from Watson Conversation Service" placement="right">Email Intents</span>
-        </h2>
-      </div>
-      <div class="col-sm-6 col-md-4" *ngFor='let type of requestTypes'>
-        <h1 class='alignCenter'>
-          <span *ngIf='type.name == "ADD_TO_POLICY"' class="addToPolicy fa-stack fa-lg">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-plus fa-stack-1x" aria-hidden="true"></i>
-          </span>
-          <span *ngIf='type.name == "REMOVE_POLICY"' class="removePolicy fa-stack fa-lg">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-remove fa-stack-1x" aria-hidden="true"></i>
-          </span>
-          <span *ngIf='type.name == "MODIFY_POLICY"' class="modifyPolicy fa-stack fa-lg">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-pencil fa-stack-1x" aria-hidden="true"></i>
-          </span>
-          <span *ngIf='type.name == "RETURN_DEVICE"' class="modifyPolicy fa-stack fa-lg">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-pencil fa-stack-1x" aria-hidden="true"></i>
-          </span>
-          <span *ngIf='type.name != "ADD_TO_POLICY" && type.name != "REMOVE_POLICY" && type.name != "MODIFY_POLICY" && type.name != "RETURN_DEVICE"' class="otherType fa-stack fa-lg">
-            <i class="fa fa-circle-thin fa-stack-2x"></i>
-            <i class="fa fa-bandcamp fa-stack-1x" aria-hidden="true"></i>
-          </span>
-        </h1>
-        <h3 class="alignCenter">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          {{type.name}}
-          <span class="label label-info">{{type.count}}</span>
-        </h3>
-        <div class="intentStats">
-          <div class="whiteWell">
-            <h4 class="alignCenter">
-              <span>
-                <span class="label label-success">{{type.complete}}</span>
-                Automated
-              </span>
-            </h4>
-          </div>
-          <div class="whiteWell">
-            <h4 class="alignCenter">
-              <span>
-                <span class="label label-danger">{{type.incomplete}}</span>
-                Needs Review
-              </span>
-            </h4>
-          </div>
+    <md-toolbar>
+      <span>Dashboard Overview</span>
+      <span class='spacer'></span>
+      <button md-button (click)="routeToEmails()">View Emails!</button>
+    </md-toolbar>
+    <div class="containerX">
+      <div fxLayout="row wrap" class="colored box nopad" >
+        <div class="gridTileDiv" fxFlex *ngFor='let type of requestTypes'>
+          <md-card>
+            <md-card-header>
+              <md-card-title>Intent</md-card-title>
+              <md-card-subtitle>Identified by Conversation Services</md-card-subtitle>
+            </md-card-header>
+            <md-card-content>
+              <h3>
+                <i *ngIf='type.name == "ADD_TO_POLICY"' class="material-icons">note_add</i>
+                <i *ngIf='type.name == "REMOVE_POLICY"' class="material-icons">remove_circle</i>
+                <i *ngIf='type.name == "MODIFY_POLICY"' class="material-icons">mode_edit</i>
+                <i *ngIf='type.name == "RETURN_DEVICE"' class="material-icons">assignment_return</i>
+                <i *ngIf='type.name != "ADD_TO_POLICY" && type.name != "REMOVE_POLICY" && type.name != "MODIFY_POLICY" && type.name != "RETURN_DEVICE"' class="material-icons">explore</i>
+                {{type.name}}
+              </h3>
+            </md-card-content>
+            <md-card-actions class='cardActions'>
+              <md-chip-list class='cardActionChips'>
+                <md-chip selected="true" mdTooltip="total {{type.name}} emails identified">Total Emails: {{type.count}}</md-chip>
+                <md-chip color="accent" selected="true" mdTooltip="automated emails">{{type.complete}}</md-chip>
+                <md-chip color="warn" selected="true" mdTooltip="needs attention">{{type.incomplete}}</md-chip>
+              </md-chip-list>
+              <span class="cardActionSpacer"></span>
+              <button class="intentCardOpenButton" md-raised-button (click)="openDialog(type)">Explore</button>
+            </md-card-actions>
+          </md-card>
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <h2>
-          <span tooltip="Intents indicate the type of email that was sent" placement="right">Email Intents / Time</span>
-        </h2>
-        <div id="emailIntentsChart"></div>
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-
+    <md-toolbar mdTooltip="Intents indicate the type of email that was sent">Email Intents / Time</md-toolbar>
+    <md-card>
+      <div id="emailIntentsChart"></div>
+    </md-card>
   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="panel panel-primary">
-        <!-- Default panel contents -->
-        <div class="panel-heading">Overview</div>
-        <div class="panel-body">
-
-          <table class="table">
-            <tr>
-              <td>Total Emails</td>
-              <td>{{emails.length}}</td>
-            </tr>
-          </table>
-
-          <table class="table">
-            <th>Request Types</th>
-            <tr *ngFor="let item of requestTypes">
-              <td>{{item.name}}</td>
-              <td>{{item.count}}</td>
-            </tr>
-          </table>
-
-          <table class="table">
-            <th>Status</th>
-            <tr *ngFor="let item of statuses">
-              <td>{{item.name}}</td>
-              <td>{{item.count}}</td>
-            </tr>
-          </table>
-
-          <table class="table">
-            <th>Entity Breakdown</th>
-            <tr>
-              <td>Average Entities Extracted</td>
-              <td>{{averageEntitiesExtracted}}</td>
-            </tr>
-            <tr>
-              <td>Entity Extractions</td>
-              <td>{{entityExtractionSuccess | percent}}</td>
-            </tr>
-            <tr>
-              <td>Entity with most extractions</td>
-              <td>{{mostEntitiesExtracted}}</td>
-              <td>{{mostEntitiesExtractedPercentage | percent}}</td>
-            </tr>
-            <tr>
-              <td>Entity most commonly missing</td>
-              <td>{{leastEntitiesExtracted}}</td>
-              <td>{{leastEntitiesExtractedPercentage | percent}}</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="btn-group">
-        <button (click)="routeToEmails()" type="button" class="btn btn-primary">View Emails</button>
-      </div>
-
-    </div>
-  </div>
-
 </div>

@@ -1,17 +1,23 @@
-<div class="panel panel-primary" *ngIf="currentEmail">
-  <!-- Default panel contents -->
-  <div class="panel-heading">Summary</div>
-  <div class="panel-body">
-    <h3><span class="label label-info">{{currentEmail.requestType}}</span></h3>
-    <div class="btn-group">
-      <button (click)='updateEntities()' type="button" class="btn btn-primary">Update</button>
-    </div>
-  </div>
-  <!-- Table -->
-  <table class="table">
-    <tr *ngFor='let entity of currentEntities'>
-      <td>{{entity.name}}</td>
-      <td><input type="text" name="" [(ngModel)]="entity.value"></td>
-    </tr>
-  </table>
+<div *ngIf="currentEmail">
+  <md-toolbar>
+    <span>Summary</span>
+    <span class="toolbarSpacer"></span>
+    <md-icon>sort</md-icon>
+  </md-toolbar>
+  <md-card class="card" *ngIf="currentEmail">
+    <md-card-header>
+      <md-card-title>Request Type:
+        <md-chip selected="true">{{currentEmail.requestType}}</md-chip>
+        <md-chip-list></md-chip-list>
+      </md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <md-input-container *ngFor='let entity of currentEntities'>
+        <input mdInput placeholder="{{entity.name}}" [(ngModel)]="entity.value">
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions>
+      <button (click)='updateEntities()' md-button>Update</button>
+    </md-card-actions>
+  </md-card>
 </div>

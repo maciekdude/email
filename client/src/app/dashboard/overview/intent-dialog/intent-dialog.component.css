@@ -1,0 +1,22 @@
+.dialogContainer{
+  display: flex;
+}
+.cardContent{
+  display: flex;
+  align-items:flex-end;
+  margin-top: -3em;
+  margin-bottom: -1em;
+  justify-content: center;
+}
+.completeEmails{
+  font-size:200px;
+  color: lightslategrey;
+}
+.completeEmailsText{
+  max-width: 150px;
+  padding-bottom: 27px;
+}
+.accessEmailsButton{
+  width:100%;
+  margin-top: 1em;
+}
