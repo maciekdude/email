@@ -8,7 +8,7 @@ This Accelerator showcases Watson powered automation for email actions and respo
 
 ## Team
 
-This Accelerator was built by the Watson Accelerators Team. The original idea for the Accelerator was formed during a brainstorming session between the Watson Accelerators Team and (ANNA, who was the other group?)...
+This Accelerator was built by the Watson Accelerators Team. The original idea for the Accelerator was formed during a brainstorming session between the Watson Accelerators Team and Cognitive and Cloud Team.
 
 #### Watson Accelerators Team Contributors
 - [Anna Quincy](https://www.linkedin.com/in/anna-quincy-25042957)
@@ -135,7 +135,17 @@ You will notice two sets of credentials for each service. These different creden
 
 ### WKS Setup
 
-To be completed by Anna.
+You can get access to a free trial version of WKS [here](https://www.ibm.com/us-en/marketplace/supervised-machine-learning).
+
+To upload your model, follow these steps:
+
+1. Create a new workspace in Watson Knowledge Studio.
+2. Upload the type system, dictionaries, and documents in that order.  File can be found in the accelerator/wks folder.
+3. Go to your annotator components and click Create a Machine Learning  Annotator.
+4. Click “All” under document sets and click “Next.”
+5. Map dictionaries to the appropriate entities.
+6. Now click “Train and Evaluate” the annotator. This should take ~15 minutes and when it is done you can deploy to WDS.
+7. The instructions for deploying from WKS are here: https://www.ibm.com/watson/developercloud/doc/wks/wks_mapublish.shtml#wks_madiscovery
 
 ## Building the application
 
