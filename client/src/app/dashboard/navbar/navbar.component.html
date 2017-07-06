@@ -1,6 +1,27 @@
-<nav class="navbar navbar-fixed-top navbar-inverse">
+<md-toolbar>
+  <span>{{currentDemo.companyName}}</span>
+  <span class="spacer"></span>
+  <span>
+    <button md-button [mdMenuTriggerFor]="menu">Menu</button>
+  </span>
+</md-toolbar>
+
+<md-menu #menu="mdMenu" [overlapTrigger]="false">
+  <button md-menu-item *ngFor="let demo of demos" (click)="switchDemo(demo)" mdTooltip="Switch demo to {{demo.name}}" mdTooltipPosition="left">
+    <md-icon>{{demo.icon}}</md-icon>
+    <span>{{demo.name}}</span>
+  </button>
+  <md-list>
+    <md-divider></md-divider>
+  </md-list>
+  <button md-menu-item (click)="openInfoDialog()" mdTooltip="Information about the Email Automation Accelerator" mdTooltipPosition="left">
+    <md-icon>info</md-icon>
+    <span>About</span>
+  </button>
+</md-menu>
+
+<!-- <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -9,7 +30,6 @@
         <span class="icon-bar"></span>
       </button>
       <a href="/dashboard" class="navbar-brand" class="logoAtag">
-        <!-- {{currentDemo.companyName}} -->
         <div *ngIf="currentDemo.companyName == 'ACME Insurance'">
           <img class="logoImage" src="../../../assets/img/logos/armorInsurance_logo.png" alt="{{currentDemo.companyName}}">
         </div>
@@ -22,7 +42,6 @@
       </a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a>Email Automation Accelerator</a></li>
@@ -39,6 +58,6 @@
             </ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </div>
+  </div>
+</nav> -->

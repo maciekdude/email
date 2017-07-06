@@ -8,12 +8,14 @@ export class CurrentDemoService {
     {
       id:0,
       name:'Insurance',
-      companyName:'ACME Insurance'
+      companyName:'ACME Insurance',
+      icon:'security'
     },
     {
       id:1,
       name:'Workstation Management',
-      companyName:'GBM Workstation Management'
+      companyName:'GBM Workstation Management',
+      icon:'computer'
     }
   ]
 

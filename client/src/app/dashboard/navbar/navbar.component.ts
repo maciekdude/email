@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CurrentDemoService } from '../services/current-demo.service'
+import { MdDialog, MdDialogRef } from '@angular/material'
+import { AboutComponent } from '../about/about.component';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +11,8 @@ import { CurrentDemoService } from '../services/current-demo.service'
 export class NavbarComponent implements OnInit {
 
   constructor(
-    private currentDemoService:CurrentDemoService
+    private currentDemoService:CurrentDemoService,
+    public dialog: MdDialog
   ) { }
 
   demos = []
@@ -18,6 +21,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.demos = this.currentDemoService.demos
+    console.log(this.demos)
 
     this.currentDemoService.changeDemo.subscribe( (demo) =>{
       this.currentDemo = demo
@@ -26,6 +30,10 @@ export class NavbarComponent implements OnInit {
 
   switchDemo(demo){
     this.currentDemoService.switchDemo(demo)
+  }
+
+  openInfoDialog(){
+    let dialogRef = this.dialog.open(AboutComponent);
   }
 
 }

@@ -24,11 +24,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModule, PaginationModule, ProgressbarModule, PopoverModule, TooltipModule } from 'ngx-bootstrap';
 
 // material
-import {MdInputModule, MdIconModule, MdListModule, MdDialogModule, MdToolbarModule, MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule, MdChipsModule, MdTooltipModule} from '@angular/material';
+import {MdMenuModule, MdInputModule, MdIconModule, MdListModule, MdDialogModule, MdToolbarModule, MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule, MdChipsModule, MdTooltipModule} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { IntentDialogComponent } from './overview/intent-dialog/intent-dialog.component';
 import { SortByPipe } from './pipes/sort-by.pipe';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   imports: [
@@ -56,7 +57,8 @@ import { SortByPipe } from './pipes/sort-by.pipe';
     MdDialogModule,
     MdListModule,
     MdIconModule,
-    MdInputModule
+    MdInputModule,
+    MdMenuModule
   ],
   declarations: [
     DashboardComponent,
@@ -68,7 +70,8 @@ import { SortByPipe } from './pipes/sort-by.pipe';
     OverviewComponent,
     NavbarComponent,
     IntentDialogComponent,
-    SortByPipe
+    SortByPipe,
+    AboutComponent
   ],
 providers: [
   EmailService,
@@ -78,7 +81,8 @@ providers: [
   EmailsStorageService
 ],
 entryComponents: [
-  IntentDialogComponent
+  IntentDialogComponent,
+  AboutComponent
 ]
 })
 export class AppDashboardModule { }
