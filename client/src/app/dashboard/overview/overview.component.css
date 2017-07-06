@@ -65,3 +65,9 @@
 .intentCardOpenButton{
   float:right;
 }
+/*.c3-axis.c3-axis-x .tick {
+   display: none !important;
+}*/
+.c3-axis-x .tick {
+    display: none;
+}

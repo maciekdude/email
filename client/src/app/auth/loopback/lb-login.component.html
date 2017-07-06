@@ -1,7 +1,37 @@
-<div *ngIf="isError" class="alert alert-danger">
-  <p>{{errorMsg}}</p>
+<div class="background">
+  <div class="contentArea">
+    <md-toolbar>
+      <span>Email Automation Accelerator</span>
+      <span class="spacer"></span>
+      <a mdTooltip="Watson Accelerators" href="https://watsonaccelerators.mybluemix.net/" target="_blank">
+        <img class="watsonIcon" src="./assets/img/watson/watson_w.png" alt="Watson">
+      </a>
+    </md-toolbar>
+    <md-card>
+      <md-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+          <div *ngIf="isError">
+            <md-chip-list>
+              <md-chip color="primary" selected="true">{{errorMsg}}</md-chip>
+            </md-chip-list>
+          </div>
+          <br>
+          <md-input-container class="formItems">
+            <input mdInput placeholder="Username" formControlName="username" type="text" required focused>
+            <md-error>Username is required.</md-error>
+          </md-input-container>
+          <br>
+          <md-input-container class="formItems">
+            <input mdInput placeholder="Password" formControlName="password" type="password" required>
+          </md-input-container>
+          <br>
+          <button class="formItems" [disabled]="!loginForm.valid" md-raised-button type="submit">Sign In</button>
+        </form>
+      </md-card-content>
+    </md-card>
+  </div>
 </div>
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-sm-6 col-md-4 col-md-offset-4">
       <div class="panel panel-default">
@@ -49,4 +79,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

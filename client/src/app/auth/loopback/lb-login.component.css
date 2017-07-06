@@ -1,7 +1,34 @@
-.container {
-  margin-top:200px
+.background{
+  background-image:url('/assets/img/background/cityBuilding.jpg');
+  height:100vh;
+  width:100vw;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
 }
-
-.panel {
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.30);
+.contentArea{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.spacer{
+  flex: 1 1 auto;
+}
+.watsonIcon{
+  max-height: 45px;
+}
+md-card{
+  width: 100%;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(66, 66, 66, 0.9);
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.formItems{
+  width: 25vw;
 }
