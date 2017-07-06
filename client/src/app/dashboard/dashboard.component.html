@@ -1,25 +1,24 @@
 <app-navbar></app-navbar>
+<div class="pageWrapper">
+  <md-sidenav-container>
+    <md-sidenav mode="side">
+      <app-app-sidebar></app-app-sidebar>
+    </md-sidenav>
+    <div class="my-content">Main content</div>
 
-<div id="wrapper" [class.toggled]="isToggled">
-
-  <app-app-sidebar (onToggled)="onToggled()"></app-app-sidebar>
-
-  <!-- Page Content -->
-  <div id="page-content-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6">
-          <app-email-view></app-email-view>
-          <app-response></app-response>
-        </div>
-        <div class="col-lg-6">
-          <app-summary></app-summary>
-          <app-actions></app-actions>
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <app-email-view></app-email-view>
+            <app-response></app-response>
+          </div>
+          <div class="col-lg-6">
+            <app-summary></app-summary>
+            <app-actions></app-actions>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- /#page-content-wrapper -->
-
+  </md-sidenav-container>
 </div>
-<!-- /#wrapper -->
