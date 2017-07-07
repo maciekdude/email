@@ -1,24 +1,16 @@
 <app-navbar></app-navbar>
 <div class="pageWrapper">
-  <md-sidenav-container>
-    <md-sidenav mode="side">
-      <app-app-sidebar></app-app-sidebar>
-    </md-sidenav>
-    <div class="my-content">Main content</div>
-
-    <div id="page-content-wrapper">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <app-email-view></app-email-view>
-            <app-response></app-response>
-          </div>
-          <div class="col-lg-6">
-            <app-summary></app-summary>
-            <app-actions></app-actions>
-          </div>
-        </div>
-      </div>
+  <div class="sideBar">
+    <app-app-sidebar></app-app-sidebar>
+  </div>
+  <div class="pageContent">
+    <div class="pageColumn">
+      <app-email-view></app-email-view>
+      <app-response></app-response>
     </div>
-  </md-sidenav-container>
+    <div class="pageColumn">
+      <app-summary></app-summary>
+      <app-actions></app-actions>
+    </div>
+  </div>
 </div>

@@ -24,7 +24,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModule, PaginationModule, ProgressbarModule, PopoverModule, TooltipModule } from 'ngx-bootstrap';
 
 // material
-import {MdMenuModule, MdInputModule, MdIconModule, MdListModule, MdDialogModule, MdToolbarModule, MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule, MdChipsModule, MdTooltipModule} from '@angular/material';
+import {MdProgressSpinnerModule, MdMenuModule, MdInputModule, MdIconModule, MdListModule, MdDialogModule, MdToolbarModule, MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule, MdChipsModule, MdTooltipModule} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { IntentDialogComponent } from './overview/intent-dialog/intent-dialog.component';
@@ -58,7 +58,8 @@ import { AboutComponent } from './about/about.component';
     MdListModule,
     MdIconModule,
     MdInputModule,
-    MdMenuModule
+    MdMenuModule,
+    MdProgressSpinnerModule
   ],
   declarations: [
     DashboardComponent,

@@ -2,59 +2,17 @@
   margin-top: 64px;
   background-image: url('./../../assets/img/background/dark-triangles.png');
   height:calc(100vh - 64px);
+  display: flex;
 }
 
-
-
-.navbar{
-  margin-bottom: 0px;
+.pageContent{
+  display: flex;
+  height:100%;
+  overflow: scroll;
 }
 
-#wrapper {
-    background-image: url('./../../assets/img/background/dark-triangles.png');
-    padding-left: 0;
-    padding-top: 50px;
-    height: calc(100vh);
-    overflow-y: scroll;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-
+.pageColumn{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
 }
-
-#wrapper.toggled {
-    padding-left: 50px;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    padding: 15px;
-    height:100%;
-    overflow-y: scroll;
-}
-
-/*#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-
-@media(min-width:768px) {
-    #wrapper {
-        padding-left: 250px;
-    }
-
-    #wrapper.toggled {
-        padding-left: 50px;
-    }
-
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-    }
-
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
-}*/
