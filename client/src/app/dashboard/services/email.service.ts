@@ -90,8 +90,11 @@ export class EmailService {
         }
     }
     if(this.emails.length == emailsAnalyzed){
+      // add emails to firstEmail array (everything but 2 most recent emails)
       this.firstEmail = []
-      this.firstEmail.push(this.emails[0])
+      let firstEmails = this.emails.slice(0)
+      firstEmails.splice(0,2)
+      this.firstEmail = firstEmails
       this.emailsReady.next(this.emails)
     }
   }
