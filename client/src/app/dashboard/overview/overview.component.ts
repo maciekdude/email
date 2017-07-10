@@ -32,10 +32,15 @@ export class OverviewComponent implements OnInit {
   intents = []
   intentNamesforChart = []
 
+  // for the c3 chart
+  chart:any
+
   ngOnInit() {
     // add emails after enrichments
     this.emailService.emailsReady.subscribe( (allEmails) =>{
       this.emails = allEmails
+      this.intentNamesforChart = []
+      this.intents = []
       this.runAnalysis()
     })
   }
@@ -124,7 +129,7 @@ export class OverviewComponent implements OnInit {
       let date = this.emails[i].timestamp
       let requestType = this.emails[i].requestType
       // adding to array of chart variables
-      if(!this.intentNamesforChart.hasOwnProperty(requestType)){
+      if(!this.intentNamesforChart.hasOwnProperty(requestType) && requestType !== null){
         this.intentNamesforChart.push(requestType)
       }
       let foundItem = 0
@@ -163,8 +168,7 @@ export class OverviewComponent implements OnInit {
 
   // c3 chart of intents over time
   buildIntentsChart(){
-
-    var chart = c3.generate({
+    this.chart = c3.generate({
         bindto: '#emailIntentsChart',
         data: {
 
@@ -182,8 +186,7 @@ export class OverviewComponent implements OnInit {
                 }
             }
         }
-    });
-
+    })
   }
 
 }

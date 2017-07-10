@@ -9,10 +9,10 @@
       <span class='spacer'></span>
       <button md-button (click)="routeToEmails()">View Emails!</button>
     </md-toolbar>
-    <div class="containerX">
-      <div fxLayout="row wrap" class="colored box nopad" >
-        <div class="gridTileDiv" fxFlex *ngFor='let type of requestTypes'>
-          <md-card>
+    <div class="intentRow">
+      <div *ngFor='let type of requestTypes'>
+        <div class="cardHolder" *ngIf="type.name && type.name.length>0">
+          <md-card *ngIf="type.name && type.name.length>0">
             <md-card-header>
               <md-card-title>Intent</md-card-title>
               <md-card-subtitle>Identified by Conversation Services</md-card-subtitle>

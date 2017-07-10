@@ -4,8 +4,9 @@
   overflow-y: scroll;
 }
 
-.intentsRow{
-  background-color: whitesmoke;
+.intentRow{
+  display: flex;
+  justify-content: space-around;
 }
 
 .addToPolicy{
@@ -47,8 +48,9 @@
   float: right;
 }
 
-.gridTileDiv{
+.cardHolder{
   padding: 1em;
+  flex-grow:1;
 }
 
 .spacer {
@@ -65,9 +67,10 @@
 .intentCardOpenButton{
   float:right;
 }
-/*.c3-axis.c3-axis-x .tick {
-   display: none !important;
-}*/
 .c3-axis-x .tick {
     display: none;
+}
+
+.c3-axis-x{
+  color:white important!;
 }

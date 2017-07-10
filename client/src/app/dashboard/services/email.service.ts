@@ -44,7 +44,6 @@ export class EmailService {
   }
 
   runWatsonAnalysis(){
-    let responseCounter = 0
     for(let i of this.emails){
       let message = i.text
       this.conversationService.sendMessage(message).subscribe(response => {
@@ -53,16 +52,11 @@ export class EmailService {
         }
       })
       this.nluService.analyzeText(message).subscribe(response => {
-        let entityResponseCounter = 0
-        for(let n of response[0].entities){
-          if(i.entities.hasOwnProperty(n.type)){
-            i.entities[n.type] = n.text
-            entityResponseCounter++
-            if(entityResponseCounter == response[0].entities.length){
-              responseCounter++
-              if(responseCounter == this.emails.length){
-                  this.doEntityCheck()
-              }
+        if(response[0]){
+          for(let n of response[0].entities){
+            if(i.entities.hasOwnProperty(n.type)){
+              i.entities[n.type] = n.text
+              this.doEntityCheck()
             }
           }
         }
