@@ -10,7 +10,7 @@ import { NluService } from './nlu.service';
 import { CurrentDemoService } from './current-demo.service';
 import { EmailsStorageService } from './emails-storage.service';
 
-import { Email } from './email';
+import { Email } from './email.class';
 
 @Injectable()
 export class EmailService {

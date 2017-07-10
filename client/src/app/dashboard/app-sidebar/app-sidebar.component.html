@@ -2,7 +2,7 @@
   <md-toolbar>
     <span>Emails</span>
     <span class="spacer"></span>
-    <span><button md-button (click)="refreshEmails()"><i class="material-icons">refresh</i></button></span>
+    <span><button md-button (click)="refreshEmails()" mdTooltip="Refresh emails"><i class="material-icons">refresh</i></button></span>
   </md-toolbar>
   <md-card>
     <md-spinner *ngIf="loading"></md-spinner>

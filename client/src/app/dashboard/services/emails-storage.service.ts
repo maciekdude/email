@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Email } from './email';
+import { Email } from './email.class';
 
 @Injectable()
 export class EmailsStorageService {

@@ -2,7 +2,7 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { EmailService } from '../services/email.service';
-import { Email } from '../services/email'
+import { Email } from '../services/email.class'
 
 import {MdDialog} from '@angular/material';
 

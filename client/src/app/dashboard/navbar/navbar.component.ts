@@ -21,7 +21,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.demos = this.currentDemoService.demos
-    console.log(this.demos)
 
     this.currentDemoService.changeDemo.subscribe( (demo) =>{
       this.currentDemo = demo

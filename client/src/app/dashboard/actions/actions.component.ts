@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { EmailService } from '../services/email.service';
-import { Email } from '../services/email'
+import { Email } from '../services/email.class'
 
 @Component({
   selector: 'app-actions',

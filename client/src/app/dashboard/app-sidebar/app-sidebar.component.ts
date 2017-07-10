@@ -4,7 +4,7 @@ import { LoopbackLoginService } from '../../auth/loopback/lb-login.service';
 
 import { EmailService } from '../services/email.service';
 
-import { Email } from '../services/email'
+import { Email } from '../services/email.class'
 
 @Component({
   selector: 'app-app-sidebar',
