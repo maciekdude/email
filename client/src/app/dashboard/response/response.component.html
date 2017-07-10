@@ -4,7 +4,7 @@
     <md-card-subtitle>To: {{currentEmail.from}}</md-card-subtitle>
   </md-card-header>
   <md-card-content>
-    <div id="responseHTML">{{currentEmail.response}}</div>
+    <div class="preset">{{currentEmail.response}}</div>
   </md-card-content>
 </md-card>
 
@@ -16,19 +16,7 @@
   <md-card-content>
     <div id="responseArea" contenteditable>
       <div class="preset" *ngIf="itemsMissing.length > 0">
-        <span>Hi,</span>
-        <br>
-        <br>
-        <span>Thank you for sending this through; however, we are missing a few items. Could you please provide us with the following:</span>
-        <br>
-        <br>
-        <span>
-          <ul>
-            <li *ngFor='let item of itemsMissing'>{{item}}</li>
-          </ul>
-        </span>
-        <br>
-        <span>Thank you!</span>
+        {{autoReply}}
       </div>
     </div>
   </md-card-content>

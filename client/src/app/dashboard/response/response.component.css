@@ -2,3 +2,8 @@
   border: 1px solid grey;
   padding: 1em;
 }
+
+.preset{
+  white-space: pre-wrap;
+  white-space: pre-line;
+}
