@@ -13,8 +13,8 @@ export class CurrentDemoService {
     },
     {
       id:1,
-      name:'Workstation Management',
-      companyName:'GBM Workstation Management',
+      name:'IT Asset Management',
+      companyName:'IT Asset Management',
       icon:'computer'
     }
   ]

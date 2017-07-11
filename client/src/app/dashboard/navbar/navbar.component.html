@@ -2,6 +2,14 @@
   <span>{{currentDemo.companyName}}</span>
   <span class="spacer"></span>
   <span>
+    <button md-button routerLink="/dashboard/overview" routerLinkActive="buttonActive">
+      <md-icon>dashboard</md-icon>
+      <span>Overview</span>
+    </button>
+    <button md-button routerLink="/dashboard/emails" routerLinkActive="buttonActive">
+      <md-icon>email</md-icon>
+      <span>Emails</span>
+    </button>
     <button md-button [mdMenuTriggerFor]="menu">Menu</button>
   </span>
 </md-toolbar>

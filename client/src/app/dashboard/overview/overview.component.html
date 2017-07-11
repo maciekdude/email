@@ -4,11 +4,7 @@
   <div class="container">
     <br><br><br><br>
 
-    <md-toolbar>
-      <span>Dashboard Overview</span>
-      <span class='spacer'></span>
-      <button md-button (click)="routeToEmails()">View Emails!</button>
-    </md-toolbar>
+    <md-toolbar>Dashboard Overview</md-toolbar>
     <div class="intentRow">
       <div *ngFor='let type of requestTypes'>
         <div class="cardHolder" *ngIf="type.name && type.name.length>0">
