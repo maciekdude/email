@@ -18,9 +18,12 @@ export class SummaryComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    // get the email that we just switched to
     this.emailService.emailChange.subscribe( (email) => {
       this.currentEmail = email
+      // clear out current entities
       this.currentEntities = []
+      // for each entity in the email, add it to currentEntities
       let entities = email.entities
       for(let i in entities){
         this.currentEntities.push({ name:i, value:entities[i]})
@@ -28,6 +31,7 @@ export class SummaryComponent implements OnInit {
     })
   }
 
+  // if the user adds in an entity, update it in the current entities and as well as the actual email object
   updateEntities(){
     let newEntities = {}
     for(let i of this.currentEntities){

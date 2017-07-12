@@ -5,16 +5,22 @@ import { Email } from './email.class';
 @Injectable()
 export class EmailsStorageService {
 
+  // store of all the emails for each scenario
+  // emails is an array of arrays for each scenario: [[insurance emails], [IT asset emails]]
   emails: [Array<Email>] = [
       [
+        // sample commentary for an email object
         {
           id:"1234",
           from: "regisco@mail.com",
           to: "process@insurance.com",
           subject: "Add New Driver To Policy",
+          // this is the text that is sent to be analyzed by WCS and NLU
           text: "Add Irvine Brahams to fleet policy #: UL32953 , car policy: 050-632-200, zip: 32940, VIN: JHMZE2H73AS009608, License: 4382913, P#:(321) 321-2145 Thanks!!",
+          // WCS updates the requestType
           requestType: null,
           status:"Incomplete",
+          // NLU (w/ WKS) finds the entities
           entities: {
             Zip_Code: null,
             Cell_Number: null,
@@ -25,6 +31,7 @@ export class EmailsStorageService {
             Last_Name: null,
             Vin_Number: null
           },
+          // a response can be auto sent by the app if all entities are found, otherwise the user can send a response
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
         },

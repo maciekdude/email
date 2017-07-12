@@ -25,7 +25,6 @@ import { AlertModule, CollapseModule, BsDropdownModule, ButtonsModule, TabsModul
 
 // material
 import {MdProgressSpinnerModule, MdMenuModule, MdInputModule, MdIconModule, MdListModule, MdDialogModule, MdToolbarModule, MdButtonModule, MdCheckboxModule, MdCardModule, MdGridListModule, MdChipsModule, MdTooltipModule} from '@angular/material';
-import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { IntentDialogComponent } from './overview/intent-dialog/intent-dialog.component';
 import { SortByPipe } from './pipes/sort-by.pipe';
@@ -46,7 +45,6 @@ import { AboutComponent } from './about/about.component';
     PopoverModule.forRoot(),
     TooltipModule.forRoot(),
     // material
-    FlexLayoutModule,
     MdButtonModule,
     MdCheckboxModule,
     MdCardModule,

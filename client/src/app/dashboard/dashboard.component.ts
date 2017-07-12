@@ -10,21 +10,11 @@ import { EmailService } from './services/email.service';
 @Injectable()
 export class DashboardComponent implements OnInit {
 
-  public isToggled: boolean = false;
-
   constructor(
     private emailService:EmailService
   ) { }
 
   ngOnInit() {
-  }
-
-  onToggled() {
-    this.isToggled = (this.isToggled ? false : true);
-  }
-
-  refreshEmails(){
-    this.emailService.refreshEmails()
   }
 
 }

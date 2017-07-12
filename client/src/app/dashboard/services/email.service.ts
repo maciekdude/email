@@ -15,14 +15,19 @@ import { Email } from './email.class';
 @Injectable()
 export class EmailService {
 
+  // the current demo scenario (insurance OR IT asset mgmt)
   currentDemo = this.currentDemoService.currentDemo
 
+  // the first emails sent through (all but 2, to showcase emails coming in in real time)
   firstEmail: Array<Email> = []
-
+  // all emails for the given scenario
   emails: Array<Email> = this.emailsStorageService.emails[this.currentDemo.id]
 
+  // switching between individual emails
   emailChange: Subject<any> = new Subject<any>();
+  // indicating emails are ready
   emailsReady: Subject<any> = new Subject<any>();
+  // sending emails through (could be firstEmail or all emails)
   emailsUpdate: Subject<any> = new Subject<any>();
 
   constructor(

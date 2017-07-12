@@ -29,6 +29,7 @@ export class NluService {
     })
   }
 
+  // analyze text with WKS model through NLU call
   analyzeText(text){
     let urlReadyText = encodeURIComponent(text)
     let urlWithQuery = this.url + '&text=' + urlReadyText
