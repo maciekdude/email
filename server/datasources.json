@@ -32,7 +32,10 @@
     "auth": {
       "user": "${CONVERSATION_API_USER}",
       "password": "${CONVERSATION_API_PASSWORD}"
-    }
+    },
+    "plugin": "retry",
+    "retryAttempts": 10,
+    "retryTimeout": 1000
   },
   "watson-conversation1": {
     "name": "watson-conversation1",
@@ -62,7 +65,10 @@
     "auth": {
       "user": "${CONVERSATION_API_USER}",
       "password": "${CONVERSATION_API_PASSWORD}"
-    }
+    },
+    "plugin": "retry",
+    "retryAttempts": 10,
+    "retryTimeout": 1000
   },
   "nlu0": {
     "name": "nlu0",
@@ -100,7 +106,10 @@
           ]
         }
       }
-    ]
+    ],
+    "plugin": "retry",
+    "retryAttempts": 10,
+    "retryTimeout": 1000
   },
   "nlu1": {
     "name": "nlu1",
@@ -138,6 +147,9 @@
           ]
         }
       }
-    ]
+    ],
+    "plugin": "retry",
+    "retryAttempts": 10,
+    "retryTimeout": 1000
   }
 }

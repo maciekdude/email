@@ -226,13 +226,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
@@ -246,13 +247,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 6, 2017 10:13:00")
@@ -266,13 +268,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
@@ -286,13 +289,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 4, 2017 10:13:00")
@@ -306,13 +310,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
@@ -326,13 +331,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 6, 2017 10:13:00")
@@ -346,13 +352,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
@@ -366,13 +373,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 4, 2017 10:13:00")
@@ -386,13 +394,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
@@ -406,13 +415,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 6, 2017 10:13:00")
@@ -426,13 +436,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
@@ -446,13 +457,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 4, 2017 10:13:00")
@@ -466,13 +478,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
@@ -486,13 +499,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 6, 2017 10:13:00")
@@ -506,13 +520,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
@@ -526,13 +541,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 4, 2017 10:13:00")
@@ -546,13 +562,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
@@ -566,13 +583,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 6, 2017 10:13:00")
@@ -586,13 +604,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
@@ -606,13 +625,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 4, 2017 10:13:00")
@@ -626,13 +646,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
@@ -646,13 +667,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 6, 2017 10:13:00")
@@ -666,13 +688,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
@@ -686,13 +709,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 4, 2017 10:13:00")
@@ -706,13 +730,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
@@ -726,13 +751,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 6, 2017 10:13:00")
@@ -746,13 +772,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
@@ -766,13 +793,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 4, 2017 10:13:00")
@@ -786,13 +814,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
@@ -806,13 +835,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 6, 2017 10:13:00")
@@ -826,13 +856,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 7, 2017 10:13:00")
@@ -846,13 +877,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 4, 2017 10:13:00")
@@ -866,13 +898,14 @@ export class EmailsStorageService {
           requestType: null,
           status:"Incomplete",
           entities: {
-            Zip: null,
-            State: null,
-            City: null,
-            Street_Number: null,
-            Last_Name: null,
+            Zip_Code: null,
+            Cell_Number: null,
+            LIC: null,
+            PL_Policy: null,
+            CL_Policy: null,
             First_Name: null,
-            Serial_Number: null
+            Last_Name: null,
+            Vin_Number: null
           },
           response: null,
           timestamp: new Date("June 5, 2017 10:13:00")
