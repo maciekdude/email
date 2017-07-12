@@ -20,20 +20,19 @@ export class NluService {
     private currentDemoService: CurrentDemoService
   ) {
     this.access_token = auth.get().token
-    this.url = '/api/nlu' + this.currentDemo.id + '/analyzeText?access_token=' + this.access_token
+    this.url = '/api/nlu' + this.currentDemo.id + '/analyzeText?'
 
     // subscribe to demo change
     this.currentDemoService.changeDemo.subscribe( (demo) =>{
       this.currentDemo = demo
-      this.url = '/api/nlu' + demo.id + '/analyzeText?access_token=' + this.access_token
+      this.url = '/api/nlu' + demo.id + '/analyzeText?'
     })
   }
 
   analyzeText(text){
     let urlReadyText = encodeURIComponent(text)
     let urlWithQuery = this.url + '&text=' + urlReadyText
-    return this.http.post(urlWithQuery, '')
-      .map((res: Response) => res.json())
+    return this.auth.makeAuthenticatedHttpPost(urlWithQuery, '')
   }
 
 }

@@ -20,12 +20,12 @@ export class ConversationService {
     private currentDemoService: CurrentDemoService
   ) {
     this.access_token = auth.get().token
-    this.url = '/api/Conversation' + this.currentDemo.id + '/message?access_token=' + this.access_token
+    this.url = '/api/Conversation' + this.currentDemo.id + '/message'
 
     // subscribe to demo change
     this.currentDemoService.changeDemo.subscribe( (demo) =>{
       this.currentDemo = demo
-      this.url = '/api/Conversation' + demo.id + '/message?access_token=' + this.access_token
+      this.url = '/api/Conversation' + demo.id + '/message'
     })
   }
 
@@ -35,8 +35,7 @@ export class ConversationService {
         text: message
       }
     }
-    return this.http.post(this.url, body)
-      .map((res: Response) => res.json());
+    return this.auth.makeAuthenticatedHttpPost(this.url, body)
   }
 
 }
