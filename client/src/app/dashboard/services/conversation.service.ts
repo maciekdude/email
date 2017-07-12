@@ -29,6 +29,7 @@ export class ConversationService {
     })
   }
 
+  // send message (text) to analyze w/ conversation
   sendMessage(message: string): Observable<any> {
     let body: any = {
       input: {

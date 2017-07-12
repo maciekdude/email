@@ -15,13 +15,13 @@ export class NavbarComponent implements OnInit {
     public dialog: MdDialog
   ) { }
 
+  // navigate between these demos:
   demos = []
 
   currentDemo = this.currentDemoService.currentDemo
 
   ngOnInit() {
     this.demos = this.currentDemoService.demos
-
     this.currentDemoService.changeDemo.subscribe( (demo) =>{
       this.currentDemo = demo
     })

@@ -51,11 +51,13 @@ export class EmailService {
   runWatsonAnalysis(){
     for(let i of this.emails){
       let message = i.text
+      // run each email through conversation to get the intent
       this.conversationService.sendMessage(message).subscribe(response => {
         if(response[0].intents[0]){
           i.requestType = response[0].intents[0].intent
         }
       })
+      // run each email through NLU to check the entities
       this.nluService.analyzeText(message).subscribe(response => {
         if(response[0]){
           for(let n of response[0].entities){
@@ -69,6 +71,7 @@ export class EmailService {
     }
   }
 
+  // check which entities are complet
   doEntityCheck(){
     let emailsAnalyzed = 0
     for(let i of this.emails){
@@ -80,6 +83,7 @@ export class EmailService {
             completeEntities++
           }
         }
+        // if complete add auto response
         if(completeEntities == totalEntities){
           i.status = "Complete"
           i.response = "Thanks, all done! We've automatically completed your request."
@@ -96,11 +100,6 @@ export class EmailService {
       this.firstEmail = firstEmails
       this.emailsReady.next(this.emails)
     }
-  }
-
-
-  automate(){
-
   }
 
   getEmails(){
@@ -127,6 +126,7 @@ export class EmailService {
   }
 
   refreshEmails(){
+    // pass in ALL emails
     this.emailsUpdate.next(this.emails)
   }
 

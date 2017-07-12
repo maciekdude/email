@@ -4,6 +4,7 @@ import { Subject } from 'rxjs/Subject';
 @Injectable()
 export class CurrentDemoService {
 
+  // the demo scenarios - more could be added (but would need to add emails as well)
   demos = [
     {
       id:0,

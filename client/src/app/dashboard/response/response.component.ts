@@ -19,17 +19,18 @@ export class ResponseComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    // switch emails if they change
     this.emailService.emailChange.subscribe( (email) => {
       this.itemsMissing = []
       this.currentEmail = email
       this.reply = ''
-      // document.getElementById('responseHTML').innerHTML = this.currentEmail.response
       let entities = email.entities
       for(let i in entities){
         if(entities[i] == null){
           this.itemsMissing.push(i)
         }
       }
+      // if no response, build auto reply that can be sent by the user
       if(!this.currentEmail.response){
         this.buildAutoReply()
       }
