@@ -9,5 +9,7 @@
   "NATURAL_LANGUAGE_PASSWORD1": "",
   "NATURAL_LANGUAGE_URL": "https://gateway.watsonplatform.net/natural-language-understanding/api",
   "NATURAL_LANGUAGE_VERSION": "2017-02-27",
-  "NATURAL_LANGUAGE_TEXT_COMBINED_URL": "https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2017-02-27"
+  "NATURAL_LANGUAGE_TEXT_COMBINED_URL": "https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2017-02-27",
+  "WKS0":"",
+  "WKS1":""
 }

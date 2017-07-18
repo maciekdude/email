@@ -94,7 +94,7 @@
             "text" : "{text='':string}",
             "features" : {
               "entities": {
-                "model": "c8744ad4-369a-43a9-ab84-12272f06f572"
+                "model": "${WKS0}"
               }
             }
           },
@@ -135,7 +135,7 @@
             "text" : "{text='':string}",
             "features" : {
               "entities": {
-                "model": "74c51c71-c479-42ec-ad62-fe07f5034c85"
+                "model": "${WKS1}"
               }
             }
           },
