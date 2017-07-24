@@ -1,15 +1,15 @@
 {
-  "CONVERSATION0_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/***WORKSPACE_ID***/message?version=2016-09-20"},
-  "CONVERSATION1_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/***WORKSPACE_ID***/message?version=2016-09-20"},
+  "CONVERSATION0_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/4213be4a-c730-4746-8391-28a6ee82c903/message?version=2016-09-20"},
+  "CONVERSATION1_API_URL": {"expr": "Conversation.*", "field": "credentials.url", "append": "/v1/workspaces/4d1611d9-e18e-4bf2-aef1-c4c81b05566c/message?version=2016-09-20"},
   "CONVERSATION_API_USER": {"expr": "Conversation.*", "field": "credentials.username"},
   "CONVERSATION_API_PASSWORD": {"expr": "Conversation.*", "field": "credentials.password"},
-  "NATURAL_LANGUAGE_USERNAME0": "",
-  "NATURAL_LANGUAGE_PASSWORD0": "",
-  "NATURAL_LANGUAGE_USERNAME1": "",
-  "NATURAL_LANGUAGE_PASSWORD1": "",
+  "NATURAL_LANGUAGE_USERNAME0": "b4b08d6c-8040-47b4-90b1-bb4f052a20c8",
+  "NATURAL_LANGUAGE_PASSWORD0": "e0KPoXDjXr2V",
+  "NATURAL_LANGUAGE_USERNAME1": "1e076c7d-973c-4d88-b3df-f2e080200ca9",
+  "NATURAL_LANGUAGE_PASSWORD1": "dPGeNAPd6HC2",
   "NATURAL_LANGUAGE_URL": "https://gateway.watsonplatform.net/natural-language-understanding/api",
   "NATURAL_LANGUAGE_VERSION": "2017-02-27",
   "NATURAL_LANGUAGE_TEXT_COMBINED_URL": "https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2017-02-27",
-  "WKS0":"",
-  "WKS1":""
+  "WKS0":"c8744ad4-369a-43a9-ab84-12272f06f572",
+  "WKS1":"74c51c71-c479-42ec-ad62-fe07f5034c85"
 }

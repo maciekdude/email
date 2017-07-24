@@ -21,7 +21,7 @@ export class EmailService {
   // the first emails sent through (all but 2, to showcase emails coming in in real time)
   firstEmail: Array<Email> = []
   // all emails for the given scenario
-  emails: Array<Email> = this.emailsStorageService.emails[this.currentDemo.id]
+  emails: Array<Email>
 
   // switching between individual emails
   emailChange: Subject<any> = new Subject<any>();
@@ -37,41 +37,39 @@ export class EmailService {
     public emailsStorageService:EmailsStorageService,
     private http: Http
   ) {
-
-    // subscribe to demo change
-    this.currentDemoService.changeDemo.subscribe( (demo) =>{
-      this.currentDemo = demo
-      this.emails = this.emailsStorageService.emails[this.currentDemo.id]
+    this.emailsStorageService.getEmails().subscribe(data=>{
+      this.emails = data
       this.runWatsonAnalysis()
-      this.emailsUpdate.next(this.firstEmail)
     })
-    this.runWatsonAnalysis()
   }
 
   runWatsonAnalysis(){
     for(let i of this.emails){
       let message = i.text
-      // run each email through conversation to get the intent
-      this.conversationService.sendMessage(message).subscribe(response => {
-        if(response[0].intents[0]){
-          i.requestType = response[0].intents[0].intent
-        }
-      })
-      // run each email through NLU to check the entities
-      this.nluService.analyzeText(message).subscribe(response => {
-        if(response[0]){
-          for(let n of response[0].entities){
-            if(i.entities.hasOwnProperty(n.type)){
-              i.entities[n.type] = n.text
-              this.doEntityCheck()
+      // if the email hasn't already gone through enrichment
+      if(!i.requestType){
+        // run each email through conversation to get the intent
+        this.conversationService.sendMessage(message).subscribe(response => {
+          if(response[0].intents[0]){
+            i.requestType = response[0].intents[0].intent
+          }
+        })
+        // run each email through NLU to check the entities
+        this.nluService.analyzeText(message).subscribe(response => {
+          if(response[0]){
+            for(let n of response[0].entities){
+              if(i.entities.hasOwnProperty(n.type)){
+                i.entities[n.type] = n.text
+                this.doEntityCheck()
+              }
             }
           }
-        }
-      })
+        })
+      }
     }
   }
 
-  // check which entities are complet
+  // check which entities are complete
   doEntityCheck(){
     let emailsAnalyzed = 0
     for(let i of this.emails){

@@ -1,5 +1,6 @@
 export class Email {
   constructor(
+    public set: string,
     public id: string,
     public from: string,
     public to: string,
