@@ -3,14 +3,16 @@
 module.exports = function(Email) {
 
   Email.observe('before save', function enrich(ctx, next) {
+    var emailText = ctx.instance.text
     var Conversation0 = Email.app.models.Conversation0;
     var Conversation1 = Email.app.models.Conversation1;
     var nlu0 = Email.app.models.nlu0;
     var nlu1 = Email.app.models.nlu1;
+
     if (ctx.instance) {
       let input = {
         input:{
-          text:ctx.instance.text
+          text:emailText
         }
       }
       var convoAnalysis = new Promise((resolve, reject) =>{
@@ -24,7 +26,17 @@ module.exports = function(Email) {
           }
         })
       })
-      convoAnalysis.then(value => {
+      var nluAnalysis = new Promise((resolve, reject) =>{
+        nlu0.analyzeText(emailText).then(result => {
+          var addEntities = result[0].entities.map(item =>{
+            if(ctx.instance.entities.hasOwnProperty(item.type)){
+              ctx.instance.entities[item.type] = item.text
+            }
+          })
+          Promise.all(addEntities).then(value=>{resolve();})
+        })
+      })
+      Promise.all([convoAnalysis, nluAnalysis]).then(value => {
         next();
       })
     } else {

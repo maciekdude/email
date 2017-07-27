@@ -210,7 +210,7 @@
 },
 {
   "set":"insurance",
-  "from": ""to"mas@mail.com",
+  "from": "tomas@mail.com",
   "to": "process@acme.com",
   "subject": "Add Driver",
   "text": "Add Meredeth Bourdice with PL Policy Number of 050-632-200 and company policy of UL24638.",
