@@ -1,0 +1,30 @@
+{
+  "name": "cloudMailIn",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "email": {
+      "accepts": [
+        {
+          "arg":"email",
+          "type":"object"
+        }
+      ],
+      "returns": [],
+      "description": "send emails into the app",
+      "http": [
+        {
+          "path": "/sendMail",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

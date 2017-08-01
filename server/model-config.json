@@ -66,5 +66,9 @@
   "email": {
     "dataSource": "emails",
     "public": true
+  },
+  "cloudMailIn": {
+    "dataSource": null,
+    "public": true
   }
 }
