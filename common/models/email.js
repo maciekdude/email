@@ -10,6 +10,7 @@ module.exports = function(Email) {
     var nlu1 = Email.app.models.nlu1;
 
     if (ctx.instance) {
+      console.log(ctx.instance)
       let input = {
         input:{
           text:emailText
@@ -24,6 +25,9 @@ module.exports = function(Email) {
           } else {
             resolve();
           }
+        }, reject =>{
+          console.log(reject)
+          console.log(reject.Error)
         })
       })
       var nluAnalysis = new Promise((resolve, reject) =>{
@@ -35,6 +39,8 @@ module.exports = function(Email) {
           })
           Promise.all(addEntities).then(value=>{resolve();})
         })
+      }, reject =>{
+        console.log(reject)
       })
       Promise.all([convoAnalysis, nluAnalysis]).then(value => {
         next();
