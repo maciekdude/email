@@ -50,4 +50,23 @@ module.exports = function(Email) {
     }
   });
 
+  // var now = new Date();
+  // var millisTill12 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0) - now;
+  // if (millisTill12 < 0) {
+  //      millisTill12 += 86400000; // it's after 12am, try 12am tomorrow.
+  // }
+  // setTimeout(function(){
+  //
+  // }, millisTill12);
+
+  setInterval(function(){
+      console.log('//// RUNNING EVERY 5 SECONDS')
+      Email.destroyAll({
+        permanent:false
+      }, function(err, info){
+        console.log(err)
+        console.log(info)
+      })
+  }, 5000);
+
 };

@@ -50,6 +50,10 @@
     "timestamp": {
       "type": "String",
       "required": "true"
+    },
+    "permanent": {
+      "type": "Boolean",
+      "required": "true"
     }
   },
   "validations": [],
