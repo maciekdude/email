@@ -35,9 +35,19 @@ module.exports = function(Email) {
           var addEntities = result[0].entities.map(item =>{
             if(ctx.instance.entities.hasOwnProperty(item.type)){
               ctx.instance.entities[item.type] = item.text
-            }
+              return true
+            } else {return false}
           })
-          Promise.all(addEntities).then(value=>{resolve();})
+          Promise.all(addEntities).then(value=>{
+            let allTrue = value.every(item =>item)
+            console.log(allTrue)
+            if(allTrue){
+              console.log('all items are true')
+            } else {
+              console.log('at least one item is not true')
+            }
+            resolve()
+          })
         })
       }, reject =>{
         console.log(reject)
@@ -67,6 +77,6 @@ module.exports = function(Email) {
         console.log(err)
         console.log(info)
       })
-  }, 5000);
+  }, 60000);
 
 };
