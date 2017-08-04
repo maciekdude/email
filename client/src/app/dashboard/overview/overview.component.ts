@@ -29,8 +29,7 @@ export class OverviewComponent implements OnInit {
   // the current demo scenario (insurance OR IT asset mgmt)
   currentDemo = this.currentDemoService.currentDemo
 
-  allEmails: Array<Email> = []
-  emails: Array<Email> = []
+  emails: Array<Email> = this.emailService.currentEmails
 
   // analysis by request type (intent) - includes entity breakdown
   requestTypes = []
@@ -43,27 +42,12 @@ export class OverviewComponent implements OnInit {
   chart:any
 
   ngOnInit() {
-    // add emails after enrichments
-    this.emailService.emailsReady.subscribe( (allEmails) =>{
-      this.allEmails = allEmails
-      this.emails = []
-      for(let i of this.allEmails){
-        if(i.set === this.currentDemo.name){
-          this.emails.push(i)
-        }
-      }
-      this.intentNamesforChart = []
-      this.intents = []
-      this.runAnalysis()
-    })
-    this.currentDemoService.changeDemo.subscribe( (demo) =>{
-      this.currentDemo = demo
-      this.emails = []
-      for(let i of this.allEmails){
-        if(i.set === this.currentDemo.name){
-          this.emails.push(i)
-        }
-      }
+    this.intentNamesforChart = []
+    this.intents = []
+    this.runAnalysis()
+    this.emailService.emailsUpdate.subscribe( (currentEmails) =>{
+      console.log(currentEmails)
+      this.emails = currentEmails
       this.intentNamesforChart = []
       this.intents = []
       this.runAnalysis()

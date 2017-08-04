@@ -7,10 +7,10 @@
   <md-card>
     <md-spinner *ngIf="loading"></md-spinner>
     <md-nav-list dense>
-      <md-list-item *ngFor="let email of emails" (click)="activateEmail(email)">
+      <md-list-item *ngFor="let email of emails | SortByDate: '-timestamp'" (click)="activateEmail(email)">
         <md-icon md-list-icon>email</md-icon>
         <h4 md-line>{{email.subject}}</h4>
-        <p md-line> {{email.requestType}} | <span>{{email.status}}</span></p>
+        <p md-line> {{email.requestType}} <span>{{email.status}}</span></p>
       </md-list-item>
     </md-nav-list>
   </md-card>

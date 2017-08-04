@@ -28,6 +28,7 @@ import {MdProgressSpinnerModule, MdMenuModule, MdInputModule, MdIconModule, MdLi
 
 import { IntentDialogComponent } from './overview/intent-dialog/intent-dialog.component';
 import { SortByPipe } from './pipes/sort-by.pipe';
+import { SortByDatePipe } from './pipes/sort-by-date.pipe';
 import { AboutComponent } from './about/about.component';
 
 @NgModule({
@@ -70,6 +71,7 @@ import { AboutComponent } from './about/about.component';
     NavbarComponent,
     IntentDialogComponent,
     SortByPipe,
+    SortByDatePipe,
     AboutComponent
   ],
 providers: [
