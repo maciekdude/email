@@ -24,6 +24,12 @@ export class OverviewComponent implements OnInit {
     private router: Router,
     public dialog: MdDialog
   ) {
+    let endDate = new Date('September 1, 2017 00:00:00')
+    let today = new Date()
+    console.log(endDate)
+    if(endDate > today){
+      alert("Hey! You can now show email automation in realtime by sending in your own emails. Check out the about page from the menu to see how.")
+    }
   }
 
   // the current demo scenario (insurance OR IT asset mgmt)
