@@ -2,6 +2,7 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { EmailService } from '../services/email.service';
+import { CurrentDemoService } from '../services/current-demo.service';
 import { Email } from '../services/email.class'
 
 import {MdDialog} from '@angular/material';
@@ -19,11 +20,22 @@ export class OverviewComponent implements OnInit {
 
   constructor(
     private emailService: EmailService,
+    private currentDemoService: CurrentDemoService,
     private router: Router,
     public dialog: MdDialog
-  ) { }
+  ) {
+    let endDate = new Date('September 1, 2017 00:00:00')
+    let today = new Date()
+    console.log(endDate)
+    if(endDate > today){
+      alert("Hey! You can now show email automation in realtime by sending in your own emails. Check out the about page from the menu to see how.")
+    }
+  }
 
-  emails: Array<Email> = this.emailService.emails
+  // the current demo scenario (insurance OR IT asset mgmt)
+  currentDemo = this.currentDemoService.currentDemo
+
+  emails: Array<Email> = this.emailService.currentEmails
 
   // analysis by request type (intent) - includes entity breakdown
   requestTypes = []
@@ -36,9 +48,12 @@ export class OverviewComponent implements OnInit {
   chart:any
 
   ngOnInit() {
-    // add emails after enrichments
-    this.emailService.emailsReady.subscribe( (allEmails) =>{
-      this.emails = allEmails
+    this.intentNamesforChart = []
+    this.intents = []
+    this.runAnalysis()
+    this.emailService.emailsUpdate.subscribe( (currentEmails) =>{
+      console.log(currentEmails)
+      this.emails = currentEmails
       this.intentNamesforChart = []
       this.intents = []
       this.runAnalysis()
@@ -126,7 +141,7 @@ export class OverviewComponent implements OnInit {
     let firstItteration = true
     for(let i in this.emails){
 
-      let date = this.emails[i].timestamp
+      let date = new Date(this.emails[i].timestamp)
       let requestType = this.emails[i].requestType
       // adding to array of chart variables
       if(!this.intentNamesforChart.hasOwnProperty(requestType) && requestType !== null){

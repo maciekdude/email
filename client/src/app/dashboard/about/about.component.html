@@ -1,13 +1,13 @@
 <h1 md-dialog-title>Email Automation Accelerator</h1>
 <md-dialog-content>
-  <p>This Accelerator showcases Watson powered automation for email actions and responses. It leverages Watson Conversation Service to identify the intent of the email, then uses a Watson Knowledge Studio custom annotation model through Natural Language Understanding to extract key information for automating requests.</p>
+  <p>This Accelerator showcases Watson powered automation for email actions and responses. It leverages Watson Conversation Service to identify the intent of the email, then uses a Watson Knowledge Studio custom annotation model through Natural Language Understanding to extract key information for automating requests. The Accelerator demonstrates two email automation scenarios; the first is automating the addition of drivers to insurance policies and the second is automating tickets for workstation management departments. You can switch between the two scenarios with the menu dropdown at the top right of the nav bar.</p>
   <table>
     <tr>
       <td><img src="../assets/img/watson/watson_w.png" alt="Watson"></td>
       <td>
         <br>
-        <p>The Accelerator demonstrates two email automation scenarios; the first is automating the addition of drivers to insurance policies and the second is automating tickets for workstation management departments.</p>
-        <p>You can switch between the two scenarios with the menu dropdown at the top right of the nav bar.</p>
+        <h5><em>NEW!</em> Send in custom emails to <a target="_blank" href="mailto:watsonemailautomation@gmail.com">watsonemailautomation@gmail.com</a> for Insurance scenario</h5>
+        <p>You can send in your own email to the Insurance scenario in this email. Please ensure you format any emails sent in correctly with the appropriate entities, otherwise the trained WKS model will not be able to properly identify the email. You should also remove any signature in your email. Click refresh in the emails view after you send and the email will show up in the list of emails. All emails sent in will be removed within 20 minutes.</p>
       </td>
     </tr>
   </table>
@@ -16,15 +16,28 @@
   <div class="componentRow">
     <div class="col-md-3">
       <img class='componentImage' src="../assets/img/components/conv.png" alt="WCS">
-      <p class='componentText'>Watson Conversation Service</p>
+      <h5 class='componentText'>Watson Conversation Service</h5>
+      <p class='componentText'>Identify the type (intent) of emails</p>
     </div>
     <div class="col-md-3">
       <img class='componentImage' src="../assets/img/watson/watson_w.png" alt="WKS">
-      <p class='componentText'>Watson Knowledge Studio</p>
+      <h5 class='componentText'>Watson Knowledge Studio</h5>
+      <p class='componentText'>Custom ML model to identify email entities</p>
     </div>
     <div class="col-md-3">
       <img class='componentImage' src="../assets/img/components/NLU.png" alt="NLU">
-      <p class='componentText'>Natural Language Understanding</p>
+      <h5 class='componentText'>Natural Language Understanding</h5>
+      <p class='componentText'>WKS model deployed through NLU API</p>
+    </div>
+    <div class="col-md-3">
+      <img class='componentImage' src="../assets/img/components/nodered.png" alt="NLU">
+      <h5 class='componentText'>Node-RED</h5>
+      <p class='componentText'>Routes incoming emails to application</p>
+    </div>
+    <div class="col-md-3">
+      <img class='componentImage' src="../assets/img/components/cloudant.png" alt="NLU">
+      <h5 class='componentText'>Cloudant noSQL database</h5>
+      <p class='componentText'>Stores emails on the cloud</p>
     </div>
   </div>
   <br>

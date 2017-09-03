@@ -8,13 +8,13 @@ export class CurrentDemoService {
   demos = [
     {
       id:0,
-      name:'Insurance',
+      name:'insurance',
       companyName:'ACME Insurance',
       icon:'security'
     },
     {
       id:1,
-      name:'IT Asset Management',
+      name:'itasset',
       companyName:'IT Asset Management',
       icon:'computer'
     }

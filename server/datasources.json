@@ -79,11 +79,11 @@
       "headers": {
         "accept": "application/json",
         "content-type": "application/json"
-        },
+      },
       "auth": {
         "user": "${NATURAL_LANGUAGE_USERNAME0}",
         "password": "${NATURAL_LANGUAGE_PASSWORD0}"
-        }
+      }
     },
     "operations": [
       {
@@ -91,8 +91,8 @@
           "method": "POST",
           "url": "${NATURAL_LANGUAGE_TEXT_COMBINED_URL}",
           "query": {
-            "text" : "{text='':string}",
-            "features" : {
+            "text": "{text='':string}",
+            "features": {
               "entities": {
                 "model": "${WKS0}"
               }
@@ -120,11 +120,11 @@
       "headers": {
         "accept": "application/json",
         "content-type": "application/json"
-        },
+      },
       "auth": {
         "user": "${NATURAL_LANGUAGE_USERNAME1}",
         "password": "${NATURAL_LANGUAGE_PASSWORD1}"
-        }
+      }
     },
     "operations": [
       {
@@ -132,8 +132,8 @@
           "method": "POST",
           "url": "${NATURAL_LANGUAGE_TEXT_COMBINED_URL}",
           "query": {
-            "text" : "{text='':string}",
-            "features" : {
+            "text": "{text='':string}",
+            "features": {
               "entities": {
                 "model": "${WKS1}"
               }
@@ -151,5 +151,14 @@
     "plugin": "retry",
     "retryAttempts": 10,
     "retryTimeout": 1000
+  },
+  "emails": {
+    "url": "${CLOUDANT_URL}",
+    "database": "${CLOUDANT_DB}",
+    "username": "${CLOUDANT_USERNAME}",
+    "password": "${CLOUDANT_PASSWORD}",
+    "name": "emails",
+    "modelIndex": "",
+    "connector": "cloudant"
   }
 }
