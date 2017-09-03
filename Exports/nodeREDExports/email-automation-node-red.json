@@ -1,0 +1,60 @@
+[
+   {
+      "id":"ec03777b.875d98",
+      "type":"tab",
+      "label":"Flow 1"
+   },
+   {
+      "id":"45db4332.2b24ec",
+      "type":"e-mail in",
+      "z":"ec03777b.875d98",
+      "name":"",
+      "protocol":"IMAP",
+      "server":"imap.gmail.com",
+      "useSSL":true,
+      "port":"993",
+      "box":"INBOX",
+      "disposition":"Read",
+      "repeat":"10",
+      "x":134,
+      "y":161,
+      "wires":[
+         [
+            "1e68a547.37642b"
+         ]
+      ]
+   },
+   {
+      "id":"890eb36a.0be0c",
+      "type":"http request",
+      "z":"ec03777b.875d98",
+      "name":"POST EMAIL",
+      "method":"POST",
+      "ret":"obj",
+      "url":"http://email-automation.mybluemix.net/api/emails",
+      "tls":"",
+      "x":574,
+      "y":161,
+      "wires":[
+         [
+
+         ]
+      ]
+   },
+   {
+      "id":"1e68a547.37642b",
+      "type":"function",
+      "z":"ec03777b.875d98",
+      "name":"Extract HTML",
+      "func":"var html = msg.html\nvar fullText = html.replace(/<(?:.|\\n)*?>/gm, '');\nvar textBreaks = fullText.replace(/\\&nbsp;/g, \" \");\nvar text = textBreaks.replace(/\\r?\\n|\\r/g, \"\");\n\nvar object = {payload:{\n    \"set\": \"insurance\",\n    \"from\": msg.from,\n    \"to\": msg.header.to,\n    \"subject\": msg.topic,\n    \"text\": text,\n    \"requestType\": null,\n    \"status\": \"Incomplete\",\n    \"entities\":{\n        \"zip_Code\": null,\n        \"Cell_Number\": null,\n        \"LIC\": null,\n        \"PL_Policy\": null,\n        \"CL_Policy\": null,\n        \"First_Name\": null,\n        \"Last_Name\": null,\n        \"Vin_Number\": null\n    },\n    \"timestamp\": msg.header.date,\n    \"permanent\": false\n}}\nreturn object;",
+      "outputs":1,
+      "noerr":0,
+      "x":344,
+      "y":161,
+      "wires":[
+         [
+            "890eb36a.0be0c"
+         ]
+      ]
+   }
+]
