@@ -2,14 +2,14 @@
   "conversation": [{
     "credentials": {
       "url": "https://gateway.watsonplatform.net/conversation/api",
-      "username": "23226287-2347-4143-80be-e9a46b1833b2",
-      "password": "XVxMddpOK3ty"
+      "username": "",
+      "password": ""
     },
     "syslog_drain_url": null,
     "label": "conversation",
     "provider": null,
     "plan": "free",
-    "name": "Conversation-m5",
+    "name": "",
     "tags": [
       "watson",
       "ibm_created"
