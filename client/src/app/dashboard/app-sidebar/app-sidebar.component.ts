@@ -23,7 +23,7 @@ export class AppSidebarComponent implements OnInit {
     private emailService: EmailService
   ) { }
 
-  emails: Array<Email> = this.emailService.firstEmail
+  emails: Array<Email> = this.emailService.currentEmails
 
   ngOnInit() {
     // update emails if they change

@@ -18,15 +18,15 @@ export class EmailService {
   // the current demo scenario (insurance OR IT asset mgmt)
   currentDemo = this.currentDemoService.currentDemo
 
-  // the first emails sent through (all but 2, to showcase emails coming in in real time)
-  firstEmail: Array<Email> = []
+  // // the first emails sent through (all but 2, to showcase emails coming in in real time)
+  // firstEmail: Array<Email> = []
+  // all emails
+  emails: Array<Email> = []
   // all emails for the given scenario
-  emails: Array<Email>
+  currentEmails: Array<Email> = []
 
   // switching between individual emails
   emailChange: Subject<any> = new Subject<any>();
-  // indicating emails are ready
-  emailsReady: Subject<any> = new Subject<any>();
   // sending emails through (could be firstEmail or all emails)
   emailsUpdate: Subject<any> = new Subject<any>();
 
@@ -38,73 +38,36 @@ export class EmailService {
     private http: Http
   ) {
     this.emailsStorageService.getEmails().subscribe(data=>{
-      this.emails = data
-      this.runWatsonAnalysis()
+      this.sortEmails(data)
+    })
+    this.currentDemoService.changeDemo.subscribe( (demo) =>{
+      this.currentDemo = demo
+      this.currentEmails = []
+      for(let i of this.emails){
+        if(i.set === this.currentDemo.name){
+          this.currentEmails.push(i)
+        }
+      }
+      this.emailsUpdate.next(this.currentEmails)
     })
   }
 
-  runWatsonAnalysis(){
-    for(let i of this.emails){
-      let message = i.text
-      // if the email hasn't already gone through enrichment
-      if(!i.requestType){
-        // run each email through conversation to get the intent
-        this.conversationService.sendMessage(message).subscribe(response => {
-          if(response[0].intents[0]){
-            i.requestType = response[0].intents[0].intent
-          }
-        })
-        // run each email through NLU to check the entities
-        this.nluService.analyzeText(message).subscribe(response => {
-          if(response[0]){
-            for(let n of response[0].entities){
-              if(i.entities.hasOwnProperty(n.type)){
-                i.entities[n.type] = n.text
-                this.doEntityCheck()
-              }
-            }
-          }
-        })
+  sortEmails(allEmails){
+    this.emails = allEmails
+    for(let i of allEmails){
+      if(i.set === this.currentDemo.name){
+        this.currentEmails.push(i)
       }
     }
-  }
-
-  // check which entities are complete
-  doEntityCheck(){
-    let emailsAnalyzed = 0
-    for(let i of this.emails){
-        let totalEntities = 0
-        let completeEntities = 0
-        for(let e in i.entities){
-          totalEntities++
-          if(i.entities[e] !== null){
-            completeEntities++
-          }
-        }
-        // if complete add auto response
-        if(completeEntities == totalEntities){
-          i.status = "Complete"
-          i.response = "Thanks, all done! We've automatically completed your request."
-          emailsAnalyzed++
-        } else {
-          emailsAnalyzed++
-        }
-    }
-    if(this.emails.length == emailsAnalyzed){
-      // add emails to firstEmail array (everything but 2 most recent emails)
-      this.firstEmail = []
-      let firstEmails = this.emails.slice(0)
-      firstEmails.splice(0,2)
-      this.firstEmail = firstEmails
-      this.emailsReady.next(this.emails)
-    }
+    this.emailsUpdate.next(this.currentEmails)
   }
 
   getEmails(){
-    return this.emails
+    return this.currentEmails
   }
 
   switchEmail(email){
+    console.log(email)
     this.emailChange.next(email)
   }
 
@@ -117,15 +80,17 @@ export class EmailService {
 
   updateEntities(email, entities){
     // find the index of the given email
-    let index = this.emails.indexOf(email)
+    let index = this.currentEmails.indexOf(email)
     // update the entities
-    this.emails[index].entities = entities
+    this.currentEmails[index].entities = entities
     this.switchEmail(email)
   }
 
   refreshEmails(){
-    // pass in ALL emails
-    this.emailsUpdate.next(this.emails)
+    this.emailsStorageService.getEmails().subscribe(data => {
+      // pass in ALL emails
+      this.sortEmails(data)
+    })
   }
 
 }

@@ -153,9 +153,12 @@
     "retryTimeout": 1000
   },
   "emails": {
+    "url": "${CLOUDANT_URL}",
+    "database": "${CLOUDANT_DB}",
+    "username": "${CLOUDANT_USERNAME}",
+    "password": "${CLOUDANT_PASSWORD}",
     "name": "emails",
-    "localStorage": "emails",
-    "file": "emails_db.json",
-    "connector": "memory"
+    "modelIndex": "",
+    "connector": "cloudant"
   }
 }
