@@ -26,27 +26,22 @@ export class LoopbackLoginService {
   // Function that will indicate if a user is logged in or not.
   public isAuthenticated(): Observable<boolean> | boolean {
     let stored = this.get();
-    let authenticated;
     if (stored && stored.token && stored.id) {
       let url = this.findByIdUrl + '/' + stored.id + '/accessTokens/' + stored.token + '?access_token=' + stored.token;
       return this.http.get(url)
         .map((res: Response) => {
-          return true
+          return true;
         })
         .catch((error:any) => {
           this.destroyToken();
-          return Observable.create(observer => {
-            this.router.navigate(['/login'])
-            observer.next(false)
-            observer.complete()
-          });
+          this.router.navigate(['/login'])
+          // Return an observable immediately returning false
+          return Observable.of(false);
         });
     } else {
-      return Observable.create(observer => {
-        this.router.navigate(['/login'])
-        observer.next(false)
-        observer.complete()
-      });
+      this.router.navigate(['/login'])
+      // Return an observable immediately returning false
+      return Observable.of(false);
     }
   }
 
@@ -95,14 +90,17 @@ export class LoopbackLoginService {
   // Function that will make an authenticated GET request to the server.  If an Unauthenicated is returned by
   // the server, then it will route to the login page.
   // You need a URL and an array of objects that contains a name and value for example [ { name: 'id', value: 1 }]
-  public makeAuthenticatedHttpGet(url, queryParams) : Observable<any> {
+  public makeAuthenticatedHttpGet(url, queryParams?) : Observable<any> {
     let params: URLSearchParams = new URLSearchParams();
     params.set('access_token', this.get().token);
-    for (let qp of queryParams) {
-      params.set(qp.name, qp.value.toString())
+    if (queryParams && queryParams.length > 0) {
+      for (let qp of queryParams) {
+        params.set(qp.name, qp.value.toString())
+      }
     }
-    let requestOptions = new RequestOptions();
-    requestOptions.search = params;
+    let requestOptions = new RequestOptions({
+      search: params
+    });
     return this.http.get(url, requestOptions)
        .map((res:Response) => res.json())
        .catch((error:any) => {
@@ -122,6 +120,46 @@ export class LoopbackLoginService {
     let requestOptions = new RequestOptions();
     requestOptions.search = params;
     return this.http.post(url, formData, requestOptions)
+       .map((res:Response) => res.json())
+       .catch((error:any) => {
+         if (error.status === 401) {
+           this.router.navigate(['login'])
+         }
+         return Observable.throw(error.json().error || 'Server error')
+       });
+  }
+
+  public makeAuthenticatedHttpJsonPost(url, data) : Observable<any> {
+    let params: URLSearchParams = new URLSearchParams();
+    params.set('access_token', this.get().token);
+    let headers = new Headers({'Content-Type':'application/json'});
+    let requestOptions = new RequestOptions({
+      headers: headers,
+      search: params,
+      body: JSON.stringify(data)
+    });
+    return this.http.post(url, {}, requestOptions)
+       .map((res:Response) => res.json())
+       .catch((error:any) => {
+         if (error.status === 401) {
+           this.router.navigate(['login'])
+         }
+         return Observable.throw(error.json().error || 'Server error')
+       });
+  }
+
+  public makeAuthenticatedHttpDelete(url, queryParams?) : Observable<any> {
+    let params: URLSearchParams = new URLSearchParams();
+    params.set('access_token', this.get().token);
+    if (queryParams && queryParams.length > 0) {
+      for (let qp of queryParams) {
+        params.set(qp.name, qp.value.toString())
+      }
+    }
+    let requestOptions = new RequestOptions({
+      search: params
+    });
+    return this.http.delete(url, requestOptions)
        .map((res:Response) => res.json())
        .catch((error:any) => {
          if (error.status === 401) {
