@@ -42,7 +42,10 @@
           "*": false,
           "login": true,
           "logout": true,
-          "isInRole": true
+          "isInRole": true,
+          "prototype.__destroyById__accessTokens": true,
+          "prototype.__findById__accessTokens": true,
+          "prototype.__get__accessTokens": true
         }
       }
     }
