@@ -86,6 +86,8 @@ Note: Please read the upgrade instructions for Angular CLI when you upgrade or i
 
 > Conversation
 
+> Cloudant
+
 1. Click on the Connect new button.
 2. Search for the service you would like to create.
 3. Create the service using the free, light or standard plans.
@@ -132,6 +134,12 @@ You will also need to add your conversation credentials into the vcap-local.json
 ```
 
 You will notice two sets of credentials for each service. These different credentials are for the two different demo scenarios in the application. If you just want to use one scenario you can make all credentials the same; otherwise you will need to create a second NLU service and a second WCS workspace (note: not another service instance, just a new workspace).
+
+### Cloudant Setup
+
+In addition to the credentials for Cloudant, you can replicate the the email data from the Accelerator email database to your Cloudant database. You can do this by going through the replication steps on cloudant and using this link as the Target Name for an Existing Remote Target:
+
+```https://yfictruchestachencerifea:7afb7ee8bd3b16c50affd61c23a27eb6bafecb4e@2b4f20b7-b5c2-4a15-a357-8f98bf288a60-bluemix.cloudant.com/emails```
 
 ### WKS Setup
 
@@ -225,3 +233,9 @@ Once all the credentials are in place, the application can be starter with ```gu
 You can access the application with credentials  `watson\p@ssw0rd`
 
 The user names and passwords can be modified in the /server/boot/init-access.js file.
+
+# Inbound Email Client
+
+You can set up an email service to receive emails and use some logic to send them to the endpoint in this app to process them by WCS and NLU and save them to the database. We've done this with NodeRED, and you can use the nodeRED export we have in the Exports folder to do the same.
+
+You will need to set up your own email and update it in NodeRED as well as change the endpoint to be sent to your application.
