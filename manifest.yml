@@ -3,6 +3,6 @@ applications:
   memory: 512M
   instances: 1
   domain: mybluemix.net
-  name: apple-emails
-  host: apple-emails
+  name: email-automation
+  host: email-automation
   disk_quota: 1024M
