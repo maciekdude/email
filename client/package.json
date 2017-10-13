@@ -10,7 +10,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.2.4",
-    "@angular/cdk": "^2.0.0-beta.10",
+    "@angular/cdk": "2.0.0-beta.10",
     "@angular/common": "^4.2.4",
     "@angular/compiler": "^4.2.4",
     "@angular/compiler-cli": "^4.0.1",
@@ -18,7 +18,7 @@
     "@angular/flex-layout": "^2.0.0-beta.8",
     "@angular/forms": "^4.0.1",
     "@angular/http": "^4.0.1",
-    "@angular/material": "^2.0.0-beta.10",
+    "@angular/material": "2.0.0-beta.10",
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.3",
     "@angular/platform-server": "^4.0.1",
@@ -55,7 +55,7 @@
     "node-sass": "^3.4.2",
     "protractor": "4.0.9",
     "ts-node": "1.2.1",
-    "typescript": "^2.2.2",
+    "typescript": "2.2.2",
     "webdriver-manager": "10.2.5"
   }
 }
