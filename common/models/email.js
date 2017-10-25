@@ -3,6 +3,7 @@
 module.exports = function(Email) {
 
   Email.observe('before save', function enrich(ctx, next) {
+    // console.log(ctx)
     var emailText = ctx.instance.text
     var Conversation0 = Email.app.models.Conversation0;
     var Conversation1 = Email.app.models.Conversation1;
@@ -10,17 +11,20 @@ module.exports = function(Email) {
     var nlu1 = Email.app.models.nlu1;
 
     if (ctx.instance) {
-      console.log(ctx.instance)
+      // console.log(ctx.instance)
       let convo
       let nlu
       if(ctx.instance.set === 'insurance'){
-        console.log('it is an insurance email')
+        // console.log('it is an insurance email')
         convo = Conversation0
         nlu = nlu0
       } else if(ctx.instance.set === 'itasset'){
-        console.log('it is an IT asset email')
+        // console.log('it is an IT asset email')
         convo = Conversation1
         nlu = nlu1
+      } else {
+        convo = Conversation0
+        nlu = nlu0
       }
       let input = {
         input:{
@@ -28,49 +32,65 @@ module.exports = function(Email) {
         }
       }
       var convoAnalysis = new Promise((resolve, reject) =>{
-        convo.message(input).then(result => {
-          if(result[0].intents[0]){
-            let intent = result[0].intents[0].intent
-            ctx.instance.requestType = intent
-            resolve();
-          } else {
-            resolve();
-          }
-        }, reject =>{
-          console.log(reject)
-          console.log(reject.Error)
-        })
-      })
-      var nluAnalysis = new Promise((resolve, reject) =>{
-        nlu.analyzeText(emailText).then(result => {
-
-          var addEntities = result[0].entities.map(item =>{
-            console.log(item)
-            if(ctx.instance.entities.hasOwnProperty(item.type)){
-              ctx.instance.entities[item.type] = item.text
-              return true
-            } else {return false}
-          })
-          Promise.all(addEntities).then(value=>{
-            let allTrue = Object.keys(ctx.instance.entities).every(itemKey =>ctx.instance.entities[itemKey])
-            console.log(allTrue)
-            if(allTrue){
-              console.log('all items are true')
-              ctx.instance.status = "Complete"
-              ctx.instance.response = "Thanks, all done! We've automatically completed your request."
-              console.log(ctx.instance)
+        try{
+          convo.message(input).then(result => {
+            if(result[0].intents[0]){
+              let intent = result[0].intents[0].intent
+              ctx.instance.requestType = intent
+              resolve();
             } else {
-              console.log('at least one item is not true')
-              console.log(ctx.instance)
+              reject();
             }
-            resolve()
+          }).catch(err =>{
+            reject(err)
           })
-        })
-      }, reject =>{
-        console.log(reject)
+        } catch(e) {
+          reject(e)
+        }
       })
+
+      var nluAnalysis = new Promise((resolve, reject) =>{
+        try{
+          nlu.analyzeText(emailText).then(result => {
+
+            var addEntities = result[0].entities.map(item =>{
+              console.log(item)
+              if(ctx.instance.entities.hasOwnProperty(item.type)){
+                ctx.instance.entities[item.type] = item.text
+                return true
+              } else {return false}
+            })
+
+            Promise.all(addEntities).then(value =>{
+
+              let allTrue = Object.keys(ctx.instance.entities).every(itemKey =>ctx.instance.entities[itemKey])
+              console.log(allTrue)
+              if(allTrue){
+                // console.log('all items are true')
+                ctx.instance.status = "Complete"
+                ctx.instance.response = "Thanks, all done! We've automatically completed your request."
+                resolve()
+              } else {
+                // console.log('at least one item is not true')
+                resolve()
+              }
+            })
+
+          }).catch(err =>{
+            reject(err)
+          })
+        } catch(e) {
+          reject(e)
+        }
+      })
+
       Promise.all([convoAnalysis, nluAnalysis]).then(value => {
+        // console.log(ctx.instance)
+        // console.log('all promises complete')
         next();
+      }).catch((err) => {
+        console.log(err)
+        console.log('errored')
       })
     } else {
       console.log('hit data, not ctx')
