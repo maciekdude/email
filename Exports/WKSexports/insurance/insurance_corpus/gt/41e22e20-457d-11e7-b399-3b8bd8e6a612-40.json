@@ -1,0 +1,168 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-40",
+  "name" : "doc3-40",
+  "version" : 3,
+  "text" : "Add Gardie Enderby with PL Policy Number of 051-634-200 and company policy of UL26434.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496180000922,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 86,
+    "text" : "Add Gardie Enderby with PL Policy Number of 051-634-200 and company policy of UL26434.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 4,
+      "end" : 10,
+      "text" : "Gardie",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 11,
+      "end" : 18,
+      "text" : "Enderby",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 19,
+      "end" : 23,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 24,
+      "end" : 26,
+      "text" : "PL",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 27,
+      "end" : 33,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 34,
+      "end" : 40,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 41,
+      "end" : 43,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 44,
+      "end" : 55,
+      "text" : "051-634-200",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 56,
+      "end" : 59,
+      "text" : "and",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 60,
+      "end" : 67,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 68,
+      "end" : 74,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 75,
+      "end" : 77,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 78,
+      "end" : 85,
+      "text" : "UL26434",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 85,
+      "end" : 86,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 4,
+    "end" : 10,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 11,
+    "end" : 18,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 44,
+    "end" : 55,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 78,
+    "end" : 85,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

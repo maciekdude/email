@@ -1,0 +1,330 @@
+{
+  "id" : "c09dbd00-4551-11e7-96e5-73faef245a10-7",
+  "name" : "Doc-7",
+  "version" : 3,
+  "text" : "Add Clayson Plett to fleet policy #: UL03504 , car policy: 051-634-200, zip: 03504, VIN: SCFEFBBC5AGD13386, License: 5627460, P#:(973) 932-2920 Thanks!!",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496166561626,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_LW" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 152,
+    "text" : "Add Clayson Plett to fleet policy #: UL03504 , car policy: 051-634-200, zip: 03504, VIN: SCFEFBBC5AGD13386, License: 5627460, P#:(973) 932-2920 Thanks!!",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 4,
+      "end" : 11,
+      "text" : "Clayson",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 12,
+      "end" : 17,
+      "text" : "Plett",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 18,
+      "end" : 20,
+      "text" : "to",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 21,
+      "end" : 26,
+      "text" : "fleet",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 27,
+      "end" : 33,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 34,
+      "end" : 36,
+      "text" : "#:",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 37,
+      "end" : 44,
+      "text" : "UL03504",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 45,
+      "end" : 46,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 47,
+      "end" : 50,
+      "text" : "car",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 51,
+      "end" : 57,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 57,
+      "end" : 58,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 59,
+      "end" : 70,
+      "text" : "051-634-200",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 70,
+      "end" : 71,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 72,
+      "end" : 75,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 75,
+      "end" : 76,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 77,
+      "end" : 82,
+      "text" : "03504",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t17",
+      "begin" : 82,
+      "end" : 83,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t18",
+      "begin" : 84,
+      "end" : 87,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t19",
+      "begin" : 87,
+      "end" : 88,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t20",
+      "begin" : 89,
+      "end" : 106,
+      "text" : "SCFEFBBC5AGD13386",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t21",
+      "begin" : 106,
+      "end" : 107,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t22",
+      "begin" : 108,
+      "end" : 115,
+      "text" : "License",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t23",
+      "begin" : 115,
+      "end" : 116,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t24",
+      "begin" : 117,
+      "end" : 124,
+      "text" : "5627460",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t25",
+      "begin" : 124,
+      "end" : 125,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t26",
+      "begin" : 126,
+      "end" : 128,
+      "text" : "P#",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t27",
+      "begin" : 128,
+      "end" : 129,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t28",
+      "begin" : 129,
+      "end" : 130,
+      "text" : "(",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t29",
+      "begin" : 130,
+      "end" : 133,
+      "text" : "973",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t30",
+      "begin" : 133,
+      "end" : 134,
+      "text" : ")",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t31",
+      "begin" : 135,
+      "end" : 143,
+      "text" : "932-2920",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t32",
+      "begin" : 144,
+      "end" : 150,
+      "text" : "Thanks",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t33",
+      "begin" : 150,
+      "end" : 151,
+      "text" : "!",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t34",
+      "begin" : 151,
+      "end" : 152,
+      "text" : "!",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "s0-m1",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "First_Name",
+    "begin" : 4,
+    "end" : 11,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Last_Name",
+    "begin" : 12,
+    "end" : 17,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 37,
+    "end" : 44,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "PL_Policy",
+    "begin" : 59,
+    "end" : 70,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m5",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 77,
+    "end" : 82,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m6",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 89,
+    "end" : 106,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m7",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "LIC",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "LIC",
+    "begin" : 117,
+    "end" : 124,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m8",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Cell_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Cell_Number",
+    "begin" : 129,
+    "end" : 143,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

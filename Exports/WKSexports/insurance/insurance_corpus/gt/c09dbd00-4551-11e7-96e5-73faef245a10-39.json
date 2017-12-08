@@ -1,0 +1,360 @@
+{
+  "id" : "c09dbd00-4551-11e7-96e5-73faef245a10-39",
+  "name" : "Doc-39",
+  "version" : 3,
+  "text" : "Hey, can you please add Lezley Leyre to fleet policy #: UL90527 , car policy: 053-631-300, zip: 90527, VIN: 5XYKT4A64CG224929, License: 4155803, P#:(466) 312-7990 Thanks!!",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496166195899,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_LW" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 171,
+    "text" : "Hey, can you please add Lezley Leyre to fleet policy #: UL90527 , car policy: 053-631-300, zip: 90527, VIN: 5XYKT4A64CG224929, License: 4155803, P#:(466) 312-7990 Thanks!!",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Hey",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 3,
+      "end" : 4,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 5,
+      "end" : 8,
+      "text" : "can",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 9,
+      "end" : 12,
+      "text" : "you",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 13,
+      "end" : 19,
+      "text" : "please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 20,
+      "end" : 23,
+      "text" : "add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 24,
+      "end" : 30,
+      "text" : "Lezley",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 31,
+      "end" : 36,
+      "text" : "Leyre",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 37,
+      "end" : 39,
+      "text" : "to",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 40,
+      "end" : 45,
+      "text" : "fleet",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 46,
+      "end" : 52,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 53,
+      "end" : 55,
+      "text" : "#:",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 56,
+      "end" : 63,
+      "text" : "UL90527",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 64,
+      "end" : 65,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 66,
+      "end" : 69,
+      "text" : "car",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 70,
+      "end" : 76,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 76,
+      "end" : 77,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t17",
+      "begin" : 78,
+      "end" : 89,
+      "text" : "053-631-300",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t18",
+      "begin" : 89,
+      "end" : 90,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t19",
+      "begin" : 91,
+      "end" : 94,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t20",
+      "begin" : 94,
+      "end" : 95,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t21",
+      "begin" : 96,
+      "end" : 101,
+      "text" : "90527",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t22",
+      "begin" : 101,
+      "end" : 102,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t23",
+      "begin" : 103,
+      "end" : 106,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t24",
+      "begin" : 106,
+      "end" : 107,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t25",
+      "begin" : 108,
+      "end" : 125,
+      "text" : "5XYKT4A64CG224929",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t26",
+      "begin" : 125,
+      "end" : 126,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t27",
+      "begin" : 127,
+      "end" : 134,
+      "text" : "License",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t28",
+      "begin" : 134,
+      "end" : 135,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t29",
+      "begin" : 136,
+      "end" : 143,
+      "text" : "4155803",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t30",
+      "begin" : 143,
+      "end" : 144,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t31",
+      "begin" : 145,
+      "end" : 147,
+      "text" : "P#",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t32",
+      "begin" : 147,
+      "end" : 148,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t33",
+      "begin" : 148,
+      "end" : 149,
+      "text" : "(",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t34",
+      "begin" : 149,
+      "end" : 152,
+      "text" : "466",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t35",
+      "begin" : 152,
+      "end" : 153,
+      "text" : ")",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t36",
+      "begin" : 154,
+      "end" : 162,
+      "text" : "312-7990",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t37",
+      "begin" : 163,
+      "end" : 169,
+      "text" : "Thanks",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t38",
+      "begin" : 169,
+      "end" : 170,
+      "text" : "!",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t39",
+      "begin" : 170,
+      "end" : 171,
+      "text" : "!",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "s0-m1",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "First_Name",
+    "begin" : 24,
+    "end" : 30,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Last_Name",
+    "begin" : 31,
+    "end" : 36,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 56,
+    "end" : 63,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "PL_Policy",
+    "begin" : 78,
+    "end" : 89,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m5",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 96,
+    "end" : 101,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m6",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 108,
+    "end" : 125,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m7",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "LIC",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "LIC",
+    "begin" : 136,
+    "end" : 143,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m8",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Cell_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Cell_Number",
+    "begin" : 148,
+    "end" : 162,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

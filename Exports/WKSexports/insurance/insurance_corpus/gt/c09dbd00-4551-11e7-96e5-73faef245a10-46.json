@@ -1,0 +1,336 @@
+{
+  "id" : "c09dbd00-4551-11e7-96e5-73faef245a10-46",
+  "name" : "Doc-46",
+  "version" : 3,
+  "text" : "Please move Dasha Morrott to fleet policy #: UL29185 , car policy: 053-932-600, zip: 29185, VIN: WAULF78K89N032914, License: 3321693, P#:(354) 282-8748 Thanks!!",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496166413096,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_LW" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 160,
+    "text" : "Please move Dasha Morrott to fleet policy #: UL29185 , car policy: 053-932-600, zip: 29185, VIN: WAULF78K89N032914, License: 3321693, P#:(354) 282-8748 Thanks!!",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 11,
+      "text" : "move",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 12,
+      "end" : 17,
+      "text" : "Dasha",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 18,
+      "end" : 25,
+      "text" : "Morrott",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 26,
+      "end" : 28,
+      "text" : "to",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 29,
+      "end" : 34,
+      "text" : "fleet",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 35,
+      "end" : 41,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 42,
+      "end" : 44,
+      "text" : "#:",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 45,
+      "end" : 52,
+      "text" : "UL29185",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 53,
+      "end" : 54,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 55,
+      "end" : 58,
+      "text" : "car",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 59,
+      "end" : 65,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 65,
+      "end" : 66,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 67,
+      "end" : 78,
+      "text" : "053-932-600",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 78,
+      "end" : 79,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 80,
+      "end" : 83,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 83,
+      "end" : 84,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t17",
+      "begin" : 85,
+      "end" : 90,
+      "text" : "29185",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t18",
+      "begin" : 90,
+      "end" : 91,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t19",
+      "begin" : 92,
+      "end" : 95,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t20",
+      "begin" : 95,
+      "end" : 96,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t21",
+      "begin" : 97,
+      "end" : 114,
+      "text" : "WAULF78K89N032914",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t22",
+      "begin" : 114,
+      "end" : 115,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t23",
+      "begin" : 116,
+      "end" : 123,
+      "text" : "License",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t24",
+      "begin" : 123,
+      "end" : 124,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t25",
+      "begin" : 125,
+      "end" : 132,
+      "text" : "3321693",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t26",
+      "begin" : 132,
+      "end" : 133,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t27",
+      "begin" : 134,
+      "end" : 136,
+      "text" : "P#",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t28",
+      "begin" : 136,
+      "end" : 137,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t29",
+      "begin" : 137,
+      "end" : 138,
+      "text" : "(",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t30",
+      "begin" : 138,
+      "end" : 141,
+      "text" : "354",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t31",
+      "begin" : 141,
+      "end" : 142,
+      "text" : ")",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t32",
+      "begin" : 143,
+      "end" : 151,
+      "text" : "282-8748",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t33",
+      "begin" : 152,
+      "end" : 158,
+      "text" : "Thanks",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t34",
+      "begin" : 158,
+      "end" : 159,
+      "text" : "!",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t35",
+      "begin" : 159,
+      "end" : 160,
+      "text" : "!",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "s0-m1",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "First_Name",
+    "begin" : 12,
+    "end" : 17,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Last_Name",
+    "begin" : 18,
+    "end" : 25,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 45,
+    "end" : 52,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "PL_Policy",
+    "begin" : 67,
+    "end" : 78,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m5",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 85,
+    "end" : 90,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m6",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 97,
+    "end" : 114,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m7",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "LIC",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "LIC",
+    "begin" : 125,
+    "end" : 132,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m8",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Cell_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Cell_Number",
+    "begin" : 137,
+    "end" : 151,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

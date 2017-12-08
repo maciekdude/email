@@ -1,0 +1,336 @@
+{
+  "id" : "c09dbd00-4551-11e7-96e5-73faef245a10-49",
+  "name" : "Doc-49",
+  "version" : 3,
+  "text" : "Please move Ruprecht Antosik to fleet policy #: UL27839 , car policy: 051-532-110, zip: 27839, VIN: 1G8ZF52801Z328015, License: 7115641, P#:(866) 933-4588 Thanks!!",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496166461889,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_LW" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 163,
+    "text" : "Please move Ruprecht Antosik to fleet policy #: UL27839 , car policy: 051-532-110, zip: 27839, VIN: 1G8ZF52801Z328015, License: 7115641, P#:(866) 933-4588 Thanks!!",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 11,
+      "text" : "move",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 12,
+      "end" : 20,
+      "text" : "Ruprecht",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 21,
+      "end" : 28,
+      "text" : "Antosik",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 29,
+      "end" : 31,
+      "text" : "to",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 32,
+      "end" : 37,
+      "text" : "fleet",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 38,
+      "end" : 44,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 45,
+      "end" : 47,
+      "text" : "#:",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 48,
+      "end" : 55,
+      "text" : "UL27839",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 56,
+      "end" : 57,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 58,
+      "end" : 61,
+      "text" : "car",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 62,
+      "end" : 68,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 68,
+      "end" : 69,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 70,
+      "end" : 81,
+      "text" : "051-532-110",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 81,
+      "end" : 82,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 83,
+      "end" : 86,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 86,
+      "end" : 87,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t17",
+      "begin" : 88,
+      "end" : 93,
+      "text" : "27839",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t18",
+      "begin" : 93,
+      "end" : 94,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t19",
+      "begin" : 95,
+      "end" : 98,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t20",
+      "begin" : 98,
+      "end" : 99,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t21",
+      "begin" : 100,
+      "end" : 117,
+      "text" : "1G8ZF52801Z328015",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t22",
+      "begin" : 117,
+      "end" : 118,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t23",
+      "begin" : 119,
+      "end" : 126,
+      "text" : "License",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t24",
+      "begin" : 126,
+      "end" : 127,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t25",
+      "begin" : 128,
+      "end" : 135,
+      "text" : "7115641",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t26",
+      "begin" : 135,
+      "end" : 136,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t27",
+      "begin" : 137,
+      "end" : 139,
+      "text" : "P#",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t28",
+      "begin" : 139,
+      "end" : 140,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t29",
+      "begin" : 140,
+      "end" : 141,
+      "text" : "(",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t30",
+      "begin" : 141,
+      "end" : 144,
+      "text" : "866",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t31",
+      "begin" : 144,
+      "end" : 145,
+      "text" : ")",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t32",
+      "begin" : 146,
+      "end" : 154,
+      "text" : "933-4588",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t33",
+      "begin" : 155,
+      "end" : 161,
+      "text" : "Thanks",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t34",
+      "begin" : 161,
+      "end" : 162,
+      "text" : "!",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t35",
+      "begin" : 162,
+      "end" : 163,
+      "text" : "!",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "s0-m1",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "First_Name",
+    "begin" : 12,
+    "end" : 20,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Last_Name",
+    "begin" : 21,
+    "end" : 28,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 48,
+    "end" : 55,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "PL_Policy",
+    "begin" : 70,
+    "end" : 81,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m5",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 88,
+    "end" : 93,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m6",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 100,
+    "end" : 117,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m7",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "LIC",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "LIC",
+    "begin" : 128,
+    "end" : 135,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m8",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Cell_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Cell_Number",
+    "begin" : 140,
+    "end" : 154,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

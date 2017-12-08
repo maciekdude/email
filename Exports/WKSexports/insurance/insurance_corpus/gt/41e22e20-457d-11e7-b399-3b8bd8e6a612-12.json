@@ -1,0 +1,178 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-12",
+  "name" : "doc3-12",
+  "version" : 3,
+  "text" : "Please add Caryn Vlasin who operates in zip code 33056 with a VIN number of 3G4AG54N9NS614902.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496179433452,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 94,
+    "text" : "Please add Caryn Vlasin who operates in zip code 33056 with a VIN number of 3G4AG54N9NS614902.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 10,
+      "text" : "add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 11,
+      "end" : 16,
+      "text" : "Caryn",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 17,
+      "end" : 23,
+      "text" : "Vlasin",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 24,
+      "end" : 27,
+      "text" : "who",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 28,
+      "end" : 36,
+      "text" : "operates",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 37,
+      "end" : 39,
+      "text" : "in",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 40,
+      "end" : 43,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 44,
+      "end" : 48,
+      "text" : "code",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 49,
+      "end" : 54,
+      "text" : "33056",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 55,
+      "end" : 59,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 60,
+      "end" : 61,
+      "text" : "a",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 62,
+      "end" : 65,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 66,
+      "end" : 72,
+      "text" : "number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 73,
+      "end" : 75,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 76,
+      "end" : 93,
+      "text" : "3G4AG54N9NS614902",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 93,
+      "end" : 94,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 11,
+    "end" : 16,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 17,
+    "end" : 23,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 49,
+    "end" : 54,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m5",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 76,
+    "end" : 93,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

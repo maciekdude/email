@@ -1,0 +1,180 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-15",
+  "name" : "doc3-15",
+  "version" : 3,
+  "text" : "Please add Margery Cervantes who operates in zip code 31755 with a VIN number of WP0CB29906S769518.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496179466986,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 99,
+    "text" : "Please add Margery Cervantes who operates in zip code 31755 with a VIN number of WP0CB29906S769518.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 10,
+      "text" : "add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 11,
+      "end" : 18,
+      "text" : "Margery",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 19,
+      "end" : 28,
+      "text" : "Cervantes",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 29,
+      "end" : 32,
+      "text" : "who",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 33,
+      "end" : 41,
+      "text" : "operates",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 42,
+      "end" : 44,
+      "text" : "in",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 45,
+      "end" : 48,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 49,
+      "end" : 53,
+      "text" : "code",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 54,
+      "end" : 59,
+      "text" : "31755",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 60,
+      "end" : 64,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 65,
+      "end" : 66,
+      "text" : "a",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 67,
+      "end" : 70,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 71,
+      "end" : 77,
+      "text" : "number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 78,
+      "end" : 80,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 81,
+      "end" : 98,
+      "text" : "WP0CB29906S769518",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 98,
+      "end" : 99,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 11,
+    "end" : 18,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 19,
+    "end" : 28,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Zip_Code",
+    "begin" : 54,
+    "end" : 59,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 81,
+    "end" : 98,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

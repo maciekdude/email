@@ -1,0 +1,222 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-36",
+  "name" : "doc3-36",
+  "version" : 3,
+  "text" : "Please add Cory Mance to company policy UL44854. PL Policy Number is 050-634-300 and the zip code is 47344.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496179697386,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 48,
+    "text" : "Please add Cory Mance to company policy UL44854.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 10,
+      "text" : "add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 11,
+      "end" : 15,
+      "text" : "Cory",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 16,
+      "end" : 21,
+      "text" : "Mance",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 22,
+      "end" : 24,
+      "text" : "to",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 25,
+      "end" : 32,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 33,
+      "end" : 39,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 40,
+      "end" : 47,
+      "text" : "UL44854",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 47,
+      "end" : 48,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  }, {
+    "id" : "s1",
+    "begin" : 49,
+    "end" : 107,
+    "text" : "PL Policy Number is 050-634-300 and the zip code is 47344.",
+    "tokens" : [ {
+      "id" : "s1-t0",
+      "begin" : 49,
+      "end" : 51,
+      "text" : "PL",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t1",
+      "begin" : 52,
+      "end" : 58,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t2",
+      "begin" : 59,
+      "end" : 65,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t3",
+      "begin" : 66,
+      "end" : 68,
+      "text" : "is",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t4",
+      "begin" : 69,
+      "end" : 80,
+      "text" : "050-634-300",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t5",
+      "begin" : 81,
+      "end" : 84,
+      "text" : "and",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t6",
+      "begin" : 85,
+      "end" : 88,
+      "text" : "the",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t7",
+      "begin" : 89,
+      "end" : 92,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t8",
+      "begin" : 93,
+      "end" : 97,
+      "text" : "code",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t9",
+      "begin" : 98,
+      "end" : 100,
+      "text" : "is",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t10",
+      "begin" : 101,
+      "end" : 106,
+      "text" : "47344",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t11",
+      "begin" : 106,
+      "end" : 107,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 11,
+    "end" : 15,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 16,
+    "end" : 21,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 40,
+    "end" : 47,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 69,
+    "end" : 80,
+    "inCoref" : false
+  }, {
+    "id" : "s1-m2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 101,
+    "end" : 106,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

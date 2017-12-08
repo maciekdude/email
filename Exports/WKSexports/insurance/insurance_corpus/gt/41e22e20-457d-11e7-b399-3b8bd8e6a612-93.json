@@ -1,0 +1,126 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-93",
+  "name" : "doc3-93",
+  "version" : 3,
+  "text" : "Modify Cordell Streetfield with company Policy Number of 050-632-200.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496180346632,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 69,
+    "text" : "Modify Cordell Streetfield with company Policy Number of 050-632-200.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Modify",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 14,
+      "text" : "Cordell",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 15,
+      "end" : 26,
+      "text" : "Streetfield",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 27,
+      "end" : 31,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 32,
+      "end" : 39,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 40,
+      "end" : 46,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 47,
+      "end" : 53,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 54,
+      "end" : 56,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 57,
+      "end" : 68,
+      "text" : "050-632-200",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 68,
+      "end" : 69,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 7,
+    "end" : 14,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 15,
+    "end" : 26,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 57,
+    "end" : 68,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

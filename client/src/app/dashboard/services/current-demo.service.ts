@@ -8,15 +8,9 @@ export class CurrentDemoService {
   demos = [
     {
       id:0,
-      name:'insurance',
-      companyName:'ACME Insurance',
-      icon:'security'
-    },
-    {
-      id:1,
-      name:'itasset',
-      companyName:'IT Asset Management',
-      icon:'computer'
+      name:'Miles&More',
+      companyName:'Lufthansa',
+      icon:'airplanemode_active'
     }
   ]
 

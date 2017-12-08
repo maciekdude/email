@@ -1,0 +1,122 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-100",
+  "name" : "doc3-100",
+  "version" : 3,
+  "text" : "Modify Kaycee Angier with company Policy Number of 053-631-300.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496179405331,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 63,
+    "text" : "Modify Kaycee Angier with company Policy Number of 053-631-300.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Modify",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 13,
+      "text" : "Kaycee",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 14,
+      "end" : 20,
+      "text" : "Angier",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 21,
+      "end" : 25,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 26,
+      "end" : 33,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 34,
+      "end" : 40,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 41,
+      "end" : 47,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 48,
+      "end" : 50,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 51,
+      "end" : 62,
+      "text" : "053-631-300",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 62,
+      "end" : 63,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "First_Name",
+    "begin" : 7,
+    "end" : 13,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Last_Name",
+    "begin" : 14,
+    "end" : 20,
+    "inCoref" : false
+  }, {
+    "id" : "-M3",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 51,
+    "end" : 62,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

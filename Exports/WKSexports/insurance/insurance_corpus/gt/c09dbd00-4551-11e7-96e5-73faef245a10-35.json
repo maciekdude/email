@@ -1,0 +1,360 @@
+{
+  "id" : "c09dbd00-4551-11e7-96e5-73faef245a10-35",
+  "name" : "Doc-35",
+  "version" : 3,
+  "text" : "Hey, can you please add Corliss Sayburn to fleet policy #: UL19123 , car policy: 053-932-600, zip: 19123, VIN: JH4DC4340RS000837, License: 6159472, P#:(982) 257-8893 Thanks!!",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496166158356,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_LW" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 174,
+    "text" : "Hey, can you please add Corliss Sayburn to fleet policy #: UL19123 , car policy: 053-932-600, zip: 19123, VIN: JH4DC4340RS000837, License: 6159472, P#:(982) 257-8893 Thanks!!",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Hey",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 3,
+      "end" : 4,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 5,
+      "end" : 8,
+      "text" : "can",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 9,
+      "end" : 12,
+      "text" : "you",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 13,
+      "end" : 19,
+      "text" : "please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 20,
+      "end" : 23,
+      "text" : "add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 24,
+      "end" : 31,
+      "text" : "Corliss",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 32,
+      "end" : 39,
+      "text" : "Sayburn",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 40,
+      "end" : 42,
+      "text" : "to",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 43,
+      "end" : 48,
+      "text" : "fleet",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 49,
+      "end" : 55,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 56,
+      "end" : 58,
+      "text" : "#:",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 59,
+      "end" : 66,
+      "text" : "UL19123",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 67,
+      "end" : 68,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 69,
+      "end" : 72,
+      "text" : "car",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 73,
+      "end" : 79,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 79,
+      "end" : 80,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t17",
+      "begin" : 81,
+      "end" : 92,
+      "text" : "053-932-600",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t18",
+      "begin" : 92,
+      "end" : 93,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t19",
+      "begin" : 94,
+      "end" : 97,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t20",
+      "begin" : 97,
+      "end" : 98,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t21",
+      "begin" : 99,
+      "end" : 104,
+      "text" : "19123",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t22",
+      "begin" : 104,
+      "end" : 105,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t23",
+      "begin" : 106,
+      "end" : 109,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t24",
+      "begin" : 109,
+      "end" : 110,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t25",
+      "begin" : 111,
+      "end" : 128,
+      "text" : "JH4DC4340RS000837",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t26",
+      "begin" : 128,
+      "end" : 129,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t27",
+      "begin" : 130,
+      "end" : 137,
+      "text" : "License",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t28",
+      "begin" : 137,
+      "end" : 138,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t29",
+      "begin" : 139,
+      "end" : 146,
+      "text" : "6159472",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t30",
+      "begin" : 146,
+      "end" : 147,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t31",
+      "begin" : 148,
+      "end" : 150,
+      "text" : "P#",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t32",
+      "begin" : 150,
+      "end" : 151,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t33",
+      "begin" : 151,
+      "end" : 152,
+      "text" : "(",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t34",
+      "begin" : 152,
+      "end" : 155,
+      "text" : "982",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t35",
+      "begin" : 155,
+      "end" : 156,
+      "text" : ")",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t36",
+      "begin" : 157,
+      "end" : 165,
+      "text" : "257-8893",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t37",
+      "begin" : 166,
+      "end" : 172,
+      "text" : "Thanks",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t38",
+      "begin" : 172,
+      "end" : 173,
+      "text" : "!",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t39",
+      "begin" : 173,
+      "end" : 174,
+      "text" : "!",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "s0-m1",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "First_Name",
+    "begin" : 24,
+    "end" : 31,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Last_Name",
+    "begin" : 32,
+    "end" : 39,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 59,
+    "end" : 66,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "PL_Policy",
+    "begin" : 81,
+    "end" : 92,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m5",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 99,
+    "end" : 104,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m6",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 111,
+    "end" : 128,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m7",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "LIC",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "LIC",
+    "begin" : 139,
+    "end" : 146,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m8",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Cell_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Cell_Number",
+    "begin" : 151,
+    "end" : 165,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

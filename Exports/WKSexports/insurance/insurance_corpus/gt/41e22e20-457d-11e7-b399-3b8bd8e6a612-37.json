@@ -1,0 +1,222 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-37",
+  "name" : "doc3-37",
+  "version" : 3,
+  "text" : "Please add Fidel Tilley to company policy UL51266. PL Policy Number is 050-672-200 and the zip code is 57588.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496179867154,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 50,
+    "text" : "Please add Fidel Tilley to company policy UL51266.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 10,
+      "text" : "add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 11,
+      "end" : 16,
+      "text" : "Fidel",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 17,
+      "end" : 23,
+      "text" : "Tilley",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 24,
+      "end" : 26,
+      "text" : "to",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 27,
+      "end" : 34,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 35,
+      "end" : 41,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 42,
+      "end" : 49,
+      "text" : "UL51266",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 49,
+      "end" : 50,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  }, {
+    "id" : "s1",
+    "begin" : 51,
+    "end" : 109,
+    "text" : "PL Policy Number is 050-672-200 and the zip code is 57588.",
+    "tokens" : [ {
+      "id" : "s1-t0",
+      "begin" : 51,
+      "end" : 53,
+      "text" : "PL",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t1",
+      "begin" : 54,
+      "end" : 60,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t2",
+      "begin" : 61,
+      "end" : 67,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t3",
+      "begin" : 68,
+      "end" : 70,
+      "text" : "is",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t4",
+      "begin" : 71,
+      "end" : 82,
+      "text" : "050-672-200",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t5",
+      "begin" : 83,
+      "end" : 86,
+      "text" : "and",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t6",
+      "begin" : 87,
+      "end" : 90,
+      "text" : "the",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t7",
+      "begin" : 91,
+      "end" : 94,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t8",
+      "begin" : 95,
+      "end" : 99,
+      "text" : "code",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t9",
+      "begin" : 100,
+      "end" : 102,
+      "text" : "is",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t10",
+      "begin" : 103,
+      "end" : 108,
+      "text" : "57588",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t11",
+      "begin" : 108,
+      "end" : 109,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 11,
+    "end" : 16,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 17,
+    "end" : 23,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 42,
+    "end" : 49,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 71,
+    "end" : 82,
+    "inCoref" : false
+  }, {
+    "id" : "s1-m2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 103,
+    "end" : 108,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

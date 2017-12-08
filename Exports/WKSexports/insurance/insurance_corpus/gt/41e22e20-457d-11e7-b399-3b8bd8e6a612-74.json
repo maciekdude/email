@@ -1,0 +1,124 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-74",
+  "name" : "doc3-74",
+  "version" : 3,
+  "text" : "Remove Kerrie Garner with cL Policy Number of UL32943.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496180219899,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 54,
+    "text" : "Remove Kerrie Garner with cL Policy Number of UL32943.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Remove",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 13,
+      "text" : "Kerrie",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 14,
+      "end" : 20,
+      "text" : "Garner",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 21,
+      "end" : 25,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 26,
+      "end" : 28,
+      "text" : "cL",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 29,
+      "end" : 35,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 36,
+      "end" : 42,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 43,
+      "end" : 45,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 46,
+      "end" : 53,
+      "text" : "UL32943",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 53,
+      "end" : 54,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 7,
+    "end" : 13,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 14,
+    "end" : 20,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 46,
+    "end" : 53,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

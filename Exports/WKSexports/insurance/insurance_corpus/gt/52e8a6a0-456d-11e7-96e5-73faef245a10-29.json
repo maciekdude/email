@@ -1,0 +1,346 @@
+{
+  "id" : "52e8a6a0-456d-11e7-96e5-73faef245a10-29",
+  "name" : "Doc2-29",
+  "version" : 3,
+  "text" : "Remove Myrwyn Winchurch from fleet policy #: UL96905 , car policy: 051-634-200, zip: 86857, VIN: 5HD1GX4117K301958, License: 9671036, P#:(741) 893-2029 Thanks!!",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496172608328,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 160,
+    "text" : "Remove Myrwyn Winchurch from fleet policy #: UL96905 , car policy: 051-634-200, zip: 86857, VIN: 5HD1GX4117K301958, License: 9671036, P#:(741) 893-2029 Thanks!!",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Remove",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 13,
+      "text" : "Myrwyn",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 14,
+      "end" : 23,
+      "text" : "Winchurch",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 24,
+      "end" : 28,
+      "text" : "from",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 29,
+      "end" : 34,
+      "text" : "fleet",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 35,
+      "end" : 41,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 42,
+      "end" : 44,
+      "text" : "#:",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 45,
+      "end" : 52,
+      "text" : "UL96905",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 53,
+      "end" : 54,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 55,
+      "end" : 58,
+      "text" : "car",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 59,
+      "end" : 65,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 65,
+      "end" : 66,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 67,
+      "end" : 78,
+      "text" : "051-634-200",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 78,
+      "end" : 79,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 80,
+      "end" : 83,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 83,
+      "end" : 84,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 85,
+      "end" : 90,
+      "text" : "86857",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t17",
+      "begin" : 90,
+      "end" : 91,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t18",
+      "begin" : 92,
+      "end" : 95,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t19",
+      "begin" : 95,
+      "end" : 96,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t20",
+      "begin" : 97,
+      "end" : 114,
+      "text" : "5HD1GX4117K301958",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t21",
+      "begin" : 114,
+      "end" : 115,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t22",
+      "begin" : 116,
+      "end" : 123,
+      "text" : "License",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t23",
+      "begin" : 123,
+      "end" : 124,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t24",
+      "begin" : 125,
+      "end" : 132,
+      "text" : "9671036",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t25",
+      "begin" : 132,
+      "end" : 133,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t26",
+      "begin" : 134,
+      "end" : 136,
+      "text" : "P#",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t27",
+      "begin" : 136,
+      "end" : 137,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t28",
+      "begin" : 137,
+      "end" : 138,
+      "text" : "(",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t29",
+      "begin" : 138,
+      "end" : 141,
+      "text" : "741",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t30",
+      "begin" : 141,
+      "end" : 142,
+      "text" : ")",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t31",
+      "begin" : 143,
+      "end" : 151,
+      "text" : "893-2029",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t32",
+      "begin" : 152,
+      "end" : 158,
+      "text" : "Thanks",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t33",
+      "begin" : 158,
+      "end" : 159,
+      "text" : "!",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t34",
+      "begin" : 159,
+      "end" : 160,
+      "text" : "!",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "First_Name",
+    "begin" : 7,
+    "end" : 13,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Last_Name",
+    "begin" : 14,
+    "end" : 23,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 45,
+    "end" : 52,
+    "inCoref" : false
+  }, {
+    "id" : "-M3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "PL_Policy",
+    "begin" : 67,
+    "end" : 78,
+    "inCoref" : false
+  }, {
+    "id" : "-M4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 85,
+    "end" : 90,
+    "inCoref" : false
+  }, {
+    "id" : "-M5",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 97,
+    "end" : 114,
+    "inCoref" : false
+  }, {
+    "id" : "-M6",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "LIC",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "LIC",
+    "begin" : 125,
+    "end" : 132,
+    "inCoref" : false
+  }, {
+    "id" : "-M7",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Cell_Number",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Cell_Number",
+    "begin" : 137,
+    "end" : 151,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

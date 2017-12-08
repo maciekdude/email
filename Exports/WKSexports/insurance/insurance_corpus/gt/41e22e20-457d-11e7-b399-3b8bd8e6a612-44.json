@@ -1,0 +1,168 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-44",
+  "name" : "doc3-44",
+  "version" : 3,
+  "text" : "Add Muhammad Leavold with PL Policy Number of 050-632-200 and company policy of UL64069.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496180037279,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 88,
+    "text" : "Add Muhammad Leavold with PL Policy Number of 050-632-200 and company policy of UL64069.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 4,
+      "end" : 12,
+      "text" : "Muhammad",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 13,
+      "end" : 20,
+      "text" : "Leavold",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 21,
+      "end" : 25,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 26,
+      "end" : 28,
+      "text" : "PL",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 29,
+      "end" : 35,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 36,
+      "end" : 42,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 43,
+      "end" : 45,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 46,
+      "end" : 57,
+      "text" : "050-632-200",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 58,
+      "end" : 61,
+      "text" : "and",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 62,
+      "end" : 69,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 70,
+      "end" : 76,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 77,
+      "end" : 79,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 80,
+      "end" : 87,
+      "text" : "UL64069",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 87,
+      "end" : 88,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 4,
+    "end" : 12,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 13,
+    "end" : 20,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 46,
+    "end" : 57,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 80,
+    "end" : 87,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

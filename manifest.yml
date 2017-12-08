@@ -2,7 +2,7 @@ applications:
 - path: .
   memory: 512M
   instances: 1
-  domain: mybluemix.net
-  name: email-automation
-  host: email-automation
+  domain: eu-gb.mybluemix.net  
+  name: emailtest
+  host: emailtest
   disk_quota: 1024M

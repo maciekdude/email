@@ -1,0 +1,352 @@
+{
+  "id" : "52e8a6a0-456d-11e7-96e5-73faef245a10-39",
+  "name" : "Doc2-39",
+  "version" : 3,
+  "text" : "Please remove Bethany Ambrogiotti from fleet policy #: UL19493 , car policy: 053-631-300, zip: 14595, VIN: KMHDU4AD4AU955646, License: 6005743, P#:(585) 865-4054 Appreciate it!",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496172762662,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 176,
+    "text" : "Please remove Bethany Ambrogiotti from fleet policy #: UL19493 , car policy: 053-631-300, zip: 14595, VIN: KMHDU4AD4AU955646, License: 6005743, P#:(585) 865-4054 Appreciate it!",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 13,
+      "text" : "remove",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 14,
+      "end" : 21,
+      "text" : "Bethany",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 22,
+      "end" : 33,
+      "text" : "Ambrogiotti",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 34,
+      "end" : 38,
+      "text" : "from",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 39,
+      "end" : 44,
+      "text" : "fleet",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 45,
+      "end" : 51,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 52,
+      "end" : 54,
+      "text" : "#:",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 55,
+      "end" : 62,
+      "text" : "UL19493",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 63,
+      "end" : 64,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 65,
+      "end" : 68,
+      "text" : "car",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 69,
+      "end" : 75,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 75,
+      "end" : 76,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 77,
+      "end" : 88,
+      "text" : "053-631-300",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 88,
+      "end" : 89,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 90,
+      "end" : 93,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 93,
+      "end" : 94,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t17",
+      "begin" : 95,
+      "end" : 100,
+      "text" : "14595",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t18",
+      "begin" : 100,
+      "end" : 101,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t19",
+      "begin" : 102,
+      "end" : 105,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t20",
+      "begin" : 105,
+      "end" : 106,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t21",
+      "begin" : 107,
+      "end" : 124,
+      "text" : "KMHDU4AD4AU955646",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t22",
+      "begin" : 124,
+      "end" : 125,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t23",
+      "begin" : 126,
+      "end" : 133,
+      "text" : "License",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t24",
+      "begin" : 133,
+      "end" : 134,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t25",
+      "begin" : 135,
+      "end" : 142,
+      "text" : "6005743",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t26",
+      "begin" : 142,
+      "end" : 143,
+      "text" : ",",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t27",
+      "begin" : 144,
+      "end" : 146,
+      "text" : "P#",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t28",
+      "begin" : 146,
+      "end" : 147,
+      "text" : ":",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t29",
+      "begin" : 147,
+      "end" : 148,
+      "text" : "(",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t30",
+      "begin" : 148,
+      "end" : 151,
+      "text" : "585",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t31",
+      "begin" : 151,
+      "end" : 152,
+      "text" : ")",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t32",
+      "begin" : 153,
+      "end" : 161,
+      "text" : "865-4054",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t33",
+      "begin" : 162,
+      "end" : 172,
+      "text" : "Appreciate",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t34",
+      "begin" : 173,
+      "end" : 175,
+      "text" : "it",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t35",
+      "begin" : 175,
+      "end" : 176,
+      "text" : "!",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "First_Name",
+    "begin" : 14,
+    "end" : 21,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Last_Name",
+    "begin" : 22,
+    "end" : 33,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 55,
+    "end" : 62,
+    "inCoref" : false
+  }, {
+    "id" : "-M3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "PL_Policy",
+    "begin" : 77,
+    "end" : 88,
+    "inCoref" : false
+  }, {
+    "id" : "-M4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Zip_Code",
+    "begin" : 95,
+    "end" : 100,
+    "inCoref" : false
+  }, {
+    "id" : "-M5",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 107,
+    "end" : 124,
+    "inCoref" : false
+  }, {
+    "id" : "-M6",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "LIC",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "LIC",
+    "begin" : 135,
+    "end" : 142,
+    "inCoref" : false
+  }, {
+    "id" : "-M7",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Cell_Number",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Cell_Number",
+    "begin" : 147,
+    "end" : 161,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

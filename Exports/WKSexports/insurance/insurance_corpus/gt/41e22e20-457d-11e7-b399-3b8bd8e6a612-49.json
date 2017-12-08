@@ -1,0 +1,168 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-49",
+  "name" : "doc3-49",
+  "version" : 3,
+  "text" : "Add Tomas Foster with PL Policy Number of 051-532-110 and company policy of UL25444.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496180062503,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 84,
+    "text" : "Add Tomas Foster with PL Policy Number of 051-532-110 and company policy of UL25444.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 4,
+      "end" : 9,
+      "text" : "Tomas",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 10,
+      "end" : 16,
+      "text" : "Foster",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 17,
+      "end" : 21,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 22,
+      "end" : 24,
+      "text" : "PL",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 25,
+      "end" : 31,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 32,
+      "end" : 38,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 39,
+      "end" : 41,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 42,
+      "end" : 53,
+      "text" : "051-532-110",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 54,
+      "end" : 57,
+      "text" : "and",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 58,
+      "end" : 65,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 66,
+      "end" : 72,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 73,
+      "end" : 75,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 76,
+      "end" : 83,
+      "text" : "UL25444",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 83,
+      "end" : 84,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 4,
+    "end" : 9,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 10,
+    "end" : 16,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 42,
+    "end" : 53,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 76,
+    "end" : 83,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

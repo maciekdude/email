@@ -1,0 +1,186 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-23",
+  "name" : "doc3-23",
+  "version" : 3,
+  "text" : "Add Elvyn Skaife d'Ingerthorpe who operates in zip code 76992 with a VIN number of 1G8AY12P84Z202013.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496179562303,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 101,
+    "text" : "Add Elvyn Skaife d'Ingerthorpe who operates in zip code 76992 with a VIN number of 1G8AY12P84Z202013.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 4,
+      "end" : 9,
+      "text" : "Elvyn",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 10,
+      "end" : 16,
+      "text" : "Skaife",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 17,
+      "end" : 19,
+      "text" : "d'",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 19,
+      "end" : 30,
+      "text" : "Ingerthorpe",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 31,
+      "end" : 34,
+      "text" : "who",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 35,
+      "end" : 43,
+      "text" : "operates",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 44,
+      "end" : 46,
+      "text" : "in",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 47,
+      "end" : 50,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 51,
+      "end" : 55,
+      "text" : "code",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 56,
+      "end" : 61,
+      "text" : "76992",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 62,
+      "end" : 66,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 67,
+      "end" : 68,
+      "text" : "a",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 69,
+      "end" : 72,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 73,
+      "end" : 79,
+      "text" : "number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 80,
+      "end" : 82,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t16",
+      "begin" : 83,
+      "end" : 100,
+      "text" : "1G8AY12P84Z202013",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t17",
+      "begin" : 100,
+      "end" : 101,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 4,
+    "end" : 9,
+    "inCoref" : false
+  }, {
+    "id" : "-M3",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 10,
+    "end" : 30,
+    "inCoref" : false
+  }, {
+    "id" : "-M4",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Zip_Code",
+    "begin" : 56,
+    "end" : 61,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m6",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 83,
+    "end" : 100,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

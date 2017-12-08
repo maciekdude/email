@@ -64,5 +64,6 @@
     "url": ""
   },
   "license": "Apache-2.0",
-  "description": "email-automation"
+  "description": "email-automation",
+  "author": ""
 }

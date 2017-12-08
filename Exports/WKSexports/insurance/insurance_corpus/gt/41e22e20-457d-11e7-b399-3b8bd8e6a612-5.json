@@ -1,0 +1,272 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-5",
+  "name" : "doc3-5",
+  "version" : 3,
+  "text" : "Please add Alika Prangnell to company policy UL27894. PL Policy no is 051-532-110 and operates in zip code 84606 with a VIN number of JH4KA2640HC004148.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496180075097,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 53,
+    "text" : "Please add Alika Prangnell to company policy UL27894.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Please",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 10,
+      "text" : "add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 11,
+      "end" : 16,
+      "text" : "Alika",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 17,
+      "end" : 26,
+      "text" : "Prangnell",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 27,
+      "end" : 29,
+      "text" : "to",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 30,
+      "end" : 37,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 38,
+      "end" : 44,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 45,
+      "end" : 52,
+      "text" : "UL27894",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 52,
+      "end" : 53,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  }, {
+    "id" : "s1",
+    "begin" : 54,
+    "end" : 152,
+    "text" : "PL Policy no is 051-532-110 and operates in zip code 84606 with a VIN number of JH4KA2640HC004148.",
+    "tokens" : [ {
+      "id" : "s1-t0",
+      "begin" : 54,
+      "end" : 56,
+      "text" : "PL",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t1",
+      "begin" : 57,
+      "end" : 63,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t2",
+      "begin" : 64,
+      "end" : 66,
+      "text" : "no",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t3",
+      "begin" : 67,
+      "end" : 69,
+      "text" : "is",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t4",
+      "begin" : 70,
+      "end" : 81,
+      "text" : "051-532-110",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t5",
+      "begin" : 82,
+      "end" : 85,
+      "text" : "and",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t6",
+      "begin" : 86,
+      "end" : 94,
+      "text" : "operates",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t7",
+      "begin" : 95,
+      "end" : 97,
+      "text" : "in",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t8",
+      "begin" : 98,
+      "end" : 101,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t9",
+      "begin" : 102,
+      "end" : 106,
+      "text" : "code",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t10",
+      "begin" : 107,
+      "end" : 112,
+      "text" : "84606",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t11",
+      "begin" : 113,
+      "end" : 117,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t12",
+      "begin" : 118,
+      "end" : 119,
+      "text" : "a",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t13",
+      "begin" : 120,
+      "end" : 123,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t14",
+      "begin" : 124,
+      "end" : 130,
+      "text" : "number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t15",
+      "begin" : 131,
+      "end" : 133,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t16",
+      "begin" : 134,
+      "end" : 151,
+      "text" : "JH4KA2640HC004148",
+      "whiteSpace" : false
+    }, {
+      "id" : "s1-t17",
+      "begin" : 151,
+      "end" : 152,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 11,
+    "end" : 16,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 17,
+    "end" : 26,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 45,
+    "end" : 52,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 70,
+    "end" : 81,
+    "inCoref" : false
+  }, {
+    "id" : "-M3",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Zip_Code",
+    "begin" : 107,
+    "end" : 112,
+    "inCoref" : false
+  }, {
+    "id" : "s1-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 134,
+    "end" : 151,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

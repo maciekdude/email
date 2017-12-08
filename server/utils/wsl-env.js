@@ -110,7 +110,7 @@ module.exports = (function () {
           var field = envLocalJson[valName].field
           var append = envLocalJson[valName].append
           var re = new RegExp(expr)
-          var json = appEnv.getService(re)
+          var json = appEnv.getServices(re)
           // If the field is an array then we want to extract all the values
           // and use the valuePattern to build the value
           var val = getValue(valName, json, field)

@@ -1,0 +1,168 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-45",
+  "name" : "doc3-45",
+  "version" : 3,
+  "text" : "Add Staci Antat with PL Policy Number of 050-632-200 and company policy of UL44191.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496180042372,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 83,
+    "text" : "Add Staci Antat with PL Policy Number of 050-632-200 and company policy of UL44191.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 4,
+      "end" : 9,
+      "text" : "Staci",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 10,
+      "end" : 15,
+      "text" : "Antat",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 16,
+      "end" : 20,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 21,
+      "end" : 23,
+      "text" : "PL",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 24,
+      "end" : 30,
+      "text" : "Policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 31,
+      "end" : 37,
+      "text" : "Number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 38,
+      "end" : 40,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 41,
+      "end" : 52,
+      "text" : "050-632-200",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 53,
+      "end" : 56,
+      "text" : "and",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 57,
+      "end" : 64,
+      "text" : "company",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 65,
+      "end" : 71,
+      "text" : "policy",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 72,
+      "end" : 74,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 75,
+      "end" : 82,
+      "text" : "UL44191",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 82,
+      "end" : 83,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 4,
+    "end" : 9,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 10,
+    "end" : 15,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "PL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "PL_Policy",
+    "begin" : 41,
+    "end" : 52,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "CL_Policy",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "CL_Policy",
+    "begin" : 75,
+    "end" : 82,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

@@ -1,0 +1,124 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-34",
+  "name" : "doc3-34",
+  "version" : 3,
+  "text" : "Remove Gran Brailsford with a VIN number of JH4DA3453GS006314.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496179671817,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 62,
+    "text" : "Remove Gran Brailsford with a VIN number of JH4DA3453GS006314.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 6,
+      "text" : "Remove",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 7,
+      "end" : 11,
+      "text" : "Gran",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 12,
+      "end" : 22,
+      "text" : "Brailsford",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 23,
+      "end" : 27,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 28,
+      "end" : 29,
+      "text" : "a",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 30,
+      "end" : 33,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 34,
+      "end" : 40,
+      "text" : "number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 41,
+      "end" : 43,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 44,
+      "end" : 61,
+      "text" : "JH4DA3453GS006314",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 61,
+      "end" : 62,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 7,
+    "end" : 11,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 12,
+    "end" : 22,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m3",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 44,
+    "end" : 61,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}

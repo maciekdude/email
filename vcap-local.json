@@ -1,9 +1,9 @@
 {
   "conversation": [{
-    "credentials": {
+    "credentials":{
       "url": "https://gateway.watsonplatform.net/conversation/api",
-      "username": "",
-      "password": ""
+      "password": "XOCDPJLAXiBx",
+      "username": "49d01c68-7d65-4409-bf94-2b70523f07c7"
     },
     "syslog_drain_url": null,
     "label": "conversation",

@@ -85,12 +85,12 @@ module.exports = function(Email) {
       })
 
       Promise.all([convoAnalysis, nluAnalysis]).then(value => {
-        // console.log(ctx.instance)
-        // console.log('all promises complete')
+        console.log(ctx.instance)
+        console.log('all promises complete')
         next();
       }).catch((err) => {
         console.log(err)
-        console.log('errored')
+        console.log('errored1')
       })
     } else {
       console.log('hit data, not ctx')

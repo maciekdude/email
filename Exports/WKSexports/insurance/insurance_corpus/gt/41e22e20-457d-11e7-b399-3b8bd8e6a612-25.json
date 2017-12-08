@@ -1,0 +1,174 @@
+{
+  "id" : "41e22e20-457d-11e7-b399-3b8bd8e6a612-25",
+  "name" : "doc3-25",
+  "version" : 3,
+  "text" : "Add Eilis Jerzak who operates in zip code 88756 with a VIN number of 1FMZK04185GA30815.",
+  "docLength" : 0,
+  "language" : "EN",
+  "status" : "SUBMITTED",
+  "modifiedDate" : 1496179575302,
+  "documentSet" : [ ],
+  "preannotation" : [ "PRE_SIRE" ],
+  "sentences" : [ {
+    "id" : "s0",
+    "begin" : 0,
+    "end" : 87,
+    "text" : "Add Eilis Jerzak who operates in zip code 88756 with a VIN number of 1FMZK04185GA30815.",
+    "tokens" : [ {
+      "id" : "s0-t0",
+      "begin" : 0,
+      "end" : 3,
+      "text" : "Add",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t1",
+      "begin" : 4,
+      "end" : 9,
+      "text" : "Eilis",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t2",
+      "begin" : 10,
+      "end" : 16,
+      "text" : "Jerzak",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t3",
+      "begin" : 17,
+      "end" : 20,
+      "text" : "who",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t4",
+      "begin" : 21,
+      "end" : 29,
+      "text" : "operates",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t5",
+      "begin" : 30,
+      "end" : 32,
+      "text" : "in",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t6",
+      "begin" : 33,
+      "end" : 36,
+      "text" : "zip",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t7",
+      "begin" : 37,
+      "end" : 41,
+      "text" : "code",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t8",
+      "begin" : 42,
+      "end" : 47,
+      "text" : "88756",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t9",
+      "begin" : 48,
+      "end" : 52,
+      "text" : "with",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t10",
+      "begin" : 53,
+      "end" : 54,
+      "text" : "a",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t11",
+      "begin" : 55,
+      "end" : 58,
+      "text" : "VIN",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t12",
+      "begin" : 59,
+      "end" : 65,
+      "text" : "number",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t13",
+      "begin" : 66,
+      "end" : 68,
+      "text" : "of",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t14",
+      "begin" : 69,
+      "end" : 86,
+      "text" : "1FMZK04185GA30815",
+      "whiteSpace" : false
+    }, {
+      "id" : "s0-t15",
+      "begin" : 86,
+      "end" : 87,
+      "text" : ".",
+      "whiteSpace" : false
+    } ]
+  } ],
+  "mentions" : [ {
+    "id" : "-M0",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "First_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "First_Name",
+    "begin" : 4,
+    "end" : 9,
+    "inCoref" : false
+  }, {
+    "id" : "-M1",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Last_Name",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Last_Name",
+    "begin" : 10,
+    "end" : 16,
+    "inCoref" : false
+  }, {
+    "id" : "-M2",
+    "properties" : {
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC",
+      "SIRE_ENTITY_LEVEL" : "NONE",
+      "SIRE_ENTITY_CLASS" : "SPC",
+      "SIRE_MENTION_ROLE" : "Zip_Code",
+      "SIRE_ENTITY_SUBTYPE" : "NONE"
+    },
+    "type" : "Zip_Code",
+    "begin" : 42,
+    "end" : 47,
+    "inCoref" : false
+  }, {
+    "id" : "s0-m4",
+    "properties" : {
+      "SIRE_MENTION_ROLE" : "Vin_Number",
+      "SIRE_ENTITY_SUBTYPE" : "NONE",
+      "SIRE_MENTION_TYPE" : "NONE",
+      "SIRE_MENTION_CLASS" : "SPC"
+    },
+    "type" : "Vin_Number",
+    "begin" : 69,
+    "end" : 86,
+    "inCoref" : false
+  } ],
+  "relations" : [ ],
+  "corefs" : [ ],
+  "typeResolved" : true,
+  "userResolved" : false
+}
