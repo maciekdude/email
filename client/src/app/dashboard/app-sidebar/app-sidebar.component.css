@@ -19,3 +19,11 @@ md-toolbar{
   background: #ebebeb;
   color: #016;
 }
+
+.mat-line{
+  color: #016; 
+}
+
+md-icon{
+  color: #016;   
+}
