@@ -54,6 +54,7 @@ export class EmailService {
 
   sortEmails(allEmails){
     this.emails = allEmails
+    this.currentEmails = []
     for(let i of allEmails){
       if(i.set === this.currentDemo.name){
         this.currentEmails.push(i)

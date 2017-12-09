@@ -1,0 +1,23 @@
+{
+    "set": "insurance",
+    "from": "maciek@dydejczyk.pl",
+    "to": "maciek@dydejczyk.pl",
+    "subject": "add me to the policy",
+    "text": "Please delete Ninnetta Shilito from fleet policy #: UL30763 , car policy: 050-632-200, zip: 80788, VIN: 3HSCWAPRXBN366331, License: 9238443, P#:(665 616-2227 Thanks!!",
+    "requestType": null,
+    "status": "Incomplete",
+    "timestamp": "June 4, 2017 10:13:00",
+    "permanent": true,
+    "entities":{
+        "zip_Code": null,
+        "Cell_Number": null,
+        "LIC": null,
+        "PL_Policy": null,
+        "CL_Policy": null,
+        "First_Name": null,
+        "Last_Name": null,
+        "Vin_Number": null
+    }
+}
+
+    {"text":"Please delete Ninnetta Shilito from fleet policy : UL30763"}

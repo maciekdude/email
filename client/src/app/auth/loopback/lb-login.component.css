@@ -1,5 +1,5 @@
 .background{
-  background-image:url('/assets/img/background/cityBuilding.jpg');
+  background-image:url('/assets/img/background/lufBG.jpg');
   height:100vh;
   width:100vw;
   background-size: cover;
@@ -23,7 +23,13 @@ md-card{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(66, 66, 66, 0.9);
+  background-color: #fff;
+  color:#016;
+  opacity:0.95;
+}
+md-toolbar{
+  background:#ffc233;
+  color:#016;
 }
 form{
   display: flex;

@@ -7,9 +7,15 @@
 .spacer{
   flex:1 1 auto;
 }
+
 md-card{
   flex:auto;
   display: flex;
   justify-content: center;
   overflow: scroll;
+  color:#016;
+}
+md-toolbar{
+  background: #ebebeb;
+  color: #016;
 }

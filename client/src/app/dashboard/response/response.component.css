@@ -7,3 +7,11 @@
   white-space: pre-wrap;
   white-space: pre-line;
 }
+
+md-card{
+  color:#016;
+}
+md-toolbar{
+  background: #ebebeb;
+  color: #016;
+}

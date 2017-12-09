@@ -20,3 +20,11 @@
   width:100%;
   margin-top: 1em;
 }
+
+md-card{
+  color:#016;
+}
+md-toolbar{
+  background: #ebebeb;
+  color: #016;
+}
