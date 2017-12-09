@@ -5,3 +5,7 @@ md-card{
     background: #ebebeb;
     color: #016;
   }
+  .mat-chip.mat-chip-selected.mat-primary {
+    background-color: #006;
+    color: #fff;
+  }
