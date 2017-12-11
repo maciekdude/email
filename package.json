@@ -16,6 +16,7 @@
     "init": "npm install && (cd ./client && npm install)"
   },
   "dependencies": {
+    "@loopback/core": "^4.0.0-alpha.23",
     "babel-polyfill": "^6.20.0",
     "body-parser": "^1.15.2",
     "cfenv": "^1.0.3",
