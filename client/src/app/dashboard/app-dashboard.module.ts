@@ -15,6 +15,7 @@ import { NluService } from './services/nlu.service';
 import { CurrentDemoService } from './services/current-demo.service';
 import { EmailsStorageService } from './services/emails-storage.service';
 
+
 import { SummaryComponent } from './summary/summary.component';
 import { ActionsComponent } from './actions/actions.component';
 import { ResponseComponent } from './response/response.component';
@@ -30,6 +31,7 @@ import { IntentDialogComponent } from './overview/intent-dialog/intent-dialog.co
 import { SortByPipe } from './pipes/sort-by.pipe';
 import { SortByDatePipe } from './pipes/sort-by-date.pipe';
 import { AboutComponent } from './about/about.component';
+import { SendemailService } from './services/sendemail.service';
 
 @NgModule({
   imports: [
@@ -79,7 +81,8 @@ providers: [
   ConversationService,
   NluService,
   CurrentDemoService,
-  EmailsStorageService
+  EmailsStorageService,
+  SendemailService
 ],
 entryComponents: [
   IntentDialogComponent,

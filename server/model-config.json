@@ -69,5 +69,13 @@
   "email": {
     "dataSource": "emails",
     "public": true
+  },
+  "Gmail": {
+    "dataSource": "gmail",
+    "public": true
+  },
+  "respond": {
+    "dataSource": null,
+    "public": true
   }
 }

@@ -160,5 +160,21 @@
     "name": "emails",
     "modelIndex": "",
     "connector": "cloudant"
+  },
+  "gmail": {
+    "name": "gmail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "${GMAIL_USERNAME}",
+          "pass": "${GMAIL_PASSWORD}"
+        }
+      }
+    ]
   }
 }
