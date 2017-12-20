@@ -17,5 +17,9 @@
   "CLOUDANT_USERNAME":"121c71d2-6adf-4f67-aefe-23b728372ea7-bluemix",
   "CLOUDANT_PASSWORD":"c21666d3b151e90079465f31945053178b180a44d78f4ed4711078dae760d62e",
   "GMAIL_USERNAME":"lhcognitivedemo@gmail.com",
-  "GMAIL_PASSWORD":"Cognitive123"
+  "GMAIL_PASSWORD":"Cognitive123",
+  "TONE_URL":"https://gateway.watsonplatform.net/tone-analyzer/api",
+  "TONE_URL_COMBINED":"https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21",
+  "TONE_USERNAME":"6f425125-4776-4dcf-97a0-7d91c8898f44",
+  "TONE_PASSWORD":"xOq58RdVL0sZ"
 }

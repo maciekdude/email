@@ -176,5 +176,39 @@
         }
       }
     ]
+  },
+  "tone": {
+    "name": "tone",
+    "baseURL": "${TONE_URL}",
+    "crud": false,
+    "connector": "rest",
+    "options": {
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "auth": {
+        "user": "${TONE_USERNAME}",
+        "password": "${TONE_PASSWORD}"
+      }
+    },
+    "operations": [
+      {
+        "template": {
+          "method": "POST",
+          "url": "${TONE_URL_COMBINED}",
+          "body": "{tone_input='':any}",
+          "responsePath": "$"
+        },
+        "functions": {
+          "analyzeTone": [
+            "tone_input"
+          ]
+        }
+      }
+    ],
+    "plugin": "retry",
+    "retryAttempts": 10,
+    "retryTimeout": 1000
   }
 }
