@@ -11,6 +11,7 @@ import { Email } from '../services/email.class'
 export class EmailViewComponent implements OnInit {
 
   currentEmail: Email = null
+  toneList: Array<any> = []
 
   constructor(
     private emailService: EmailService
@@ -19,7 +20,13 @@ export class EmailViewComponent implements OnInit {
   ngOnInit() {
     this.emailService.emailChange.subscribe( (email) => {
       this.currentEmail = email
+      if (email.document_tone){
+        this.toneList = email.document_tone
+      }else{
+        this.toneList = []
+      }
     })
+    
   }
 
 }

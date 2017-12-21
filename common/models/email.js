@@ -9,6 +9,7 @@ module.exports = function(Email) {
     var Conversation1 = Email.app.models.Conversation1;
     var nlu0 = Email.app.models.nlu0;
     var nlu1 = Email.app.models.nlu1;
+    var tone = Email.app.models.tone;
 
     if (ctx.instance) {
       // console.log(ctx.instance)
@@ -83,8 +84,39 @@ module.exports = function(Email) {
           reject(e)
         }
       })
+      let toneInput = {
+          text:emailText
+        }
+      var toneAnalysis = new Promise((resolve, reject) =>{
+        try{
+          tone.analyzeTone(toneInput).then(result => {
+            console.log(result)
+            console.log(result[0].document_tone)
+            //ctx.instance.document_tone = result[0].document_tone
+            var toneArray = []
+            if(result[0].document_tone){
+              //let intent = result[0].intents[0].intent
+              //ctx.instance.requestType = intent
+              var toneInstance = result[0].document_tone.tones.map(eachTone => {
+                console.log(eachTone)
+                toneArray.push(eachTone.tone_name + ' - ' + Math.round(eachTone.score * 100) + '%')
+              })
+              ctx.instance.document_tone = toneArray
+              resolve();
+            } else {
+              ctx.instance.document_tone=[]
+              reject();
+            }
+          }).catch(err =>{
+            reject(err)
+            console.log(err)
+          })
+        } catch(e) {
+          reject(e)
+        }
+      })
 
-      Promise.all([convoAnalysis, nluAnalysis]).then(value => {
+      Promise.all([convoAnalysis, nluAnalysis, toneAnalysis]).then(value => {
         console.log(ctx.instance)
         console.log('all promises complete')
         next();

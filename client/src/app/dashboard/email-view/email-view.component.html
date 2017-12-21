@@ -11,6 +11,13 @@
     </md-card-header>
     <md-card-content>
       {{currentEmail.text}}
+      <div *ngIf="toneList.length > 0" class="currentEmailTone">
+          <md-divider md-inset></md-divider>
+          Email tone:
+          <md-chip-list>
+              <md-chip *ngFor="let toneItem of toneList" selected="true">{{toneItem}}</md-chip>     
+          </md-chip-list>
+        </div>
     </md-card-content>
   </md-card>
 </div>

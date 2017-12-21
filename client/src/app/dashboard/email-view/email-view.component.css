@@ -1,7 +1,23 @@
+.completedChip{
+  width: 100%;
+  text-align:center;
+}
 md-card{
-    color:#016;
-  }
-  md-toolbar{
-    background: #ebebeb;
-    color: #016;
-  }
+  color:#016;
+}
+md-toolbar{
+  background: #ebebeb;
+  color: #016;
+}
+
+.mat-chip.mat-chip-selected.mat-primary {
+  background-color: #006;
+  color: #fff;
+}
+
+.currentEmailTone{
+  color: rgba(0, 0, 0, 0.54);
+}
+md-divider{
+  padding-bottom: 10px;
+}

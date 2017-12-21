@@ -10,7 +10,8 @@ export class Email {
     public status: string,
     public entities:any,
     public response: string,
-    public timestamp: any
+    public timestamp: any,
+    public document_tone: any
   ) {
     // Left blank
   }
