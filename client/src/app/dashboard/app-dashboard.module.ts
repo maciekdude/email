@@ -32,6 +32,7 @@ import { SortByPipe } from './pipes/sort-by.pipe';
 import { SortByDatePipe } from './pipes/sort-by-date.pipe';
 import { AboutComponent } from './about/about.component';
 import { SendemailService } from './services/sendemail.service';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   imports: [
@@ -74,7 +75,8 @@ import { SendemailService } from './services/sendemail.service';
     IntentDialogComponent,
     SortByPipe,
     SortByDatePipe,
-    AboutComponent
+    AboutComponent,
+    SettingsComponent
   ],
 providers: [
   EmailService,

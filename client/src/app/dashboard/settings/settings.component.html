@@ -1,0 +1,30 @@
+<div id="allPageContent">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <md-toolbar>
+      <span>Settings</span>
+      <span class="toolbarSpacer"></span>
+      <md-icon>settings applications</md-icon>
+    </md-toolbar>
+    <md-card class="card">
+        <md-card-header>
+            <md-card-title>Status to autodelete incomming emails:
+            </md-card-title>
+          </md-card-header>
+      <md-card-content>
+        <md-input-container>
+          <input mdInput placeholder="Interval" value="{{interval}}" [(ngModel)]="interval">
+        </md-input-container>
+        <md-checkbox [(ngModel)]="refresh" aria-label="Delete new emails?">
+          Delete new emails 1: {{ refresh }}
+        </md-checkbox>
+      </md-card-content>
+     <md-card-actions>
+        <button mdTooltip="Submit to update settings" (click)="submit()" md-button>Submit</button>
+      </md-card-actions>
+    </md-card>
+    <span>Interval:{{interval}}</span>
+    <span>Refresh:{{refresh}}</span>
+    
+  </div>  
+</div>

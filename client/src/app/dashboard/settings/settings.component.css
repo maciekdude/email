@@ -1,0 +1,15 @@
+#allPageContent{
+    /*background-image: url('../../../assets/img/background/dark-triangles.png');*/
+    background-color:#fff;  
+    height: calc(100vh);
+    overflow-y: scroll;
+    margin-top: 64px;
+  }
+
+md-card{
+    color:#016;
+}
+md-toolbar{
+    background: #ebebeb;
+    color: #016;
+}
