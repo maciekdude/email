@@ -27,5 +27,9 @@ updateConfig(duration: number, flag: boolean): Observable<any> {
   return this.auth.makeAuthenticatedHttpPost(this.url, mail)
 
 }
+getConfig(){
+  this.url = '/api/AppConfigs/1'
+  return this.auth.makeAuthenticatedHttpGet(this.url, '')
+}
 
 }

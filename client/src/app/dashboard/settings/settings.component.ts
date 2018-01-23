@@ -15,7 +15,13 @@ export class SettingsComponent implements OnInit {
 
   constructor(
     private updateSettings:AppsettingsService
-  ) {}
+  ) {
+    this.updateSettings.getConfig().subscribe(results=>{
+      console.log(results)
+      this.interval=results.interval
+      this.refresh = results.deleteFlag
+    })
+  }
 
   ngOnInit() {
   }
