@@ -104,7 +104,7 @@ module.exports = function(Email) {
       console.log('hit data, not ctx')
     }
   });
-
+/*
   var interval = 10;
   var deleteflag = true;
 
@@ -132,5 +132,5 @@ module.exports = function(Email) {
       recursiveDelete();
     }, interval*60*1000);
    })();
-  });
+  });*/
 };
