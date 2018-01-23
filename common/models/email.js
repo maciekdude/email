@@ -3,7 +3,6 @@
 module.exports = function(Email) {
   
   var app = require('../../server/server');
-  var deleteFlag
  
   /*Email.observe('loaded', function readSetting(ctx, next){
     var AppCon = app.models.AppConfig;
@@ -109,19 +108,20 @@ module.exports = function(Email) {
   var interval = 10;
   var deleteflag = true;
 
+  app.on('started', function(){
+    console.log('inside app.on started');
   (function recursiveDelete() {
-
+    console.log('inside recursive function');
+    var AppCon = app.models.AppConfig;
+    AppCon.findById('1').then((result) =>{
+      interval=result.interval
+      deleteflag=result.deleteFlag;
+    });
     setTimeout(function() {
       console.log('interval:', interval)
-      var AppCon = app.models.AppConfig;
-      AppCon.findById('1').then((result) =>{
-        console.log(result)
-        interval=result.interval
-        deleteFlag=result.deleteFlag;
-      });
-      console.log('//// RUNNING EVERY 20 MINUTES')
-      if (deleteFlag) {  
-        console.log('Inside the deleteFlag if:',deleteFlag)
+      console.log('//// RUNNING EVERY %i miliseconds',interval*60*1000)
+      if (deleteflag) {  
+        console.log('Inside the deleteFlag if:',deleteflag)
         Email.destroyAll({
         permanent:false
       }, function(err, info){
@@ -130,6 +130,7 @@ module.exports = function(Email) {
       })}
     
       recursiveDelete();
-    }, interval*1000);
+    }, interval*60*1000);
    })();
+  });
 };
