@@ -9,6 +9,7 @@ import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
 import { AppRoutingModule } from './app-dashboard-routing.module';
 import { EmailViewComponent } from './email-view/email-view.component';
 
+import {AppsettingsService} from './services/appsettings.service';
 import { EmailService } from './services/email.service';
 import { ConversationService } from './services/conversation.service';
 import { NluService } from './services/nlu.service';
@@ -84,7 +85,8 @@ providers: [
   NluService,
   CurrentDemoService,
   EmailsStorageService,
-  SendemailService
+  SendemailService,
+  AppsettingsService
 ],
 entryComponents: [
   IntentDialogComponent,

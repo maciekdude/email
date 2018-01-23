@@ -1,7 +1,16 @@
 'use strict';
 
 module.exports = function(Email) {
-
+  
+  var app = require('../../server/server');
+  var deleteFlag
+ 
+  /*Email.observe('loaded', function readSetting(ctx, next){
+    var AppCon = app.models.AppConfig;
+    AppCon.findById('1', function (err, result){
+      console.log(result.interval, result.deleteFlag)
+    });
+  });*/
   Email.observe('before save', function enrich(ctx, next) {
     // console.log(ctx)
     var emailText = ctx.instance.text
@@ -97,14 +106,30 @@ module.exports = function(Email) {
     }
   });
 
-  setInterval(function(){
+  var interval = 10;
+  var deleteflag = true;
+
+  (function recursiveDelete() {
+
+    setTimeout(function() {
+      console.log('interval:', interval)
+      var AppCon = app.models.AppConfig;
+      AppCon.findById('1').then((result) =>{
+        console.log(result)
+        interval=result.interval
+        deleteFlag=result.deleteFlag;
+      });
       console.log('//// RUNNING EVERY 20 MINUTES')
-      Email.destroyAll({
+      if (deleteFlag) {  
+        console.log('Inside the deleteFlag if:',deleteFlag)
+        Email.destroyAll({
         permanent:false
       }, function(err, info){
         console.log(err)
         console.log(info)
-      })
-  }, 1200000);
-
+      })}
+    
+      recursiveDelete();
+    }, interval*1000);
+   })();
 };

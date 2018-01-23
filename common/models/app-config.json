@@ -1,0 +1,25 @@
+{
+  "name": "AppConfig",
+  "plural": "AppConfigs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "interval": {
+      "type": "number",
+      "required": true,
+      "default": 30
+    },
+    "deleteFlag": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
